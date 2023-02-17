@@ -10,6 +10,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+import Sticker from "./sticker"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -33,6 +34,7 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
+        <Sticker />
         <footer
           style={{
             marginTop: `var(--space-5)`,
