@@ -1,3 +1,35 @@
+# EASIT- Landing Page
+
+## Description
+
+## Installation
+
+```bash
+
+```
+
+## Running the app
+
+```bash
+
+```
+
+## Plugins
+### used
+- [Robots](https://www.gatsbyjs.com/plugins/gatsby-plugin-robots-txt/?=robots)
+- [Sitemap](https://www.gatsbyjs.com/plugins/gatsby-plugin-sitemap/?=sitemap)
+- [Google Tag Manager](https://www.gatsbyjs.com/plugins/gatsby-plugin-google-tagmanager/?=google)
+- [Emotion](https://www.gatsbyjs.com/plugins/gatsby-plugin-emotion/)
+- [Styled-Components](https://www.gatsbyjs.com/plugins/gatsby-plugin-styled-components/)
+
+### to be used
+- [Preload Fonts](https://www.gatsbyjs.com/plugins/gatsby-plugin-preload-fonts/?=font)
+- [Google Analytics](https://www.gatsbyjs.com/plugins/gatsby-plugin-google-analytics/?=google)
+- 
+
+
+------
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.com">
