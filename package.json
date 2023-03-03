@@ -3,13 +3,14 @@
   "private": true,
   "description": "Funnel for EASIT.rent",
   "version": "0.1.0",
-  "author": "Tobias Vonesch <tobias@teqly.ch>",
+  "author": "Tobias Vonesch <tobias@teqly.ch> & Jannik Frei <jannik@teqly.ch>",
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "babel-plugin-styled-components": "^2.0.7",
     "gatsby": "^5.6.1",
     "gatsby-plugin-emotion": "^8.6.0",
+    "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-image": "^3.6.0",
     "gatsby-plugin-manifest": "^5.6.0",
     "gatsby-plugin-robots-txt": "^1.8.0",
@@ -40,9 +41,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://gitlab.com/teqly1/easit-website"
   }
 }

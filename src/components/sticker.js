@@ -14,7 +14,6 @@ const Background = styled.div`
 
 const Text = styled.p`
   text-align: center;
-  position: absolute;
   margin: auto;
   animation-name: spin;
   animation-duration: 5000ms;

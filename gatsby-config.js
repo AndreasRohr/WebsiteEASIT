@@ -36,6 +36,15 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Inconsolata`
+        ],
+        display: 'swap'
+      }
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `EASIT-Funnel`,
