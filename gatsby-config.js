@@ -26,6 +26,14 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        host: `https://easit.rent/`,
+        sitemap: `https://easit.rent/sitemap.xml`,
+        policy: [{ userAgent: `*`, allow: `/` }],
+      }
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `EASIT-Funnel`,
