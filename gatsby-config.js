@@ -25,6 +25,8 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    //configuration can be modified manually. check out https://www.gatsbyjs.com/plugins/gatsby-plugin-sitemap/
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-robots-txt`,
       options: {
@@ -47,7 +49,7 @@ module.exports = {
         legacy: false,
         theme_color_in_head: false, // This will avoid adding theme-color meta tag.
         // Place where crossOrigin attribute can be added.
-      },
-    },
+      }
+    }
   ],
 }
