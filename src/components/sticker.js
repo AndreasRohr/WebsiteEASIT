@@ -13,6 +13,7 @@ const Background = styled.div`
 `
 
 const Text = styled.p`
+  font-family: "JetBrains Mono", monospace;
   text-align: center;
   margin: auto;
   animation-name: spin;

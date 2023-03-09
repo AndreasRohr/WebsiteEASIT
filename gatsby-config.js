@@ -39,7 +39,8 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Inconsolata`
+          `Inconsolata`,
+          `JetBrains Mono`
         ],
         display: 'swap'
       }

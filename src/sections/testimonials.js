@@ -1,18 +1,12 @@
 import * as React from "react"
-import styled from "@emotion/styled"
 import Testimonial from "../components/testemonial";
-
-const Container = styled.div`
-  background: #273C2C;
-  color: #fff;
-  width: 100%;
-`
+import SectionContainer from "../components/sectionContainer";
 
 const Testimonials = () => (
-    <Container>
+    <SectionContainer color={"#273C2C"} textcolor={"#ffffff"}>
         <h1>Testimonials</h1>
         <Testimonial />
-    </Container>
+    </SectionContainer>
 )
 
 export default Testimonials

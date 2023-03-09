@@ -1,15 +1,10 @@
 import * as React from "react"
-import styled from "@emotion/styled"
-
-const Container = styled.div`
-  background: #dd356e;
-  width: 100%;
-`
+import SectionContainer from "../components/sectionContainer";
 
 const Faq = () => (
-    <Container>
+    <SectionContainer color={"#dd356e"}>
         <h1>Faq</h1>
-    </Container>
+    </SectionContainer>
 )
 
 export default Faq

@@ -1,15 +1,10 @@
 import * as React from "react"
-import styled from "@emotion/styled"
-
-const Container = styled.div`
-  background: #ffffff;
-  width: 100%;
-`
+import SectionContainer from "../components/sectionContainer";
 
 const Calculation = () => (
-    <Container>
+    <SectionContainer color={"#ffffff"}>
         <h1>Calculation</h1>
-    </Container>
+    </SectionContainer>
 )
 
 export default Calculation
