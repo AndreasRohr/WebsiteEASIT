@@ -2,13 +2,11 @@ import * as React from "react"
 import styled from "@emotion/styled"
 
 const Background = styled.div`
+  position: absolute;
   background: #fee856;
   height: 10em;
   width: 10em;
   border-radius: 50%;
-  position: relative;
-  top: 2em;
-  left: 2em;
 `
 
 const Text = styled.p`
