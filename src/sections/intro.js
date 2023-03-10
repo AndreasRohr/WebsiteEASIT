@@ -1,9 +1,11 @@
 import * as React from "react"
 import {StaticImage} from "gatsby-plugin-image";
 import SectionContainer from "../components/sectionContainer";
+import Sticker from "../components/sticker";
 
 const Intro = () => (
-  <SectionContainer color={"#ffffff"}>
+  <SectionContainer color={"#ffffff"} id="intro">
+      <Sticker />
         <h1>Senken Sie IT-Kosten und verbessern Sie Ihre Infrastruktur!</h1>
         <p>
             Mit EASIT.rent können Sie Hard- & Software sowie Support zu einem Fixpreis

@@ -1,7 +1,7 @@
 import * as React from "react"
 import styled from "@emotion/styled";
 
-const SectionContainer = ({ children, color, textcolor="black" }) => {
+const SectionContainer = ({ children, color, textcolor="black", id }) => {
 
 const Containerstyle = styled.div`
     background: ${color};
@@ -10,7 +10,7 @@ const Containerstyle = styled.div`
 `
     return (
         <>
-            <Containerstyle>{children}</Containerstyle>
+            <Containerstyle id={id}>{children}</Containerstyle>
         </>
     )
 }

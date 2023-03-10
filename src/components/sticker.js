@@ -6,26 +6,26 @@ const Background = styled.div`
   height: 10em;
   width: 10em;
   border-radius: 50%;
-  display: inline-block;
-  position: fixed;
-  bottom: 2em;
-  right: 2em;
+  position: relative;
+  top: 2em;
+  left: 2em;
 `
 
 const Text = styled.p`
   font-family: "JetBrains Mono", monospace;
   text-align: center;
-  margin: auto;
+  top: 25%;
+  position: absolute;
   animation-name: spin;
   animation-duration: 5000ms;
   animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation-timing-function: linear;;
   @keyframes spin {
     from {
-      transform: rotate(0deg);
+      transform: rotate(-45deg);
     }
     to {
-      transform: rotate(360deg);
+      transform: rotate(45deg);
     }
   }
 `
