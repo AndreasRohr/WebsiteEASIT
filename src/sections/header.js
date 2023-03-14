@@ -23,7 +23,6 @@ const Menu = styled.menu`
 
 const Header = () => (
   <HeaderContainer>
-      <a href="">
           <StaticImage
               src="../images/EASIT-Logo.png"
               loading="eager"
@@ -32,7 +31,6 @@ const Header = () => (
               formats={["auto", "webp", "avif"]}
               alt="EASIT Logo"
           />
-      </a>
     <Menu>
       <A>FAQ</A>
       <A>Ablauf</A>
