@@ -10,7 +10,16 @@ const Button = styled.button`
 `
 
 const Table = styled.table`
-  
+  width: 100%;
+    border-collapse: collapse;
+  border-spacing: 0;
+    border: 1px solid #ddd;
+`
+
+const Td = styled.td`
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 16px;
 `
 
 const Calculator = () => {
@@ -22,7 +31,7 @@ const Calculator = () => {
     const toggle = () => {
         open ? setOpen(false) : setOpen(true);
         years ? setYears(false) : setYears(true);
-        years ? setPrices([393, 150, 50]) : setPrices([393 * 3, 150 * 3, 50]);
+        years ? setPrices([393, 150, 50]) : setPrices([393 * 3, 150, 50]);
     }
 
     return (
@@ -39,42 +48,43 @@ const Calculator = () => {
                 </thead>
                 <tbody>
                 <tr>
-                    <td>Abschreibung</td>
-                    <td>{prices[0]}.-</td>
-                    <td><StaticImage
+                    <Td>Anschaffungskosten</Td>
+                    <Td>{prices[0]}.-</Td>
+                    <Td><StaticImage
                         src="../images/Check.png"
                         loading="eager"
                         width={50}
                         formats={["auto", "webp", "avif"]}
                         alt="Checkmark"
-                    /></td>
+                    /></Td>
                 </tr>
                 <tr>
-                    <td>Setup</td>
-                    <td>50.-</td>
-                    <td><StaticImage
+                    <Td>Setup</Td>
+                    <Td>50.-</Td>
+                    <Td><StaticImage
                         src="../images/Check.png"
                         loading="eager"
                         width={50}
                         formats={["auto", "webp", "avif"]}
                         alt="Checkmark"
-                    /></td>
+                    /></Td>
                 </tr>
                 <tr>
-                    <td>Support</td>
-                    <td>{prices[1]}.-</td>
-                    <td><StaticImage
+                    <Td>Support</Td>
+                    <Td>{prices[1]}.-</Td>
+                    <Td><StaticImage
                         src="../images/Check.png"
                         loading="eager"
                         width={50}
                         formats={["auto", "webp", "avif"]}
                         alt="Checkmark"
-                    /></td>
+                    /></Td>
                 </tr>
                 <tr>
-                    <td>Total</td>
-                    <td>{prices.reduce((partialSum, a) => partialSum + a, 0)}.-</td>
-                    <td>535.-</td>
+                    <Td>Total</Td>
+                    <Td>{prices.reduce((partialSum, a) => partialSum + a, 0)}.-</Td>
+                    <Td>535.-</Td>
+                    <Td>pro Jahr</Td>
                 </tr>
                 </tbody>
             </Table>
