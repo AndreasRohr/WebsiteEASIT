@@ -23,7 +23,7 @@ const Menu = styled.menu`
 
 const Header = () => (
   <HeaderContainer>
-      <a href="#">
+      <a href="">
           <StaticImage
               src="../images/EASIT-Logo.png"
               loading="eager"
