@@ -30,7 +30,7 @@ const Lifecycle = () => (
                     loading="eager"
                     width={50}
                     formats={["auto", "webp", "avif"]}
-                    alt="Checkmark"
+                    alt="auswaehlen"
                 />
             </Td>
         </tr>
@@ -44,7 +44,7 @@ const Lifecycle = () => (
                     loading="eager"
                     width={50}
                     formats={["auto", "webp", "avif"]}
-                    alt="Checkmark"
+                    alt="bestellen"
                 />
             </Td>
         </tr>
@@ -58,7 +58,7 @@ const Lifecycle = () => (
                         loading="eager"
                         width={50}
                         formats={["auto", "webp", "avif"]}
-                        alt="Checkmark"
+                        alt="loslegen"
                     />
                 </Td>
             </tr>
