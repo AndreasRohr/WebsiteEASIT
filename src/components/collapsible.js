@@ -1,6 +1,10 @@
 import * as React from "react"
 import styled from "@emotion/styled"
 
+const Container = styled.div`
+    padding: 1em;
+`
+
 const Button = styled.button`
 
 `
@@ -9,7 +13,7 @@ const Content = styled.p`
   
 `
 
-const Collapsible = ({title}) => {
+const Collapsible = ({title, content}) => {
 
     const [open, setOpen] = React.useState(false);
 
@@ -18,10 +22,10 @@ const Collapsible = ({title}) => {
     }
 
     return (
-        <>
+        <Container>
             <Button onClick={toggle}>{title}</Button>
-            { open && <Content>EASIT ist Super!</Content> }
-        </>
+            { open && <Content>{content}</Content> }
+        </Container>
     )
 }
 
