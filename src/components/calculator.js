@@ -18,7 +18,7 @@ const Table = styled.table`
 
 const Td = styled.td`
     border: 1px solid #ddd;
-    text-align: left;
+    text-align: center;
     padding: 16px;
 `
 
@@ -51,7 +51,7 @@ const Calculator = () => {
                     <Td>Anschaffungskosten</Td>
                     <Td>{prices[0]}.-</Td>
                     <Td><StaticImage
-                        src="../images/Check.png"
+                        src="../images/check.png"
                         loading="eager"
                         width={50}
                         formats={["auto", "webp", "avif"]}
@@ -62,7 +62,7 @@ const Calculator = () => {
                     <Td>Setup</Td>
                     <Td>50.-</Td>
                     <Td><StaticImage
-                        src="../images/Check.png"
+                        src="../images/check.png"
                         loading="eager"
                         width={50}
                         formats={["auto", "webp", "avif"]}
@@ -73,7 +73,7 @@ const Calculator = () => {
                     <Td>Support</Td>
                     <Td>{prices[1]}.-</Td>
                     <Td><StaticImage
-                        src="../images/Check.png"
+                        src="../images/check.png"
                         loading="eager"
                         width={50}
                         formats={["auto", "webp", "avif"]}
@@ -84,7 +84,6 @@ const Calculator = () => {
                     <Td>Total</Td>
                     <Td>{prices.reduce((partialSum, a) => partialSum + a, 0)}.-</Td>
                     <Td>535.-</Td>
-                    <Td>pro Jahr</Td>
                 </tr>
                 </tbody>
             </Table>
