@@ -1,5 +1,6 @@
 import * as React from "react";
 import styled from "@emotion/styled";
+import Form from "./form";
 
 const ModalPage = styled.div`
     position: fixed;
@@ -29,6 +30,7 @@ const Modal = ({toggleModal}) => {
         <>
             <ModalPage>
                 <ModalContent>
+                    <Form/>
                     <a onClick={toggleModal}>Close</a>
                 </ModalContent>
             </ModalPage>
