@@ -1,0 +1,14 @@
+{
+  "xana": {
+      "name": "xana",
+      "content": "EASIT ist super!, wir waren super zufrieden"
+    },
+    "firmaA": {
+      "name": "Firma ABC",
+      "content": "Flexibel, EASIT ist mega flexibel"
+    },
+    "firmaB": {
+      "name": "Company QVY",
+      "content": "lorem ipsum"
+    }
+}
