@@ -1,6 +1,8 @@
 import * as React from "react"
 import styled from "@emotion/styled"
 import {StaticImage} from "gatsby-plugin-image";
+import Pill from "../components/pill";
+import Modal from "../components/modal";
 
 const Button = styled.button`
   background: #dd356e;
@@ -24,20 +26,25 @@ const Td = styled.td`
 
 const Calculator = () => {
 
-    const [open, setOpen] = React.useState(false);
     const [years, setYears] = React.useState(false);
     const [prices, setPrices] = React.useState([393, 150, 50]);
+    const [modal, setModal] = React.useState(false);
 
-    const toggle = () => {
-        open ? setOpen(false) : setOpen(true);
+    const toggleYears = () => {
         years ? setYears(false) : setYears(true);
         years ? setPrices([393, 150, 50]) : setPrices([393 * 3, 150, 50]);
     }
 
+    const toggleModal = () => {
+        modal ? setModal(false) : setModal(true);
+        console.log(modal)
+    }
+
     return (
         <>
-            <Button onClick={toggle} disabled={years}>1 Jahr</Button>
-            <Button onClick={toggle} disabled={!years}>3 Jahre</Button>
+            <Button onClick={toggleYears} disabled={years}>1 Jahr</Button>
+            <Button onClick={toggleYears} disabled={!years}>3 Jahre</Button>
+            {modal && <Modal toggleModal={toggleModal}/>}
             <Table>
                 <thead>
                 <tr>
@@ -83,7 +90,7 @@ const Calculator = () => {
                 <tr>
                     <Td>Total</Td>
                     <Td>{prices.reduce((partialSum, a) => partialSum + a, 0)}.-</Td>
-                    <Td>535.-</Td>
+                    <Td><Pill action={toggleModal}>Angebot erhalten</Pill></Td>
                 </tr>
                 </tbody>
             </Table>

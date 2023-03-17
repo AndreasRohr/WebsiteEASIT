@@ -1,7 +1,7 @@
 import * as React from "react"
 import styled from "@emotion/styled";
 
-const PillStyle = styled.a`
+const PillStyle = styled.button`
   float: left;
   font-weight: bold;
   text-align: center;
@@ -19,10 +19,10 @@ const PillStyle = styled.a`
   }
 `
 
-const Pill = ({ children, link }) => {
+const Pill = ({ children, action }) => {
 
     return (
-            <PillStyle href={link}>
+            <PillStyle onClick={action}>
                { children }
             </PillStyle>
     )
