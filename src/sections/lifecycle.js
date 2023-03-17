@@ -28,7 +28,7 @@ const Lifecycle = () => (
                 <StaticImage
                     src="../images/auswaehlen.png"
                     loading="eager"
-                    width={50}
+                    width={75}
                     formats={["auto", "webp", "avif"]}
                     alt="auswaehlen"
                 />
@@ -42,7 +42,7 @@ const Lifecycle = () => (
                 <StaticImage
                     src="../images/bestellen.png"
                     loading="eager"
-                    width={50}
+                    width={75}
                     formats={["auto", "webp", "avif"]}
                     alt="bestellen"
                 />
@@ -56,7 +56,7 @@ const Lifecycle = () => (
                     <StaticImage
                         src="../images/loslegen.png"
                         loading="eager"
-                        width={50}
+                        width={75}
                         formats={["auto", "webp", "avif"]}
                         alt="loslegen"
                     />
