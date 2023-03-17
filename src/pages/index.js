@@ -6,7 +6,6 @@ import Intro from "../sections/intro"
 import Lifecycle from "../sections/lifecycle"
 import Faq from "../sections/faq";
 import Calculation from "../sections/calculation";
-import Testimonials from "../sections/testimonials";
 
 const IndexPage = () => (
   <Layout>
@@ -14,7 +13,6 @@ const IndexPage = () => (
     <Faq />
     <Lifecycle />
     <Calculation />
-    <Testimonials />
   </Layout>
 )
 
