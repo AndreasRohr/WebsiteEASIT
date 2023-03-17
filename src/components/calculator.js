@@ -12,10 +12,11 @@ const Button = styled.button`
 `
 
 const Table = styled.table`
-  width: 100%;
+    width: 100%;
     border-collapse: collapse;
-  border-spacing: 0;
+    border-spacing: 0;
     border: 1px solid #ddd;
+    margin-bottom: 1.5rem;
 `
 
 const Td = styled.td`
@@ -91,6 +92,25 @@ const Calculator = () => {
                     <Td>Total</Td>
                     <Td>{prices.reduce((partialSum, a) => partialSum + a, 0)}.-</Td>
                     <Td><Pill action={toggleModal}>Angebot erhalten</Pill></Td>
+                </tr>
+                </tbody>
+            </Table>
+            <Table>
+                <thead>
+                    <tr>
+                        <th><h2>Ausserdem mit EASIT</h2></th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <Td><StaticImage
+                        src="../images/check.png"
+                        loading="eager"
+                        width={50}
+                        formats={["auto", "webp", "avif"]}
+                        alt="Checkmark"
+                    /></Td>
+                    <Td>Ausfallsicherheit</Td>
                 </tr>
                 </tbody>
             </Table>
