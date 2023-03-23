@@ -47,6 +47,17 @@ const RightContainer = styled.div`
 
 `
 
+const TeqlyContainer = styled.div`
+display: flex;
+margin-left: 17rem;
+margin-top: 0.3rem;
+margin-bottom: 1rem;
+`
+
+const Powered = styled.p`
+margin-top: 0.2rem;
+`
+
 
 const Intro = () => (
   <SectionContainer color={"linear-gradient(to bottom right, white 60%, #dd356e 60%)"} id="intro" height={80}>
@@ -54,9 +65,18 @@ const Intro = () => (
           <LeftContainer>
               <Title>Deine <PinkTitle>IT</PinkTitle></Title>
               <Title>einfach einfach</Title>
-              <p>
-                  by TEQLY
-              </p>
+              <TeqlyContainer>
+              <Powered>powered by</Powered>
+              <StaticImage
+                  placeholder= 'none'
+                  src="../images/teqly_logo_black.png"
+                  loading="eager"
+                  width={120}
+                  quality={95}
+                  formats={["auto", "webp", "avif"]}
+                  alt="TEQLY Logo"
+              />
+              </TeqlyContainer>
               <Pill link="#default">Zum Angebot</Pill>
           </LeftContainer>
           <RightContainer>
@@ -64,8 +84,8 @@ const Intro = () => (
                   placeholder= 'none'
                   src="../images/laptop-arrows-5.png"
                   loading="eager"
-                  width={650}
-                  quality={95}
+                  width={750}
+                  quality={100}
                   formats={["auto", "webp", "avif"]}
                   alt="Laptop with arrows"
                   class = "desktopImage"
