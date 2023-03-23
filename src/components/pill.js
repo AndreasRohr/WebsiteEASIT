@@ -25,13 +25,12 @@ const PillStyle = styled.button`
   }
 `
 
-const Pill = ({ children, action }) => {
-
+const Pill = ({ children, action, className }) => {
     return (
-            <PillStyle onClick={action}>
-               { children }
-            </PillStyle>
-    )
+        <PillStyle onClick={action} className={className}>
+            {children}
+        </PillStyle>
+    );
 }
 
 

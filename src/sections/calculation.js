@@ -1,10 +1,16 @@
 import * as React from "react"
 import SectionContainer from "../components/sectionContainer";
 import Calculator from "../components/calculator";
+import styled from "@emotion/styled"
+
+const Title = styled.h1`
+text-align: center;
+margin-top: 2rem;
+`
 
 const Calculation = () => (
     <SectionContainer color={"#FFFFFF"}>
-        <h1>Calculation</h1>
+        <Title>Beispielhafte Gesamtkostenrechnung</Title>
         <Calculator />
     </SectionContainer>
 )

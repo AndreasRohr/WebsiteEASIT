@@ -4,8 +4,8 @@ import Collapsible from "../components/collapsible";
 import data from "../content/faq.json"
 
 const Faq = () => (
-    <SectionContainer color={"#dd356e"}>
-        <h1>Faq</h1>
+    <SectionContainer color={"#ffffff"}>
+        <h1>FAQ</h1>
         {data.questions.map((item, index) => {
             return <><Collapsible key={index} title={item.title} content={item.content} /> <br /></>
         })}
