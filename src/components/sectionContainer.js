@@ -7,7 +7,7 @@ const SectionStyle = styled.div`
     background: ${color};
     color: ${textcolor};
     width: 100%;
-    height: ${height}vh;
+    height: ${height}%;
 `
 
 const ContentContainer = styled.div`

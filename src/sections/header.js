@@ -1,43 +1,43 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import styled from "@emotion/styled"
-import Pill from "../components/pill"
+import Navbar from "../components/navbar";
 
 const HeaderContainer = styled.header`
+display: flex;
   overflow: hidden;
   padding: 1.25em 0.625em;
+  position: fixed;
+  z-index: 1;
+  max-height: 4.5rem;
+  background-color: white;
+  width: 100%;
+  
+  .easit-logo{
+  margin-left:20%;
+  }
 `
 
-const A = styled.a`
-    float: left;
-    text-align: center;
-    padding: 0.75em;
-    text-decoration: none;
-    font-size: 1.125em;
-    font-weight: bold;
+const ImageWrapper = styled.div`
+width: 60%;
 `
 
-const Menu = styled.menu`
-    float: right;
-`
 
 const Header = () => (
   <HeaderContainer>
+      <ImageWrapper>
           <StaticImage
-              src="../images/EASIT-Logo.png"
+              placeholder= 'none'
+              src="../images/EASIT-Logo-slim.png"
               loading="eager"
-              width={150}
+              width={120}
               quality={95}
               formats={["auto", "webp", "avif"]}
               alt="EASIT Logo"
+              className="easit-logo"
           />
-    <Menu>
-      <A>FAQ</A>
-      <A>Ablauf</A>
-      <A>Vorteile</A>
-      <A>Zufriedene Kunden</A>
-      <Pill link="#default">Zum Angebot</Pill>
-    </Menu>
+      </ImageWrapper>
+          <Navbar/>
   </HeaderContainer>
 )
 

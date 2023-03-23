@@ -6,13 +6,15 @@ import Intro from "../sections/intro"
 import Lifecycle from "../sections/lifecycle"
 import Faq from "../sections/faq";
 import Calculation from "../sections/calculation";
+import Sticker from "../components/sticker";
 
 const IndexPage = () => (
   <Layout>
+      <Sticker />
     <Intro />
+      <Lifecycle />
+      <Calculation />
     <Faq />
-    <Lifecycle />
-    <Calculation />
   </Layout>
 )
 

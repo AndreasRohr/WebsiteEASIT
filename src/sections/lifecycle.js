@@ -16,8 +16,9 @@ const Td = styled.td`
   text-align: center;
 `
 
+
 const Lifecycle = () => (
-  <SectionContainer color={"#9ED8DB"}>
+  <SectionContainer color={"#FFFFFF"}>
     <h1>Lifecycle</h1>
       <Table>
         <tr>
@@ -26,6 +27,7 @@ const Lifecycle = () => (
             </Td>
             <Td>
                 <StaticImage
+                    placeholder= 'none'
                     src="../images/auswaehlen.png"
                     loading="eager"
                     width={75}
@@ -40,6 +42,7 @@ const Lifecycle = () => (
             </Td>
             <Td>
                 <StaticImage
+                    placeholder= 'none'
                     src="../images/bestellen.png"
                     loading="eager"
                     width={75}
@@ -54,6 +57,7 @@ const Lifecycle = () => (
                 </Td>
                 <Td>
                     <StaticImage
+                        placeholder= 'none'
                         src="../images/loslegen.png"
                         loading="eager"
                         width={75}

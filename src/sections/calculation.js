@@ -3,7 +3,7 @@ import SectionContainer from "../components/sectionContainer";
 import Calculator from "../components/calculator";
 
 const Calculation = () => (
-    <SectionContainer color={"#ffffff"}>
+    <SectionContainer color={"#FFFFFF"}>
         <h1>Calculation</h1>
         <Calculator />
     </SectionContainer>

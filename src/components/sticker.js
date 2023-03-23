@@ -2,11 +2,64 @@ import * as React from "react"
 import styled from "@emotion/styled"
 
 const Background = styled.div`
-  position: absolute;
-  background: #fee856;
-  height: 10em;
-  width: 10em;
-  border-radius: 50%;
+z-index: 1;
+   @media (max-width: 768px) {
+      height: 6em;
+      display: none;
+width: 6em;
+margin-bottom: 10vh;
+margin-right: 1rem; 
+  }
+  
+background: #fee856;
+height: 10em;
+width: 10em;
+border-radius: 50%;
+position: fixed;
+bottom: 0;
+right: 0;
+margin-right: 3rem; 
+margin-bottom: 60vh;
+animation: wobble 4s ease infinite;
+ 
+@keyframes wobble {
+    0%, 100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+
+    4% {
+        -webkit-transform: translateX(-9px) rotate(-8deg);
+        transform: translateX(-9px) rotate(-8deg);
+    }
+
+    8% {
+        -webkit-transform: translateX(calc(9px / 2)) rotate(8deg);
+        transform: translateX(calc(9px / 2)) rotate(8deg);
+    }
+
+    12% {
+        -webkit-transform: translateX(calc(-9px / 2)) rotate(calc(-8deg / 1.8));
+        transform: translateX(calc(-9px / 2)) rotate(calc(-8deg / 1.8));
+    }
+
+    16% {
+        -webkit-transform: translateX(calc(9px / 3.3)) rotate(calc(8deg / 3));
+        transform: translateX(calc(9px / 3.3)) rotate(calc(8deg / 3));
+    }
+
+    20% {
+        -webkit-transform: translateX(calc(-9px / 5.5)) rotate(calc(-8deg / 5));
+        transform: translateX(calc(-9px / 5.5)) rotate(calc(-8deg / 5));
+    }
+    
+     75% {
+        transform: rotate(0);
+    }
+    
+}
 `
 
 const Text = styled.p`
@@ -14,18 +67,10 @@ const Text = styled.p`
   text-align: center;
   top: 25%;
   position: absolute;
-  animation-name: spin;
-  animation-duration: 5000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;;
-  @keyframes spin {
-    from {
-      transform: rotate(-45deg);
-    }
-    to {
-      transform: rotate(45deg);
-    }
+     @media (max-width: 768px) {
+      font-size:10px;
   }
+
 `
 
 const Sticker = () => (
