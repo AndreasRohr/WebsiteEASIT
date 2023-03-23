@@ -1,0 +1,65 @@
+.toggle-card {
+    border: 0.5px solid grey;
+    background-color: white;
+    border-radius: 8px;
+    max-width: 80rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.toggle-heading {
+    display: flex;
+    align-items: center;
+    background-color: #dd356e;
+    padding: -10px!important;
+    border-radius: 8px;
+}
+
+.toggle-heading-text {
+    flex-grow: 1;
+    color: white;
+    margin-left: 1rem;
+    padding: 1rem;
+}
+
+.toggle-card-icon {
+    margin-left: auto;
+    width: 30px;
+    height: auto;
+    border: none;
+    background-color: #dd356e;
+    margin-right: 1rem;
+}
+
+.toggle-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0s ease-out, opacity 0.4s ease-in;
+    opacity: 0; /* Set the initial opacity to 0 */
+}
+
+.toggle-content.hidden {
+    max-height: none;
+}
+
+.toggle-card-icon.active {
+    transform: rotate(180deg);
+    background-color: #dd356e;
+}
+
+.toggle-heading.active {
+    border-radius: 8px 8px 0 0;
+}
+
+.toggle-content.show {
+    max-height: 1000px; /* Set a high value for max-height to ensure the element expands fully */
+    opacity: 1; /* Set the opacity to 1 to make the element visible */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+
+.cls-1{
+    fill: white;
+}
