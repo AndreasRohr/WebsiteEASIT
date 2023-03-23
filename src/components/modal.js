@@ -30,8 +30,8 @@ const Modal = ({toggleModal}) => {
         <>
             <ModalPage>
                 <ModalContent>
-                    <Form/>
-                    <a onClick={toggleModal}>Close</a>
+                    <Form closeOnSubmit={toggleModal}/>
+                    <button onClick={toggleModal}>Close</button>
                 </ModalContent>
             </ModalPage>
         </>
