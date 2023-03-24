@@ -4,8 +4,10 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import styled from "@emotion/styled"
 import "../styles/navbar.css"
 import Pill from "../components/pill"
+import { Link } from "gatsby";
 
-const A = styled.a`
+const A = styled.div`
+    color: #000000;
     float: left;
     padding-left: 0.75em;
     padding-right: 0.75em;
@@ -30,7 +32,7 @@ const Navbar = () => {
                 <A>Home</A>
                 <A> Produkte</A>
                 <A>Wie funktioniert's?</A>
-                <A>Kontakt</A>
+                <A><Link to="/contact" activeClassName="active">Kontakt</Link></A>
                 <Pill link="#default">Zum Angebot</Pill>
                 <button
                     className="nav-btn nav-close-btn"
