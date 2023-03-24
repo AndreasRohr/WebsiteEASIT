@@ -12,16 +12,15 @@ const PillStyle = styled.button`
   color: white;
   background: #dd356e;
   border-radius: 1.875em;
-  border: 1px solid white;
+  border: 2px solid white;
   font-size: 1.2rem;
   white-space: nowrap;
 
 
   &:hover {
-    color: #dd356e;
-    background: white;
-    border-style: solid;
-    border-color: black
+    color: white;
+    background: #c72159;
+    border: 2px solid white;
   }
 `
 

@@ -13,6 +13,9 @@ const SectionStyle = styled.div`
 const ContentContainer = styled.div`
     margin-inline: 3em;
     padding: 2em;
+    max-width: 1900px;
+    margin-left: auto;
+    margin-right: auto;
 `
 
     return (

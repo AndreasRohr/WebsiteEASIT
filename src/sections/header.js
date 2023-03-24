@@ -14,7 +14,7 @@ display: flex;
   width: 100%;
   
   .easit-logo{
-  margin-left:20%;
+  margin-left:7%;
   }
 `
 
