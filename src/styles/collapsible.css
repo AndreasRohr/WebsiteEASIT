@@ -30,6 +30,7 @@
     border: none;
     background-color: #dd356e;
     margin-right: 1rem;
+    margin-top: 1rem;
 }
 
 .toggle-content {
@@ -46,6 +47,8 @@
 .toggle-card-icon.active {
     transform: rotate(180deg);
     background-color: #dd356e;
+    margin-top: -1rem;
+    margin-right: 1.5rem;
 }
 
 .toggle-heading.active {
@@ -61,5 +64,6 @@
 }
 
 .cls-1{
-    fill: white;
+    stroke: white;
+    stroke-width: 2px;
 }

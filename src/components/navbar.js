@@ -27,10 +27,10 @@ const Navbar = () => {
     return (
         <header>
             <nav ref={navRef}>
-                <A>FAQ</A>
-                <A>Ablauf</A>
-                <A>Vorteile</A>
-                <A>Zufriedene Kunden</A>
+                <A>Home</A>
+                <A> Produkte</A>
+                <A>Wie funktioniert's?</A>
+                <A>Kontakt</A>
                 <Pill link="#default">Zum Angebot</Pill>
                 <button
                     className="nav-btn nav-close-btn"

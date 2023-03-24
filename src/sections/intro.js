@@ -49,9 +49,13 @@ const RightContainer = styled.div`
 
 const TeqlyContainer = styled.div`
 display: flex;
-margin-left: 17rem;
-margin-top: 0.3rem;
-margin-bottom: 1rem;
+margin-top: 0.4rem;
+margin-bottom: 1.5rem;
+
+.teqly_logo{
+min-width:120px;
+max-width: 120px;
+}
 `
 
 const Powered = styled.p`
@@ -75,6 +79,8 @@ const Intro = () => (
                   quality={95}
                   formats={["auto", "webp", "avif"]}
                   alt="TEQLY Logo"
+                  className={"teqly_logo"}
+                  objectFit={"contain"}
               />
               </TeqlyContainer>
               <Pill link="#default">Zum Angebot</Pill>
