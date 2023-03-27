@@ -1,6 +1,5 @@
 import * as React from "react"
 import styled from "@emotion/styled";
-import { Link } from "gatsby";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 const PillStyle = styled.button`

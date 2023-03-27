@@ -7,14 +7,15 @@ import Lifecycle from "../sections/lifecycle"
 import Faq from "../sections/faq";
 import Calculation from "../sections/calculation";
 import Sticker from "../components/sticker";
+import Products from "../sections/products";
 
 const IndexPage = () => (
   <Layout>
       <Sticker />
     <Intro />
-      <Calculation />
       <Lifecycle />
-
+<Products></Products>
+      <Calculation />
     <Faq />
   </Layout>
 )

@@ -38,24 +38,17 @@ border-top-right-radius: 1rem;
   }
 `
 
-const Title = styled.h1`
-text-align: center;
-margin-top: 2rem;
-margin-bottom: -2rem;
-`
-
 const Table = styled.table`
-width: 65%;
-margin: auto;
-    border-collapse: collapse;
-    border-spacing: 0;
-    border: 2px solid #ddd;
-    margin-bottom: 1.5rem;
-    border-radius: 0.5rem;
-    border-collapse: separate !important;
-    border-top: none !important;
-    border-left: none!important;
-    border-right: none!important;
+  width: 65%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 2px solid #ddd;
+  margin: auto auto 1.5rem;
+  border-radius: 0.5rem;
+  border-collapse: separate !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
 `
 
 const Tr = styled.tr`

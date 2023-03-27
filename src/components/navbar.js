@@ -4,7 +4,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import styled from "@emotion/styled"
 import "../styles/navbar.css"
 import Pill from "../components/pill"
-import { Link, AnchorLink } from "gatsby";
+import { Link } from "gatsby";
 
 const A = styled.div`
     float: left;
@@ -36,7 +36,7 @@ const Navbar = () => {
         <header>
             <nav ref={navRef}>
                 <A><Link to="/" className="link" activeClassName="active">Home</Link></A>
-                <A> Produkte</A>
+                <A><Link to="/#productSection" className="link" activeClassName="active">Produkte</Link></A>
                 <A><Link to="/how-it-works" className="link" activeClassName="active">Wie funktioniert's?</Link></A>
                 <A><Link to="/contact" className="link" activeClassName="active">Kontakt</Link></A>
                 <Pill link="#default">Zum Angebot</Pill>

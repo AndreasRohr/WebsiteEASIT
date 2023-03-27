@@ -2,13 +2,8 @@ import * as React from "react";
 import SectionContainer from "../components/sectionContainer";
 import styled from "@emotion/styled"
 import {StaticImage} from "gatsby-plugin-image";
-import Pill from "../components/pill"
 import PillLink from "../components/pillLink"
-import { Link } from "gatsby";
 
-const PillStyle = styled.button`
-  color: black;
-`
 
 const Bulletpoint = styled.h2`
   font-size: 40px;
@@ -26,30 +21,26 @@ const CardSection = styled.div`
   justify-content: flex-start;
   flex-wrap: wrap;
   text-align: center;
-  margin-top: 3rem;
   max-width: 1900px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 3rem auto;
 `
 
 const Card = styled.div`
   width: 22rem;
   height: 22rem;
-  margin: auto;
-  margin-top:1rem;
-  margin-bottom: 1rem;
+  margin: 1rem auto;
   border-radius: 8px;
   background: #dd356e;
   box-sizing: border-box;
   padding: 1rem;
-  
-  
-  .cardsPill{
- color: white;
- text-decoration: none;
- align-conten: center;
- align-items: center;
-}
+
+
+  .cardsPill {
+    color: white;
+    text-decoration: none;
+    align-content: center;
+    align-items: center;
+  }
 
 `
 

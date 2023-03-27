@@ -2,9 +2,6 @@ import * as React from "react"
 
 import Layout from "./layout"
 import Seo from "../components/seo"
-import Intro from "../sections/hiwTitle"
-import Lifecycle from "../sections/lifecycle"
-import Faq from "../sections/faq";
 import HiwTitle from "../sections/hiwTitle";
 import ScrollComponent from "../components/scrollComponent"
 import Order from "../sections/order";
