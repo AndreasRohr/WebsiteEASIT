@@ -4,7 +4,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import styled from "@emotion/styled"
 import "../styles/navbar.css"
 import Pill from "../components/pill"
-import { Link } from "gatsby";
+import { Link, AnchorLink } from "gatsby";
 
 const A = styled.div`
     float: left;

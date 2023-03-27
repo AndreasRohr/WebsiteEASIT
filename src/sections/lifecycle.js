@@ -3,6 +3,8 @@ import SectionContainer from "../components/sectionContainer";
 import styled from "@emotion/styled"
 import {StaticImage} from "gatsby-plugin-image";
 import Pill from "../components/pill"
+import PillLink from "../components/pillLink"
+import { Link } from "gatsby";
 
 const PillStyle = styled.button`
   color: black;
@@ -43,7 +45,10 @@ const Card = styled.div`
   
   
   .cardsPill{
- float: none;
+ color: white;
+ text-decoration: none;
+ align-conten: center;
+ align-items: center;
 }
 
 `
@@ -62,11 +67,16 @@ filter: invert(1);
 `
 
 
+const PillWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
 const Lifecycle = () => (
   <SectionContainer color={"#ffffff"}>
       <CardSection>
           <Card>
-<ImageWrapper>
+            <ImageWrapper>
               <StaticImage
                   placeholder= 'none'
                   src="../images/auswaehlen.png"
@@ -76,12 +86,15 @@ const Lifecycle = () => (
                   alt="auswaehlen"
                   className="lifecycleImage"
               />
-</ImageWrapper>
+            </ImageWrapper>
               <Bulletpoint>Bestellen</Bulletpoint>
               <Description>
                   LOREM IPSUM DOLOR SI AMET, LOREM IPSUM DOLOR SI AMET, LOREM IPSUM DOLOR SI AMET LOREM IPSUM DOLOR
               </Description>
-              <Pill link="#default" className="cardsPill">Mehr erfahren</Pill>
+              <PillWrapper >
+                  <PillLink to="/how-it-works#section1" className="cardsPill">Mehr erfahren</PillLink>
+              </PillWrapper>
+
           </Card>
           <Card>
               <ImageWrapper>
@@ -99,7 +112,10 @@ const Lifecycle = () => (
               <Description>
                   LOREM IPSUM DOLOR SI AMET, LOREM IPSUM DOLOR SI AMET, LOREM IPSUM DOLOR SI AMET LOREM IPSUM DOLOR
               </Description>
-              <Pill link="#default" className="cardsPill">Mehr erfahren</Pill>
+              <PillWrapper>
+                  <PillLink to="/how-it-works#section2" className="cardsPill">Mehr erfahren</PillLink>
+              </PillWrapper>
+
           </Card>
           <Card>
               <ImageWrapper>
@@ -117,7 +133,10 @@ const Lifecycle = () => (
               <Description>
                   LOREM IPSUM DOLOR SI AMET, LOREM IPSUM DOLOR SI AMET, LOREM IPSUM DOLOR SI AMET LOREM IPSUM DOLOR
               </Description>
-              <Pill link="#default" className="cardsPill">Mehr erfahren</Pill>
+              <PillWrapper>
+                  <PillLink to="/how-it-works#section3" className="cardsPill">Mehr erfahren</PillLink>
+              </PillWrapper>
+
           </Card>
           <Card>
               <ImageWrapper>
@@ -135,7 +154,10 @@ const Lifecycle = () => (
               <Description>
                   LOREM IPSUM DOLOR SI AMET, LOREM IPSUM DOLOR SI AMET, LOREM IPSUM DOLOR SI AMET LOREM IPSUM DOLOR
               </Description>
-              <Pill link="#default" className="cardsPill">Mehr erfahren</Pill>
+              <PillWrapper>
+                  <PillLink to="/how-it-works#section4" className="cardsPill">Mehr erfahren</PillLink>
+              </PillWrapper>
+
           </Card>
       </CardSection>
   </SectionContainer>
