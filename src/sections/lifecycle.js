@@ -22,7 +22,7 @@ const CardSection = styled.div`
   flex-wrap: wrap;
   text-align: center;
   max-width: 1900px;
-  margin: 3rem auto;
+  margin: 1rem auto;
 `
 
 const Card = styled.div`
@@ -56,6 +56,12 @@ filter: invert(1);
 
 
 `
+    const Title = styled.h1`
+      margin-top: 3rem;
+        text-align: center;
+      `
+
+
 
 
 const PillWrapper = styled.div`
@@ -65,6 +71,7 @@ const PillWrapper = styled.div`
 `;
 const Lifecycle = () => (
   <SectionContainer color={"#ffffff"}>
+      <Title>So funktioniert EASIT</Title>
       <CardSection>
           <Card>
             <ImageWrapper>

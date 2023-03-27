@@ -34,8 +34,12 @@ const ItemWrapper = styled.div`
   justify-content: center; /* centers items horizontally */
   align-items: center; /* centers items vertically */
   flex-direction: column;
-  height: 100%; /* ensures that the container takes up the full height of the carousel item */
+  /* ensures that the container takes up the full height of the carousel item */
   margin: 2rem 1rem 4rem;
+  border: 1px solid lightgrey;
+  padding: 2rem;
+  border-radius: 8px;
+
 `
 const Description = styled.p`
 margin-top: 1rem;
@@ -68,7 +72,7 @@ const MultiCarousel = () => (
             alt="Laptop with arrows"
             class = "desktopImage"
         />
-            <Title>Laptop</Title>
+            <Title>Laptops</Title>
             <Description>LOREM IPSUM DOLOR SI AMET, LOREM IPSUM DOLOR SI AMET. LOREM IPSUM DOLOR SI AMET, LOREM IPSUM DOLOR SI AMET. LOREM IPSUM DOLOR SI AMET, LOREM IPSUM DOLOR SI AMET.</Description>
         </ItemWrapper>
         <ItemWrapper>
@@ -82,7 +86,7 @@ const MultiCarousel = () => (
                 alt="Laptop with arrows"
                 class = "desktopImage"
             />
-            <Title>Desktop</Title>
+            <Title>Desktops</Title>
             <Description>LOREM IPSUM DOLOR SI AMET, LOREM IPSUM DOLOR SI AMET. LOREM IPSUM DOLOR SI AMET, LOREM IPSUM DOLOR SI AMET. LOREM IPSUM DOLOR SI AMET, LOREM IPSUM DOLOR SI AMET.</Description>
         </ItemWrapper>
         <ItemWrapper>
@@ -96,7 +100,7 @@ const MultiCarousel = () => (
                 alt="Laptop with arrows"
                 class = "desktopImage"
             />
-            <Title>Tablet</Title>
+            <Title>Tablets</Title>
             <Description>LOREM IPSUM DOLOR SI AMET, LOREM IPSUM DOLOR SI AMET. LOREM IPSUM DOLOR SI AMET, LOREM IPSUM DOLOR SI AMET. LOREM IPSUM DOLOR SI AMET, LOREM IPSUM DOLOR SI AMET.</Description>
         </ItemWrapper>
     </Carousel>
