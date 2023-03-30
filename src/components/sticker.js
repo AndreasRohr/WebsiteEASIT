@@ -1,14 +1,15 @@
 import * as React from "react"
 import styled from "@emotion/styled"
+import { Link } from "gatsby"
 
 const Background = styled.div`
 z-index: 1;
    @media (max-width: 768px) {
       height: 6em;
       display: none;
-width: 6em;
-margin-bottom: 10vh;
-margin-right: 1rem; 
+      width: 6em;
+      margin-bottom: 10vh;
+      margin-right: 1rem; 
   }
   
 background: #fee856;
@@ -66,6 +67,7 @@ const Text = styled.p`
   font-family: "JetBrains Mono", monospace;
   text-align: center;
   top: 25%;
+  color: #000;
   position: absolute;
      @media (max-width: 768px) {
       font-size:10px;
@@ -74,11 +76,13 @@ const Text = styled.p`
 `
 
 const Sticker = () => (
-  <Background>
-    <Text>
-      Jetzt einen Monat <b>gratis </b>testen!
-    </Text>
-  </Background>
+  <Link to="/contact">
+    <Background>
+      <Text>
+        Jetzt einen Monat <b>gratis </b>testen!
+      </Text>
+    </Background>
+  </Link>
 )
 
 export default Sticker
