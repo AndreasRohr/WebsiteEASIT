@@ -5,26 +5,25 @@ import { navigate } from "gatsby";
 
 const ContactForm = () => {
 
-  const [formState, setFormState] = useState({
-    fullname: "",
-    email: "",
-    message: ""
-  });
-
   const serverUrl = 'https://support.teqly.app';
 
+  const [loading, setLoading] = useState(false);
+
   const zsubmit = event => {
+    setLoading(true);
     event.preventDefault();
     const form = event.target;
     const formData = new FormData(form);
-    setFormState(JSON.stringify(Object.fromEntries(formData)));
-    getZammadConfig(serverUrl).then(config=>{
-      zammadSubmit(config).then(result=>{
+    const jsonData = Object.fromEntries(formData);
+    getZammadConfig(serverUrl).then(res=>{
+      zammadSubmit(res, jsonData).then(result=>{
         console.debug(result);
-        //Redirect to where you want... or update the UI in other way.
+        if('ticket' in result){
+          navigate("/success");
+        }
+        console.error(result);
       });
-    })
-    navigate("/success");
+    });
   };
 
   const fingerprint='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASw';
@@ -43,7 +42,7 @@ const ContactForm = () => {
     return response.json();
   }
 
-  async function zammadSubmit(config){
+  async function zammadSubmit(config, requestData){
     if (!config.enabled){
       console.error("Server reports form Submission disabled! ")
     }
@@ -53,9 +52,9 @@ const ContactForm = () => {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        name: formState.fullname,
-        email: formState.email,
-        body: formState.message,
+        name: requestData.name,
+        email: requestData.email,
+        body: requestData.body,
         title: "EASIT Contact Form",
         fingerprint: fingerprint,
         token: config.token
@@ -66,16 +65,23 @@ const ContactForm = () => {
 
   return (
     <SectionContainer height={100}>
+      {
+        loading ? (
+          <img src="../images/loading-animation.svg" alt="loading"/>
+        ) : (
+          <form name="contact-form" method="post" onSubmit={zsubmit}>
+            <input name="name" type="text" placeholder="Name" />
+            <input name="email" type="email" placeholder="Email" />
+            <textarea name="body" placeholder="Message" />
+            <button type="submit">Send</button>
+          </form>
+        )
+      }
       <h1 style={{ marginTop: "3em" }}>Dieser Text ist nicht Sichtbar</h1>
       <h1>Dieser schon</h1>
       <h1>Der hier auch</h1>
       <h1>Kontaktformular</h1>
-      <form name="contact-form" method="post" onSubmit={zsubmit}>
-      <input name="fullname" type="text" placeholder="Name" />
-      <input name="email" type="email" placeholder="Email" />
-      <textarea name="message" placeholder="Message" />
-      <button type="submit">Send</button>
-      </form>
+
     </SectionContainer>
   )
 }
