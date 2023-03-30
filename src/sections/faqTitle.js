@@ -1,8 +1,9 @@
 import * as React from "react"
-import {StaticImage} from "gatsby-plugin-image";
+import { StaticImage } from "gatsby-plugin-image";
 import SectionContainer from "../components/sectionContainer";
 import styled from "@emotion/styled"
 import Pill from "../components/pill";
+import { navigate } from "gatsby";
 
 const Title = styled.h1`
 margin-top:3rem;
@@ -73,7 +74,7 @@ const FaqTitle = () => (
                 <Title >Frequently Asked Questions</Title>
                 <Text>Hier finden Sie die wichtigsten Fragen und Antworten alles rund um EASIT.</Text>
                 <PillWrapper>
-                    <Pill link="#default" className={"pills"}>Kontakt</Pill>
+                    <Pill action={() => navigate("/contact")} className={"pills"}>Kontakt</Pill>
                 </PillWrapper>
             </IntroContainerLeft>
             <IntroContainerRight>
