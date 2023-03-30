@@ -2,6 +2,7 @@ import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import styled from "@emotion/styled"
 import Navbar from "../components/navbar";
+import { Link } from "gatsby"
 
 const HeaderContainer = styled.header`
 display: flex;
@@ -26,6 +27,7 @@ width: 60%;
 const Header = () => (
   <HeaderContainer>
       <ImageWrapper>
+        <Link to="/">
           <StaticImage
               placeholder= 'none'
               src="../images/EASIT-Logo-slim.png"
@@ -36,8 +38,9 @@ const Header = () => (
               alt="EASIT Logo"
               className="easit-logo"
           />
+        </Link>
       </ImageWrapper>
-          <Navbar/>
+      <Navbar/>
   </HeaderContainer>
 )
 
