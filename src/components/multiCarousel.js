@@ -3,6 +3,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import {StaticImage} from "gatsby-plugin-image";
 import styled from "@emotion/styled";
+import "../styles/carousel.css"
 
 const responsive = {
     superLargeDesktop: {
@@ -44,8 +45,12 @@ const Description = styled.p`
 margin-top: 1rem;
   margin-bottom: 1rem;
 `
-
+const CarouselWrapper = styled.div`
+margin-bottom: 4rem;
+  margin-top: 6rem;
+`
 const MultiCarousel = () => (
+<CarouselWrapper>
     <Carousel
         swipeable={false}
         draggable={false}
@@ -101,7 +106,9 @@ const MultiCarousel = () => (
             <Title>Tablets</Title>
             <Description>LOREM IPSUM DOLOR SI AMET, LOREM IPSUM DOLOR SI AMET. LOREM IPSUM DOLOR SI AMET, LOREM IPSUM DOLOR SI AMET. LOREM IPSUM DOLOR SI AMET, LOREM IPSUM DOLOR SI AMET.</Description>
         </ItemWrapper>
+
     </Carousel>
+</CarouselWrapper>
 )
 
 
