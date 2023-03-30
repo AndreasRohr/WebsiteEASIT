@@ -8,7 +8,7 @@ const Title = styled.h1`
   text-align: center;
   margin-top: 4rem;
   font-size: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 `
 const FaqWrapper = styled.div`
 margin-bottom: 4rem;

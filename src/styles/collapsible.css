@@ -1,7 +1,7 @@
 .toggle-card {
-    border: 0.5px solid grey;
+    border: 1px solid grey;
     background-color: white;
-    border-radius: 8px;
+    border-radius: 9px;
     max-width: 80rem;
     display: block;
     margin-left: auto;
@@ -61,9 +61,7 @@
 .toggle-content.show {
     max-height: 1000px; /* Set a high value for max-height to ensure the element expands fully */
     opacity: 1; /* Set the opacity to 1 to make the element visible */
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: 2rem;
+    margin: 1rem 2rem;
 }
 
 .cls-1{

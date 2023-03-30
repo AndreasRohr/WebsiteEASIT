@@ -2,6 +2,10 @@ import * as React from "react";
 import { useState } from "react";
 import SectionContainer from "../components/sectionContainer";
 import { navigate } from "gatsby";
+import {StaticImage} from "gatsby-plugin-image";
+import "../styles/contactForm.css"
+
+
 
 const ContactForm = () => {
 
@@ -64,25 +68,58 @@ const ContactForm = () => {
   }
 
   return (
-    <SectionContainer height={100}>
-      {
-        loading ? (
-          <img src="../images/loading-animation.svg" alt="loading"/>
-        ) : (
-          <form name="contact-form" method="post" onSubmit={zsubmit}>
-            <input name="name" type="text" placeholder="Name" />
-            <input name="email" type="email" placeholder="Email" />
-            <textarea name="body" placeholder="Message" />
-            <button type="submit">Send</button>
-          </form>
-        )
-      }
-      <h1 style={{ marginTop: "3em" }}>Dieser Text ist nicht Sichtbar</h1>
-      <h1>Dieser schon</h1>
-      <h1>Der hier auch</h1>
-      <h1>Kontaktformular</h1>
 
-    </SectionContainer>
+      <SectionContainer id="intro" height={80}>
+          <div className="introContainer">
+              <div className="introContainerLeft">
+                  {
+                      loading ? (
+                          <img src="../images/loading-animation.svg" alt="loading"/>
+                      ) : (
+                          <div className="box-body">
+                          <div className="box-body-description">
+                              <h1> Beratung oder Verkauf?</h1>
+                              <p>Interessierst du dich für eines der Angebote von EASIT? Jetzt unverbindlich mit uns in Kontakt treten!</p>
+                          </div>
+                              <form className="contactForm" name="contact-form" method="post" onSubmit={zsubmit}>
+                                  <div className="input-label-container">
+                                      <label className="inputLabel" htmlFor="name">Name:</label>
+                                      <input className="inputField" name="name" type="text" placeholder="Name" id="name" />
+                                  </div>
+                                  <div className="input-label-container">
+                                      <label className="inputLabel" htmlFor="email">E-Mail:</label>
+                                      <input className="inputField" id="email" name="email" type="email" placeholder="E-mail" />
+                                  </div>
+                                  <div className="input-label-container">
+                                      <label className="inputLabel" htmlFor="body">Nachricht:</label>
+                                      <textarea className="inputArea" id="body" name="body" placeholder="Nachricht..." />
+                                  </div>
+                                  <div className="box-footer">
+                                      <div className="pull-right">
+                                          <button className="btnSubmit" type="submit">Senden</button>
+                                      </div>
+                                  </div>
+                              </form>
+                      </div>
+
+                      )
+                  }
+
+              </div>
+              <div className="introContainerRight">
+                  <StaticImage
+                      placeholder= 'none'
+                      src="../images/laptop-arrows-5.png"
+                      loading="eager"
+                      width={550}
+                      quality={100}
+                      formats={["auto", "webp", "avif"]}
+                      alt="Laptop with arrows"
+                      class = "desktopImage"
+                  />
+              </div>
+          </div>
+      </SectionContainer>
   )
 }
 

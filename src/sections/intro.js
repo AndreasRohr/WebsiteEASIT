@@ -24,6 +24,7 @@ const IntroContainer = styled.div`
   align-items: center;
      @media (max-width: 768px) {
       flex-direction: column;
+       min-height: 93vh;
   }
 `
 

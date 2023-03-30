@@ -1,0 +1,98 @@
+.introContainer{
+    height: 94vh;
+    display: flex;
+    margin-top: 2.5rem;
+    margin-bottom: -7rem;
+
+}
+
+.introContainerLeft{
+    width: 55%;
+
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.introContainerRight{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 45%
+}
+
+.box-body-description{
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.box-body{
+
+}
+
+.box-footer{
+
+}
+
+.input-label-container{
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+
+}
+
+
+.inputLabel{
+    width: 20%;
+    font-size: 1.7rem;
+
+}
+
+.inputArea{
+    min-width: 80%;
+    max-width: 80%;
+    width: 80%;
+    font-size: 1.4rem;
+    border-radius: 8px;
+    border:1px  solid #dd356e;
+    padding: 5px 5px 5px 15px;
+    height: 20vh;
+    min-height: 20vh;
+    max-height: 20vh;
+}
+
+.inputField{
+    min-width: 80%;
+    max-width: 80%;
+    width: 80%;
+    font-size: 1.4rem;
+    border-radius: 8px;
+    border:1px  solid #dd356e;
+    padding: 5px 5px 5px 15px;
+}
+
+.btnSubmit{
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    padding-inline: 1.875em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    color: white;
+    background: #dd356e;
+    border-radius: 1.875em;
+    border: 2px solid white;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    margin-bottom: 2rem;
+
+}
+
+.btnSubmit:hover {
+    color: white;
+    background: #c72159;
+    border: 2px solid white;
+}

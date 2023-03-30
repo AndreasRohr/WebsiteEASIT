@@ -51,6 +51,11 @@ const Table = styled.table`
   border-top: none !important;
   border-left: none !important;
   border-right: none !important;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin: auto;
+  }
 `
 
 const Tr = styled.tr`
@@ -70,6 +75,20 @@ const Tr = styled.tr`
    font-weight: bold;
    background-color: #dd356e!important;
    color: white!important;
+
+         @media (max-width: 768px) {
+           min-width: 100%;
+           .css-1kofyew {
+             font-size: 1rem;
+           }
+
+           .css-fsgl7x {
+             font-size: 1rem;
+             margin-right: 10px;
+             white-space: nowrap;
+           }
+         }
+         
   }
   
       &:first-child {
