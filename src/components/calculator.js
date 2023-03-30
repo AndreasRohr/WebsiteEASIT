@@ -5,6 +5,7 @@ import Pill from "../components/pill";
 import Modal from "../components/modal";
 import { Tooltip as ReactTooltip } from "react-tooltip";
 import 'react-tooltip/dist/react-tooltip.css'
+import { navigate } from "gatsby";
 
 const Button1 = styled.button`
 font-size: 1.5rem;
@@ -160,6 +161,10 @@ const Calculator = () => {
         console.log(modal)
     }
 
+    const goToContactPage = () => {
+      navigate("/contact");
+    }
+
     return (
         <>
             <RequestSection>
@@ -287,7 +292,7 @@ const Calculator = () => {
 
            <RequestSection>
                <div className={"buttonWrapper"}>
-               <Pill action={toggleModal} className="cardsPill">Jetzt kontaktieren</Pill>
+               <Pill action={goToContactPage} className="cardsPill">Jetzt kontaktieren</Pill>
                <Pill action={toggleModal} className="cardsPill">Preisübersicht erhalten</Pill>
                </div>
            </RequestSection>
