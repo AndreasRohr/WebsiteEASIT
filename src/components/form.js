@@ -1,6 +1,8 @@
 import * as React from 'react';
+import "../styles/modalForm.css"
+import {StaticImage} from "gatsby-plugin-image";
 
-const Form = ({closeOnSubmit}) => {
+const Form = ({close}) => {
 
     const url = 'https://newsletter.teqly.app/index.php/lists/qd727o3cv9abb/subscribe';
 
@@ -20,45 +22,60 @@ const Form = ({closeOnSubmit}) => {
             body: formData
         });
 
-        closeOnSubmit();
+        close();
     }
 
     return (
       <form onSubmit={handleSubmit} method="post">
-          <div className="box box-primary borderless">
+          <div className="modalBox">
               <div className="box-header">
-                  <h3 className="box-title">
-                      EASIT
-                  </h3>
+                  <div className="close-button-wrapper"></div>
+                  <div className="logo-wrapper">
+                      <StaticImage
+                          placeholder= 'none'
+                          src="../images/EASIT-Logo-slim.png"
+                          loading="eager"
+                          width={200}
+                          quality={95}
+                          formats={["auto", "webp", "avif"]}
+                          alt="EASIT Logo"
+                          className="easit-logo"
+                      />
+                  </div>
+                  <div className="close-button-wrapper">
+                      <button className="closeButton" onClick={close}>X</button>
+                  </div>
+
               </div>
               <div className="box-body">
-                  <div>
+                  <div className="box-body-description">
                       Erhalten Sie unsere Preisliste per Mail mit nur wenigen Klicks.
                   </div>
-                  <div>
-                      <label htmlFor="COMPANY">Company*</label>
-                      <input placeholder="Company" type="text" defaultValue="" name="COMPANY" id="COMPANY" required="required"/>
+                  <div className="input-label-container">
+                      <label className="inputLabel" htmlFor="COMPANY">Firma* </label>
+                      <input className="inputField" placeholder="Firma" type="text" defaultValue="" name="COMPANY" id="COMPANY" required="required"/>
                   </div>
-                  <div>
-                      <label htmlFor="FNAME">First name</label>
-                      <input placeholder="First name" type="text" defaultValue="" name="FNAME" id="FNAME"/>
+                  <div className="input-label-container">
+                      <label className="inputLabel"  htmlFor="FNAME">Vorname </label>
+                      <input className="inputField" placeholder="Vorname" type="text" defaultValue="" name="FNAME" id="FNAME"/>
                   </div>
-                  <div>
-                      <label htmlFor="LNAME">Last name</label>
-                      <input placeholder="Last name" type="text" defaultValue="" name="LNAME" id="LNAME"/>
+                  <div className="input-label-container">
+                      <label className="inputLabel" htmlFor="LNAME">Nachname </label>
+                      <input className="inputField" placeholder="Nachname" type="text" defaultValue="" name="LNAME" id="LNAME"/>
                   </div>
-                  <div>
-                      <label htmlFor="PHONE">Phone number</label>
-                      <input placeholder="Phone number" type="text" defaultValue="+41 56 511 11 33" name="PHONE" id="PHONE"/>
+                  <div className="input-label-container">
+                      <label className="inputLabel" htmlFor="PHONE">Telefon </label>
+                      <input className="inputField" placeholder="Telefon" type="text" defaultValue="+41 56 511 11 33" name="PHONE" id="PHONE"/>
                   </div>
-                  <div>
-                      <label htmlFor="EMAIL" className="required">Email*</label>
-                      <input className="form-control field-email field-type-text" placeholder="Email" type="text" defaultValue="" name="EMAIL" id="EMAIL" required="required"/>
+                  <div className="input-label-container">
+                      <label className="inputLabel" htmlFor="EMAIL" required="required">E-Mail* </label>
+                      <input className="inputField" placeholder="E-Mail" type="text" defaultValue="" name="EMAIL" id="EMAIL" required="required"/>
                   </div>
               </div>
               <div className="box-footer">
                   <div className="pull-right">
-                      <input type="submit" className="btn btn-primary btn-flat" name="yt0" value="Subscribe"/>
+                      <input type="submit" className="btnSubmit" name="yt0" value="Subscribe"/>
+
                   </div>
                   <div className="clearfix"></div>
               </div>

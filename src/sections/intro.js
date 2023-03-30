@@ -20,8 +20,7 @@ const PinkTitle = styled.b`
 const IntroContainer = styled.div`
   justify-content: space-evenly;
   display: flex;
-  height: 96vh;
-  min-height: 96vh;
+  min-height: 78vh;
   align-items: center;
      @media (max-width: 768px) {
       flex-direction: column;
@@ -49,7 +48,7 @@ const RightContainer = styled.div`
 
 const TeqlyContainer = styled.div`
 display: flex;
-margin-top: 0.4rem;
+margin-top: 0.7rem;
 margin-bottom: 1.5rem;
 
 .teqly_logo{
@@ -64,7 +63,7 @@ margin-top: 0.2rem;
 
 
 const Intro = () => (
-  <SectionContainer color={"linear-gradient(to bottom right, white 60%, #dd356e 60%)"} id="intro" height={80}>
+  <SectionContainer color={"linear-gradient(to bottom right, white 60%, #dd356e 60%)"} id="intro" height={70}>
       <IntroContainer>
           <LeftContainer>
               <Title>Deine <PinkTitle>IT</PinkTitle></Title>

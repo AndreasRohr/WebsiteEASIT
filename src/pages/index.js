@@ -13,8 +13,8 @@ const IndexPage = () => (
   <Layout>
       <Sticker />
     <Intro />
+      <Products/>
       <Lifecycle />
-<Products></Products>
       <Calculation />
     <ImportantFaq />
   </Layout>

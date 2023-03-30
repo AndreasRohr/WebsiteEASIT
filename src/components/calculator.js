@@ -42,12 +42,11 @@ border-top-right-radius: 1rem;
 
 const Table = styled.table`
   width: 65%;
-  border-collapse: collapse;
   border-spacing: 0;
   border: 2px solid #ddd;
   margin: auto auto 1.5rem;
   border-radius: 0.5rem;
-  border-collapse: separate !important;
+  border-collapse: separate;
   border-top: none !important;
   border-left: none !important;
   border-right: none !important;
@@ -129,6 +128,7 @@ justify-content:center;
 
 const RequestSection = styled.div`
 margin-top: 3rem;
+  margin-bottom: 4rem;
 
 
 .cardsPill{

@@ -1,0 +1,19 @@
+.react-multiple-carousel__arrow--right {
+    background:#dd356e;
+    opacity: 0.8;
+}
+
+.react-multiple-carousel__arrow--left{
+    background:#dd356e;
+    opacity: 0.8;
+}
+
+.react-multiple-carousel__arrow--right:hover {
+    background:#c72159;
+    opacity: 1;
+}
+
+.react-multiple-carousel__arrow--left:hover{
+    background:#c72159;
+    opacity: 1;
+}

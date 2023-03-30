@@ -5,14 +5,26 @@ import { Link } from "gatsby";
 const Container = styled.footer`
   text-align: center;
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: center;
   gap: 2rem;
   padding-bottom: 2rem;
+  padding-top: 2rem;
+  font-size: var(--font-sm);
+  
+  .link{
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+
 `;
 
 const Footer = () => (
-    <Container style={{marginTop: `var(--space-5)`, fontSize: `var(--font-sm)`,}}>
+    <Container>
         <div>
             © {new Date().getFullYear()} &middot; Powered by
             {` `}

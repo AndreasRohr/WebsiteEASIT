@@ -20,9 +20,16 @@ const ModalContent = styled.div`
   margin: auto;
   background-color: white;
   width: 50%;
-  top: 30vh;
-  left: 25%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+
+  @media only screen and (max-width: 1024px) {
+    width: 100%;
+  }
 `
+
 
 const Modal = ({toggleModal}) => {
 
@@ -30,8 +37,7 @@ const Modal = ({toggleModal}) => {
         <>
             <ModalPage>
                 <ModalContent>
-                    <Form closeOnSubmit={toggleModal}/>
-                    <button onClick={toggleModal}>Close</button>
+                    <Form close={toggleModal}/>
                 </ModalContent>
             </ModalPage>
         </>

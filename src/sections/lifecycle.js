@@ -22,7 +22,7 @@ const CardSection = styled.div`
   flex-wrap: wrap;
   text-align: center;
   max-width: 1900px;
-  margin: 1rem auto;
+  margin: 1rem auto 4rem;
 `
 
 const Card = styled.div`
@@ -56,10 +56,12 @@ filter: invert(1);
 
 
 `
-    const Title = styled.h1`
-      margin-top: 3rem;
-        text-align: center;
-      `
+const Title = styled.h1`
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 3rem;
+  margin-bottom: 4rem;
+`
 
 
 
@@ -70,7 +72,7 @@ const PillWrapper = styled.div`
   justify-content: center;
 `;
 const Lifecycle = () => (
-  <SectionContainer color={"#ffffff"}>
+  <SectionContainer color={"#F3F4F7"}>
       <Title>So funktioniert EASIT</Title>
       <CardSection>
           <Card>
