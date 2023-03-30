@@ -11,7 +11,6 @@ const Form = ({closeOnSubmit}) => {
         // Read the form data
         const form = e.target;
         const formData = new FormData(form);
-        console.log(formData);
 
         // You can pass formData as a fetch body directly:
         fetch(url, {
@@ -20,10 +19,6 @@ const Form = ({closeOnSubmit}) => {
             credentials: "omit",
             body: formData
         });
-
-        // Or you can work with it as a plain object:
-        const formJson = Object.fromEntries(formData.entries());
-        console.log(formJson);
 
         closeOnSubmit();
     }

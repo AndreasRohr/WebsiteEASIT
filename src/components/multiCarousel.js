@@ -34,18 +34,16 @@ const ItemWrapper = styled.div`
   justify-content: center; /* centers items horizontally */
   align-items: center; /* centers items vertically */
   flex-direction: column;
-  /* ensures that the container takes up the full height of the carousel item */
   margin: 2rem 1rem 4rem;
   border: 1px solid lightgrey;
   padding: 2rem;
   border-radius: 8px;
-
 `
+
 const Description = styled.p`
 margin-top: 1rem;
   margin-bottom: 1rem;
 `
-
 
 const MultiCarousel = () => (
     <Carousel

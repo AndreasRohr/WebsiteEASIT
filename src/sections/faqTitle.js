@@ -3,7 +3,6 @@ import {StaticImage} from "gatsby-plugin-image";
 import SectionContainer from "../components/sectionContainer";
 import styled from "@emotion/styled"
 import Pill from "../components/pill";
-import PillLink from "../components/pillLink";
 
 const Title = styled.h1`
 margin-top:3rem;
@@ -15,6 +14,7 @@ const IntroContainer = styled.div`
 height: 70vh;
 display: flex;
 margin-top: 2.5rem;
+  margin-bottom: -7rem;
 `
 
 const IntroContainerLeft = styled.div`
@@ -66,14 +66,13 @@ const PillWrapper = styled.div`
   }
 `
 
-const HiwTitle = () => (
+const FaqTitle = () => (
     <SectionContainer id="intro" height={80}>
         <IntroContainer>
             <IntroContainerLeft>
-                <Title >Wie funktioniert's?</Title>
-                <Text>Die wichtigsten Fragen und Antworten zu EASIT und unseren Dienstleistungen. Von der Bestellung bis zur Rückgabe.</Text>
+                <Title >Frequently Asked Questions</Title>
+                <Text>Hier finden Sie die wichtigsten Fragen und Antworten alles rund um EASIT.</Text>
                 <PillWrapper>
-                    <PillLink to="/faq" className="cardsPill">Zu den FAQs</PillLink>
                     <Pill link="#default" className={"pills"}>Kontakt</Pill>
                 </PillWrapper>
             </IntroContainerLeft>
@@ -93,4 +92,4 @@ const HiwTitle = () => (
     </SectionContainer>
 )
 
-export default HiwTitle
+export default FaqTitle

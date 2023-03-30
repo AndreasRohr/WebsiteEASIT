@@ -4,10 +4,10 @@ import Layout from "./layout"
 import Seo from "../components/seo"
 import Intro from "../sections/intro"
 import Lifecycle from "../sections/lifecycle"
-import Faq from "../sections/faq";
 import Calculation from "../sections/calculation";
 import Sticker from "../components/sticker";
 import Products from "../sections/products";
+import ImportantFaq from "../sections/importantFaq";
 
 const IndexPage = () => (
   <Layout>
@@ -16,7 +16,7 @@ const IndexPage = () => (
       <Lifecycle />
 <Products></Products>
       <Calculation />
-    <Faq />
+    <ImportantFaq />
   </Layout>
 )
 

@@ -20,8 +20,8 @@ const PinkTitle = styled.b`
 const IntroContainer = styled.div`
   justify-content: space-evenly;
   display: flex;
-  height: 100vh;
-  min-height: 100vh;
+  height: 96vh;
+  min-height: 96vh;
   align-items: center;
      @media (max-width: 768px) {
       flex-direction: column;
