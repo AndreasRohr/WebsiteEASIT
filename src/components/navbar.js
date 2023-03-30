@@ -35,9 +35,9 @@ const Navbar = () => {
     return (
         <header>
             <nav ref={navRef}>
-                <A><Link to="/" className="link" activeClassName="active">Home</Link></A>
                 <A><Link to="/#productSection" className="link" activeClassName="active">Produkte</Link></A>
                 <A><Link to="/how-it-works" className="link" activeClassName="active">Wie funktioniert's?</Link></A>
+                <A><Link to="/faq" className="link" activeClassName="active">FAQ</Link></A>
                 <A><Link to="/contact" className="link" activeClassName="active">Kontakt</Link></A>
                 <Pill link="#default">Zum Angebot</Pill>
                 <button
