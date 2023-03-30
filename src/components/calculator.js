@@ -3,6 +3,8 @@ import styled from "@emotion/styled"
 import {StaticImage} from "gatsby-plugin-image";
 import Pill from "../components/pill";
 import Modal from "../components/modal";
+import { Tooltip as ReactTooltip } from "react-tooltip";
+import 'react-tooltip/dist/react-tooltip.css'
 
 const Button1 = styled.button`
 font-size: 1.5rem;
@@ -87,9 +89,6 @@ const Tr = styled.tr`
   &:nth-child(n+2):nth-child(odd){
   background-color: #F3F4F7;
   }
-  
-  
-  
 `
 
 const TrSection1 = styled.div`
@@ -101,7 +100,9 @@ display: flex;
 align-items:center;
 font-size: 1.5rem;
     white-space: nowrap;
-
+  .text{
+    margin-right: 0.5rem;
+  }
 `
 const TrSection2 = styled.div`
 width: 20%;
@@ -139,8 +140,6 @@ margin-right: 1rem;
       display: flex;
   justify-content: center;
     }
-   
-
 `
 
 const Calculator = () => {
@@ -174,9 +173,9 @@ const Calculator = () => {
                <Table>
 
                    <Tr>
-                        <TrSection1></TrSection1>
+                       <TrSection1></TrSection1>
                        <TrSection2>Kauf</TrSection2>
-                       <TrSection3>       <StaticImage
+                       <TrSection3><StaticImage
                            placeholder= 'none'
                            src="../images/EASIT-Logo-slim.png"
                            loading="eager"
@@ -189,15 +188,18 @@ const Calculator = () => {
                    </Tr>
 
                    <Tr>
-                       <TrSection1>Kauf</TrSection1>
-                       <TrSection2>{prices[0]} CHF</TrSection2>
-                       <TrSection3><StaticImage
-                           src="../images/check.png"
-                           loading="eager"
-                           width={50}
-                           formats={["auto", "webp", "avif"]}
-                           alt="Checkmark"
-                       /></TrSection3>
+                     <TrSection1><p className="text">Anschaffung</p><StaticImage src="../images/information.png" loading="eager" width={20} alt="info" className="anschaffung"/></TrSection1>
+                     <ReactTooltip anchorSelect=".anschaffung" place="top" effect="solid">
+                       <span>Für einen Laptop aus einer Business Linie mit Intel i7 Prozessor & 16GB RAM</span>
+                     </ReactTooltip>
+                     <TrSection2>{prices[0]} CHF</TrSection2>
+                     <TrSection3><StaticImage
+                         src="../images/check.png"
+                         loading="eager"
+                         width={50}
+                         formats={["auto", "webp", "avif"]}
+                         alt="Checkmark"
+                     /></TrSection3>
                    </Tr>
 
                    <Tr>
@@ -225,7 +227,10 @@ const Calculator = () => {
                    </Tr>
 
                    <Tr>
-                       <TrSection1>Gerätemanagement</TrSection1>
+                     <TrSection1><p className="text">Gerätemanagement</p>  <StaticImage src="../images/information.png" loading="eager" width={20} alt="info" className="geraetemanagement"/></TrSection1>
+                       <ReactTooltip anchorSelect=".geraetemanagement" place="top" effect="solid">
+                         <span>Wir kümmern uns um die Wartung und das Update der Geräte</span>
+                       </ReactTooltip>
                        <TrSection2>-</TrSection2>
                        <TrSection3><StaticImage
                            src="../images/check.png"
@@ -275,18 +280,8 @@ const Calculator = () => {
                    <Tr>
                        <TrSection1>Total</TrSection1>
                        <TrSection2>{prices.reduce((partialSum, a) => partialSum + a , 0)} CHF</TrSection2>
-                       <TrSection3>{pricestotal[0]} CHF</TrSection3>
+                       <TrSection3>ab {pricestotal[0]} CHF</TrSection3>
                    </Tr>
-
-
-
-
-
-
-
-
-
-
 
                </Table>}
 
@@ -296,9 +291,6 @@ const Calculator = () => {
                <Pill action={toggleModal} className="cardsPill">Preisübersicht erhalten</Pill>
                </div>
            </RequestSection>
-
-
-
         </>
     )
 }
