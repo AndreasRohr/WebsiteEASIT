@@ -1,5 +1,6 @@
 {
   "name": "easit-landing-page",
+  "homepage": "https://easit.rent",
   "private": true,
   "description": "Funnel for EASIT.rent",
   "version": "0.1.0",
