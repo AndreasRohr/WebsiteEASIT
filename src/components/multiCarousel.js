@@ -39,7 +39,7 @@ const ItemWrapper = styled.div`
   border: 1px solid lightgrey;
   padding: 2rem;
   border-radius: 8px;
-  height: 40rem;
+  height: 41rem;
 `
 
 const Description = styled.p`
@@ -75,7 +75,7 @@ const MultiCarousel = () => (
             quality={100}
             formats={["auto", "webp", "avif"]}
             alt="Laptop with arrows"
-            class = "desktopImage"
+            class = "carouselImage"
         />
             <Title>Laptops</Title>
             <Description>Wir haben eine breite Auswahl an Modellen in unserem Sortiment. Von Laptops für die klassische Büroarbeit bis hin zu CAD-Rechenmaschinen ist alles dabei. Alle Laptops kommen mit einer Hülle oder Tasche und verfügen über einen Zahlenblock, damit du noch produktiver sein kannst! </Description>
@@ -89,7 +89,7 @@ const MultiCarousel = () => (
                 quality={100}
                 formats={["auto", "webp", "avif"]}
                 alt="Laptop with arrows"
-                class = "desktopImage"
+                class = "carouselImage"
             />
             <Title>Touch Laptops</Title>
             <Description>Tablet oder Laptop? Du musst dich nicht entscheiden und kannst beides in einem Gerät haben! Dank unseren Laptops mit Touchscreen kannst du das Beste aus zwei Welten nutzen. So wird das Notizen schreiben und Dokumente kommentieren zum Kinderspiel.</Description>
@@ -103,7 +103,7 @@ const MultiCarousel = () => (
                 quality={100}
                 formats={["auto", "webp", "avif"]}
                 alt="Laptop with arrows"
-                class = "desktopImage"
+                class = "carouselImage"
             />
             <Title>Desktops</Title>
             <Description>Du brauchst kein mobiles Laptop und arbeitest lieber an einem grossen Bildschirm? Dann sind unsere All-In-One Desktops die richtige Lösung für dich! Die leistungsstarken und schlichten Geräte sind perfekt für den Büroalltag geeignet. Alle unsere Desktops kommen natürlich mit einer Kabellosen Maus und Tastatur, so dass dein Pult nie im Kabelsalat versinkt.</Description>
@@ -117,7 +117,7 @@ const MultiCarousel = () => (
                 quality={100}
                 formats={["auto", "webp", "avif"]}
                 alt="Laptop with arrows"
-                class = "desktopImage"
+                class = "carouselImage"
             />
             <Title>Tablets</Title>
             <Description>Unsere Tablets sind die perfekten begleiter für Unterwegs! Dank der mitgelieferten Tastaturhülle bist du noch produktiver und zum Schutz des Displays verfügen alle unsere Tablets über ein Panzerglas. Wenn du auch unterwegs immer online sein möchtest bieten wir auch iPads mit 4G Modul an, bei diesen Geräten ist auch immer eine Internet Flatrate dabei, so dass du so viel surfen kannst wie du möchtest.</Description>

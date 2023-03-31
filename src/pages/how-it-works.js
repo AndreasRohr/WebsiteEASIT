@@ -23,7 +23,7 @@ const HowItWorksPage = () => {
           <Layout toggleModal={toggleModal} modal={modal}>
                   <HiwTitle></HiwTitle>
                   <ScrollComponent title1="Bestellen" title2="Inbetriebnahme" title3="Im Alltag" title4="Rücknahme" />
-                  <Order></Order>
+                  <Order toggleModal={toggleModal}/>
                   <Delivery></Delivery>
                   <Starting></Starting>
                   <Retourn></Retourn>

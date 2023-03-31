@@ -123,7 +123,7 @@ const Retourn = () => (
                 <RightContainerImage>
                     <StaticImage
                         placeholder= 'none'
-                        src="../images/laptop-arrows-5.png"
+                        src="../images/device-exchange.png"
                         loading="eager"
                         width={450}
                         quality={100}
@@ -138,7 +138,7 @@ const Retourn = () => (
                 <LeftContainerImage>
                     <StaticImage
                         placeholder= 'none'
-                        src="../images/laptop-arrows-5.png"
+                        src="../images/device-return.png"
                         loading="eager"
                         width={450}
                         quality={100}
@@ -164,7 +164,7 @@ const Retourn = () => (
                 <RightContainerImage>
                     <StaticImage
                         placeholder= 'none'
-                        src="../images/laptop-arrows-5.png"
+                        src="../images/device-purchase.png"
                         loading="eager"
                         width={450}
                         quality={100}

@@ -115,7 +115,7 @@ const Starting = () => (
                 <LeftContainerImage>
                     <StaticImage
                         placeholder= 'none'
-                        src="../images/laptop-arrows-5.png"
+                        src="../images/support-service.png"
                         loading="eager"
                         width={450}
                         quality={100}
@@ -141,7 +141,7 @@ const Starting = () => (
                 <RightContainerImage>
                     <StaticImage
                         placeholder= 'none'
-                        src="../images/laptop-arrows-5.png"
+                        src="../images/maintenance.png"
                         loading="eager"
                         width={450}
                         quality={100}
@@ -156,7 +156,7 @@ const Starting = () => (
                 <LeftContainerImage>
                     <StaticImage
                         placeholder= 'none'
-                        src="../images/laptop-arrows-5.png"
+                        src="../images/device-defect.png"
                         loading="eager"
                         width={450}
                         quality={100}

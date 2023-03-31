@@ -1,25 +1,36 @@
-@media (max-width: 768px) {
+/*Portrait*/
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 812px)
+and (-webkit-min-device-pixel-ratio: 3) {
+
+    .contactTitle{
+
+    }
+
+    .box-body-description h1{
+
+    }
+
+    .desktopImage{
+        display: none;
+    }
 
     .introContainer {
-        flex-direction: column;
-        min-height: 93vh;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
+        all: unset;
+
     ;
     }
 
     .introContainerLeft{
-        order: 2;
-        display: none;
+
+        width: 100%!important;
+
     }
 
     .introContainerRight {
-        order: 1;
-    }
 
-    .desktopImage {
-        display: none;
+
     }
 
 
@@ -46,6 +57,30 @@
         border:1px  solid #dd356e;
         padding: 5px 5px 5px 15px;
     }
+
+}
+/*LANDSCAPE*/
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 812px)
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: landscape) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
@@ -79,9 +114,6 @@
     text-align: center;
 }
 
-.box-body{
-
-}
 
 .box-footer{
     display: flex;

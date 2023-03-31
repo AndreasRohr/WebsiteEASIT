@@ -19,8 +19,12 @@ const Container = styled.footer`
       text-decoration: underline;
     }
   }
-  
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 1rem;
+
+  }
 `;
 
 const Footer = () => (

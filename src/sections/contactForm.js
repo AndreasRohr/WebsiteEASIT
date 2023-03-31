@@ -78,7 +78,7 @@ const ContactForm = () => {
                       ) : (
                           <div className="box-body">
                           <div className="box-body-description">
-                              <h1> Beratung oder Verkauf?</h1>
+                              <h1 className="contactTitle"> Beratung oder Verkauf?</h1>
                               <p>Interessierst du dich für eines der Angebote von EASIT? Jetzt unverbindlich mit uns in Kontakt treten!</p>
                           </div>
                               <form className="contactForm" name="contact-form" method="post" onSubmit={zsubmit}>

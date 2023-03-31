@@ -108,7 +108,7 @@ text-align: center;
 
 
 
-const Order = () => (
+const Order = ({toggleModal}) => (
     <SectionContainer id="intro" height={80}>
         <div id="section1">
             <PhaseTitle>EASIT bestellen</PhaseTitle>
@@ -116,7 +116,7 @@ const Order = () => (
                 <LeftContainerImage>
                     <StaticImage
                         placeholder= 'none'
-                        src="../images/laptop-arrows-5.png"
+                        src="../images/select-device.png"
                         loading="eager"
                         width={450}
                         quality={100}
@@ -130,7 +130,7 @@ const Order = () => (
                     <Title>Gerät auswählen</Title>
                     <p>Egal ob Tablet, Smartphone, Laptop oder Workstation, wir haben eine grosse Auswahl an verschiedenen top Geräten.  </p>
                     <PillWrapper>
-                        <Pill link="#default" >Preisliste herunterladen</Pill>
+                        <Pill action={toggleModal}>Preisliste herunterladen</Pill>
                     </PillWrapper>
                 </RightContainerText>
             </ContentContainerRight>
@@ -145,7 +145,7 @@ const Order = () => (
                 <RightContainerImage>
                     <StaticImage
                         placeholder= 'none'
-                        src="../images/laptop-arrows-5.png"
+                        src="../images/send-request.png"
                         loading="eager"
                         width={450}
                         quality={100}
@@ -160,7 +160,7 @@ const Order = () => (
                 <LeftContainerImage>
                     <StaticImage
                         placeholder= 'none'
-                        src="../images/laptop-arrows-5.png"
+                        src="../images/all-inclusive-service.png"
                         loading="eager"
                         width={450}
                         quality={100}

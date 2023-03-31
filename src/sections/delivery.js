@@ -124,7 +124,7 @@ const Delivery = () => (
                 <RightContainerImage>
                     <StaticImage
                         placeholder= 'none'
-                        src="../images/laptop-arrows-5.png"
+                        src="../images/preparation.png"
                         loading="eager"
                         width={450}
                         quality={100}
@@ -139,7 +139,7 @@ const Delivery = () => (
                 <LeftContainerImage>
                     <StaticImage
                         placeholder= 'none'
-                        src="../images/laptop-arrows-5.png"
+                        src="../images/software-installation.png"
                         loading="eager"
                         width={450}
                         quality={100}
@@ -165,7 +165,7 @@ const Delivery = () => (
                 <RightContainerImage>
                     <StaticImage
                         placeholder= 'none'
-                        src="../images/laptop-arrows-5.png"
+                        src="../images/pickup-delivery.png"
                         loading="eager"
                         width={450}
                         quality={100}

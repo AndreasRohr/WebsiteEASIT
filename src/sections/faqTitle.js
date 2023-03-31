@@ -17,10 +17,20 @@ display: flex;
 margin-top: 2.5rem;
   margin-bottom: -7rem;
 
-  @media (max-width: 768px) {
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
     flex-direction: column;
-    min-height: 93vh;
-    margin-bottom: -45rem;
+    min-height: 100vh;
+  }
+
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+  margin-bottom: 5rem;
   }
 `
 
@@ -32,12 +42,23 @@ display: flex;
 flex-wrap: wrap;
 flex-direction: column;
 margin-left: 5rem;
-  
-  @media (max-width: 768px) {
+
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
     order:2;
     align-items: center;
     align-content: center;
+    width: 50%;
     
+  }
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+    width: 75%;
   }
 `
 
@@ -48,15 +69,26 @@ flex-wrap: wrap;
 align-items: center;
 width: 50%;
 
-@media (max-width: 768px) {
-  order: 1;
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    order: 1;
   display: none;
+    width: 0;
 }
 `
 
 const Text = styled.p`
 font-size: 1.3rem;
 margin-right: 4rem;
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    margin-right: 0!important;
+
+  }
 `
 
 const PillWrapper = styled.div`
