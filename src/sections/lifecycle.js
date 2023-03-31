@@ -100,7 +100,7 @@ const Lifecycle = () => (
               <ImageWrapper>
               <StaticImage
                   placeholder= 'none'
-                  src="../images/receiver.png"
+                  src="../images/erhalten.png"
                   loading="eager"
                   width={80}
                   formats={["auto", "webp", "avif"]}
@@ -142,7 +142,7 @@ const Lifecycle = () => (
               <ImageWrapper>
               <StaticImage
                   placeholder= 'none'
-                  src="../images/return.png"
+                  src="../images/zurueckgeben.png"
                   loading="eager"
                   width={60}
                   formats={["auto", "webp", "avif"]}

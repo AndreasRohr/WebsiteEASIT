@@ -5,6 +5,7 @@ import styled from "@emotion/styled"
 import "../styles/navbar.css"
 import Pill from "../components/pill"
 import { Link } from "gatsby";
+import {StaticImage} from "gatsby-plugin-image";
 
 const A = styled.div`
     float: left;
@@ -23,6 +24,7 @@ const A = styled.div`
     }
 `
 
+
 const Navbar = () => {
     const navRef = useRef();
 
@@ -34,6 +36,21 @@ const Navbar = () => {
 
     return (
         <header>
+            <div className="left">
+            <Link to="/">
+                <StaticImage
+                    placeholder= 'none'
+                    src="../images/EASIT-Logo-slim.png"
+                    loading="eager"
+                    width={120}
+                    quality={95}
+                    formats={["auto", "webp", "avif"]}
+                    alt="EASIT Logo"
+                    className="easit-logo"
+                />
+            </Link>
+            </div>
+            <div className="right">
             <nav ref={navRef}>
                 <A><Link to="/#productSection" className="link" activeClassName="active">Produkte</Link></A>
                 <A><Link to="/how-it-works" className="link" activeClassName="active">Wie funktioniert's?</Link></A>
@@ -51,6 +68,7 @@ const Navbar = () => {
                 onClick={showNavbar}>
                 <FaBars />
             </button>
+            </div>
         </header>
     );
 }
