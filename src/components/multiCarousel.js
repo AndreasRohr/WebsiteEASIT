@@ -83,6 +83,20 @@ const MultiCarousel = () => (
         <ItemWrapper>
             <StaticImage
                 placeholder= 'none'
+                src="../images/thinkpadE15.png"
+                loading="eager"
+                height={300}
+                quality={100}
+                formats={["auto", "webp", "avif"]}
+                alt="Laptop with arrows"
+                class = "desktopImage"
+            />
+            <Title>Hybrid Laptops</Title>
+            <Description>Unsere breite Auswahl an Lenovo ThinkPad Laptops von Medium Performance bis Extreme Performance, mit oder ohne Touch-Funktion. Finden Sie das perfekte Modell, das Ihren Anforderungen entspricht und steigern Sie Ihre Produktivität, wo immer Sie sind!</Description>
+        </ItemWrapper>
+        <ItemWrapper>
+            <StaticImage
+                placeholder= 'none'
                 src="../images/DesktopPC.png"
                 loading="eager"
                 height={300}
