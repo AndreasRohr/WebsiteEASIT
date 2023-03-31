@@ -104,7 +104,6 @@ const ContactForm = () => {
                   }
 
               </div>
-              {/*TODO: Make image disappear on smaller screen*/}
               <div className="introContainerRight">
                   <StaticImage
                       placeholder= 'none'

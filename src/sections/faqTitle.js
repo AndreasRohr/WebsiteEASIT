@@ -16,6 +16,12 @@ height: 70vh;
 display: flex;
 margin-top: 2.5rem;
   margin-bottom: -7rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    min-height: 93vh;
+    margin-bottom: -45rem;
+  }
 `
 
 const IntroContainerLeft = styled.div`
@@ -26,6 +32,13 @@ display: flex;
 flex-wrap: wrap;
 flex-direction: column;
 margin-left: 5rem;
+  
+  @media (max-width: 768px) {
+    order:2;
+    align-items: center;
+    align-content: center;
+    
+  }
 `
 
 const IntroContainerRight = styled.div`
@@ -33,7 +46,12 @@ justify-content: center;
 display: flex;
 flex-wrap: wrap;
 align-items: center;
-width: 50%
+width: 50%;
+
+@media (max-width: 768px) {
+  order: 1;
+  display: none;
+}
 `
 
 const Text = styled.p`
@@ -77,7 +95,6 @@ const FaqTitle = () => (
                     <Pill action={() => navigate("/contact")} className={"pills"}>Kontakt</Pill>
                 </PillWrapper>
             </IntroContainerLeft>
-            {/*TODO: Make image disappear on smaller screen*/}
             <IntroContainerRight>
                 <StaticImage
                     placeholder= 'none'

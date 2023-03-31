@@ -40,12 +40,10 @@ const LeftContainer = styled.div`
 const RightContainer = styled.div`
   order: 2;
      @media (max-width: 768px) {
-      order:1;
-      margin-top: 5rem;
-        .desktopImage{
-             display:none;
-         }
-
+       order: 1;
+       margin-top: 5rem;
+       display: none;
+     }
 `
 
 const TeqlyContainer = styled.div`
