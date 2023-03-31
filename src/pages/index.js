@@ -8,7 +8,6 @@ import Calculation from "../sections/calculation";
 import Sticker from "../components/sticker";
 import Products from "../sections/products";
 import ImportantFaq from "../sections/importantFaq";
-import Modal from "../components/modal";
 
 const IndexPage = () => {
 
@@ -20,8 +19,7 @@ const IndexPage = () => {
   }
 
   return (
-    <Layout>
-      {modal && <Modal toggleModal={toggleModal}/>}
+    <Layout toggleModal={toggleModal} modal={modal}>
       <Sticker />
       <Intro toggleModal={toggleModal}/>
       <Products/>

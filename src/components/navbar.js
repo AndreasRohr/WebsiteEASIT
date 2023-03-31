@@ -25,7 +25,7 @@ const A = styled.div`
 `
 
 
-const Navbar = () => {
+const Navbar = ({toggleModal}) => {
     const navRef = useRef();
 
     const showNavbar = () => {
@@ -56,7 +56,7 @@ const Navbar = () => {
                 <A><Link to="/how-it-works" className="link" activeClassName="active">Wie funktioniert's?</Link></A>
                 <A><Link to="/faq" className="link" activeClassName="active">FAQ</Link></A>
                 <A><Link to="/contact" className="link" activeClassName="active">Kontakt</Link></A>
-                <Pill link="#default">Zum Angebot</Pill>
+                <Pill action={toggleModal}>Zum Angebot</Pill>
                 <button
                     className="nav-btn nav-close-btn"
                     onClick={showNavbar}>

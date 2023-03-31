@@ -5,8 +5,15 @@ import ContactForm from "../sections/contactForm";
 
 const ContactPage = () => {
 
+  const [modal, setModal] = React.useState(false);
+
+  const toggleModal = () => {
+    modal ? setModal(false) : setModal(true);
+    console.log(modal)
+  }
+
   return (
-    <Layout>
+    <Layout toggleModal={toggleModal} modal={modal}>
       <ContactForm />
     </Layout>
   )

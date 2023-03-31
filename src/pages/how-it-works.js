@@ -10,16 +10,26 @@ import Starting from "../sections/starting";
 import Retourn from "../sections/retourn";
 
 
-const HowItWorksPage = () => (
-    <Layout>
-        <HiwTitle></HiwTitle>
-        <ScrollComponent title1="Bestellen" title2="Inbetriebnahme" title3="Im Alltag" title4="Rücknahme" />
-        <Order></Order>
-        <Delivery></Delivery>
-        <Starting></Starting>
-        <Retourn></Retourn>
-    </Layout>
-)
+const HowItWorksPage = () => {
+
+        const [modal, setModal] = React.useState(false);
+
+        const toggleModal = () => {
+                modal ? setModal(false) : setModal(true);
+                console.log(modal)
+        }
+
+        return (
+          <Layout toggleModal={toggleModal} modal={modal}>
+                  <HiwTitle></HiwTitle>
+                  <ScrollComponent title1="Bestellen" title2="Inbetriebnahme" title3="Im Alltag" title4="Rücknahme" />
+                  <Order></Order>
+                  <Delivery></Delivery>
+                  <Starting></Starting>
+                  <Retourn></Retourn>
+          </Layout>
+        )
+}
 
 export const Head = () => <Seo title="Wie funktioniert's" lang="de" />
 

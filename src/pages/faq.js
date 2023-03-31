@@ -7,8 +7,15 @@ import FaqTitle from "../sections/faqTitle";
 
 const FaqPage = () => {
 
+  const [modal, setModal] = React.useState(false);
+
+  const toggleModal = () => {
+    modal ? setModal(false) : setModal(true);
+    console.log(modal)
+  }
+
     return (
-        <Layout>
+        <Layout toggleModal={toggleModal} modal={modal}>
             <FaqTitle />
             <Faq />
         </Layout>

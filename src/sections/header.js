@@ -11,9 +11,9 @@ const HeaderContainer = styled.header`
 `
 
 
-const Header = () => (
+const Header = ({toggleModal}) => (
   <HeaderContainer>
-      <Navbar/>
+      <Navbar toggleModal={toggleModal}/>
   </HeaderContainer>
 )
 

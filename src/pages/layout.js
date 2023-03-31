@@ -9,14 +9,16 @@ import * as React from "react"
 import Header from "../sections/header"
 import Footer from "../sections/footer"
 import "./layout.css"
+import Modal from "../components/modal";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, toggleModal, modal }) => {
 
   return (
     <>
-      <Header/>
-        <main>{children}</main>
-        <Footer />
+      <Header toggleModal={toggleModal}/>
+      {modal && <Modal toggleModal={toggleModal}/>}
+      <main>{children}</main>
+      <Footer />
     </>
   )
 }
