@@ -9,6 +9,7 @@
 */
 * {
     margin: 0;
+    font-family: "Titillium Web", Helvetica, sans-serif;
 }
 /*
   3. Allow percentage-based heights in the application
@@ -24,7 +25,6 @@ html, body {
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-    font-family: Inconsolata, Helvetica, serif;
 }
 /*
   6. Improve media defaults

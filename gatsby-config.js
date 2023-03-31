@@ -40,7 +40,8 @@ module.exports = {
       options: {
         fonts: [
           `Inconsolata`,
-          `JetBrains Mono`
+          `JetBrains Mono`,
+          `Titillium Web`
         ],
         display: 'swap'
       }
