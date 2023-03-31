@@ -80,7 +80,7 @@ const HiwTitle = () => (
             <IntroContainerRight>
                 <StaticImage
                     placeholder= 'none'
-                    src="../images/laptop-arrows-5.png"
+                    src="../images/circle.png"
                     loading="eager"
                     width={550}
                     quality={100}

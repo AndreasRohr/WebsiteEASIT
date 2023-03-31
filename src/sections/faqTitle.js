@@ -82,7 +82,7 @@ const FaqTitle = () => (
                     placeholder= 'none'
                     src="../images/faq.png"
                     loading="eager"
-                    width={200}
+                    width={750}
                     quality={100}
                     formats={["auto", "webp", "avif"]}
                     alt="Laptop with arrows"
