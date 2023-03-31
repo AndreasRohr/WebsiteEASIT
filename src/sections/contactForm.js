@@ -107,7 +107,7 @@ const ContactForm = () => {
               <div className="introContainerRight">
                   <StaticImage
                       placeholder= 'none'
-                      src="../images/laptop-arrows-5.png"
+                      src="../images/contact.png"
                       loading="eager"
                       width={550}
                       quality={100}
