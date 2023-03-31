@@ -20,7 +20,6 @@ const LinkWrapper = styled.div`
     &:hover {
       color: white;
       cursor: pointer;
-      text-decoration-line: underline; 
     }
   }
 

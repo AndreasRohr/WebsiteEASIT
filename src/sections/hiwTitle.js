@@ -4,6 +4,7 @@ import SectionContainer from "../components/sectionContainer";
 import styled from "@emotion/styled"
 import Pill from "../components/pill";
 import PillLink from "../components/pillLink";
+import {navigate} from "gatsby";
 
 const Title = styled.h1`
 margin-top:3rem;
@@ -74,7 +75,7 @@ const HiwTitle = () => (
                 <Text>Die wichtigsten Fragen und Antworten zu EASIT und unseren Dienstleistungen. Von der Bestellung bis zur Rückgabe.</Text>
                 <PillWrapper>
                     <PillLink to="/faq" className="cardsPill">Zu den FAQs</PillLink>
-                    <Pill link="#default" className={"pills"}>Kontakt</Pill>
+                    <Pill action={() => navigate("/contact")} className={"pills"}>Kontakt</Pill>
                 </PillWrapper>
             </IntroContainerLeft>
             <IntroContainerRight>
@@ -82,7 +83,7 @@ const HiwTitle = () => (
                     placeholder= 'none'
                     src="../images/circle.png"
                     loading="eager"
-                    width={550}
+                    width={750}
                     quality={100}
                     formats={["auto", "webp", "avif"]}
                     alt="Laptop with arrows"

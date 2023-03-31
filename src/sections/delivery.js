@@ -2,7 +2,8 @@ import * as React from "react"
 import {StaticImage} from "gatsby-plugin-image";
 import SectionContainer from "../components/sectionContainer";
 import styled from "@emotion/styled"
-import Pill from "../components/pill";
+
+import PillLink from "../components/pillLink";
 
 
 const ContentContainerRight = styled.div`
@@ -67,19 +68,26 @@ margin-right:auto;
 const PillWrapper = styled.div`
   display: flex;
   margin-top: 3rem;
-  
+
+  .cardsPill {
+    color: white;
+    text-decoration: none;
+    align-content: center;
+    align-items: center;
+  }
+
   .pills{
 
-  margin-left: 1rem;
-  background-color: white;
-  border: 2px solid #dd356e;
-  color: #dd356e;
-  
-   &:hover {
-    color: white;
-    background: #dd356e;
-    border: 2px solid white;
-  }
+    margin-left: 1rem;
+    background-color: white;
+    border: 2px solid #dd356e;
+    color: #dd356e;
+
+    &:hover {
+      color: white;
+      background: #dd356e;
+      border: 2px solid white;
+    }
   }
 `
 
@@ -110,7 +118,7 @@ const Delivery = () => (
                     <Title>Vorbereitung</Title>
                     <p>Wir bereiten die Geräte auf und bereiten es für dich vor. Sind die Geräte bei uns an Lager, so sind sie innert 5 Tagen Einsatzbereit. Wenn wir die Geräte beschaffen beträgt die Wartezeit in der Regel zwischen 10 und 30 Tagen. </p>
                     <PillWrapper>
-                        <Pill link="#default" >Jetzt kontaktieren</Pill>
+                        <PillLink to="/contact" className="cardsPill">Jetzt kontaktieren</PillLink>
                     </PillWrapper>
                 </LeftContainerText>
                 <RightContainerImage>
@@ -145,7 +153,7 @@ const Delivery = () => (
                     <Title>Software</Title>
                     <p> Auf Wunsch installieren wir alle benötigten Programme bereits während der Vorbereitung auf Ihren Geräten. Ebenso konfigurieren wir Netzwerke, Drucker, etc. bereits vor, so dass die Geräte sofort einsatzbereit sind. </p>
                     <PillWrapper>
-                        <Pill link="#default" >Beratungstermin vereinbaren</Pill>
+                        <PillLink to="/contact" className="cardsPill">Beratungstermin vereinbaren</PillLink>
                     </PillWrapper>
                 </RightContainerText>
             </ContentContainerRight>

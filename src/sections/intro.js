@@ -5,6 +5,7 @@ import styled from "@emotion/styled"
 import Pill from "../components/pill";
 
 
+
 const Title = styled.h1`
   font-size: 5.125em;
   font-weight: bold;
@@ -64,7 +65,7 @@ margin-top: 0.2rem;
 
 
 const Intro = () => (
-  <SectionContainer color={"linear-gradient(to bottom right, white 60%, #dd356e 60%)"} id="intro" height={70}>
+  <SectionContainer color={"linear-gradient(to bottom right, white 60%, #dd356e 60%) "} id="intro" height={70}>
       <IntroContainer>
           <LeftContainer>
               <Title>Deine <PinkTitle>IT</PinkTitle></Title>

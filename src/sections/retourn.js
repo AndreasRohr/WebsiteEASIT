@@ -2,7 +2,8 @@ import * as React from "react"
 import {StaticImage} from "gatsby-plugin-image";
 import SectionContainer from "../components/sectionContainer";
 import styled from "@emotion/styled"
-import Pill from "../components/pill";
+
+import PillLink from "../components/pillLink";
 
 
 const ContentContainerRight = styled.div`
@@ -67,19 +68,26 @@ margin-right:auto;
 const PillWrapper = styled.div`
   display: flex;
   margin-top: 3rem;
-  
+
+  .cardsPill {
+    color: white;
+    text-decoration: none;
+    align-content: center;
+    align-items: center;
+  }
+
   .pills{
 
-  margin-left: 1rem;
-  background-color: white;
-  border: 2px solid #dd356e;
-  color: #dd356e;
-  
-   &:hover {
-    color: white;
-    background: #dd356e;
-    border: 2px solid white;
-  }
+    margin-left: 1rem;
+    background-color: white;
+    border: 2px solid #dd356e;
+    color: #dd356e;
+
+    &:hover {
+      color: white;
+      background: #dd356e;
+      border: 2px solid white;
+    }
   }
 `
 
@@ -109,7 +117,7 @@ const Retourn = () => (
                     <Title>Gerätetausch</Title>
                     <p>Du möchtest nach der Laufzeit ein anderes Gerät? Kein Problem! Wir kümmern uns um einen reibungslosen Wechsel auf ein anderes Modell, so dass du ohne Unterbruch weiterarbeiten kannst. </p>
                     <PillWrapper>
-                        <Pill link="#default" >Kontakt aufnehmen</Pill>
+                        <PillLink to="/contact" className="cardsPill">Kontakt aufnehmen</PillLink>
                     </PillWrapper>
                 </LeftContainerText>
                 <RightContainerImage>
@@ -150,7 +158,7 @@ const Retourn = () => (
                     <Title>Gerätekauf</Title>
                     <p>Hast du Interesse dein Gerät nach Ende der Laufzeit zu kaufen? Gerne prüfen wir ob es bei deinem Gerät möglich ist. </p>
                     <PillWrapper>
-                        <Pill link="#default" >Kontakt aufnehmen</Pill>
+                        <PillLink to="/contact" className="cardsPill">Kontakt aufnehmen</PillLink>
                     </PillWrapper>
                 </LeftContainerText>
                 <RightContainerImage>

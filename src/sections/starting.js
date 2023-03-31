@@ -2,7 +2,8 @@ import * as React from "react"
 import {StaticImage} from "gatsby-plugin-image";
 import SectionContainer from "../components/sectionContainer";
 import styled from "@emotion/styled"
-import Pill from "../components/pill";
+
+import PillLink from "../components/pillLink";
 
 
 const ContentContainerRight = styled.div`
@@ -67,19 +68,26 @@ margin-right:auto;
 const PillWrapper = styled.div`
   display: flex;
   margin-top: 3rem;
-  
+
+  .cardsPill {
+    color: white;
+    text-decoration: none;
+    align-content: center;
+    align-items: center;
+  }
+
   .pills{
 
-  margin-left: 1rem;
-  background-color: white;
-  border: 2px solid #dd356e;
-  color: #dd356e;
-  
-   &:hover {
-    color: white;
-    background: #dd356e;
-    border: 2px solid white;
-  }
+    margin-left: 1rem;
+    background-color: white;
+    border: 2px solid #dd356e;
+    color: #dd356e;
+
+    &:hover {
+      color: white;
+      background: #dd356e;
+      border: 2px solid white;
+    }
   }
 `
 
@@ -121,7 +129,7 @@ const Starting = () => (
                     <Title>Support</Title>
                     <p>Via der EASIT Supportplattform erreichst du unser Support-Team per Mail, Chat und Telefon. Wenn du eine Frage oder ein Problem mit deinen Geräten hast, stehen wir dir gerne zur Verfügung. </p>
                     <PillWrapper>
-                        <Pill link="#default" >Supportplattform kennenlernen</Pill>
+                        <PillLink to="https://support.teqly.app/#login" className="cardsPill">Zur Supportplattform</PillLink>
                     </PillWrapper>
                 </RightContainerText>
             </ContentContainerRight>
@@ -162,7 +170,7 @@ const Starting = () => (
                     <Title>Defekt</Title>
                     <p>Kaffee über die Tastatur geleert, Tablet runtergefallen oder der Bildschirm bleibt schwarz? Kein Problem, einfach dem Support melden und wir organisieren sofort ein Ersatzgerät, dass so schnell wie möglich geliefert wird. </p>
                     <PillWrapper>
-                        <Pill link="#default" >Kontakt aufnehmen</Pill>
+                        <PillLink to="/contact" className="cardsPill">Kontakt aufnehmen</PillLink>
                     </PillWrapper>
                 </RightContainerText>
             </ContentContainerRight>
