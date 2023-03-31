@@ -39,11 +39,13 @@ const ItemWrapper = styled.div`
   border: 1px solid lightgrey;
   padding: 2rem;
   border-radius: 8px;
+  height: 40rem;
 `
 
 const Description = styled.p`
-margin-top: 1rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
+  text-align: center;
 `
 const CarouselWrapper = styled.div`
 margin-bottom: 4rem;
@@ -67,7 +69,7 @@ const MultiCarousel = () => (
         <ItemWrapper>
         <StaticImage
             placeholder= 'none'
-            src="../images/laptop-arrows.png"
+            src="../images/thinkpadE15.png"
             loading="eager"
             height={300}
             quality={100}
@@ -76,12 +78,12 @@ const MultiCarousel = () => (
             class = "desktopImage"
         />
             <Title>Laptops</Title>
-            <Description>LOREM IPSUM DOLOR SI AMET, LOREM IPSUM DOLOR SI AMET. LOREM IPSUM DOLOR SI AMET, LOREM IPSUM DOLOR SI AMET. LOREM IPSUM DOLOR SI AMET, LOREM IPSUM DOLOR SI AMET.</Description>
+            <Description>Unsere breite Auswahl an Lenovo ThinkPad Laptops von Medium Performance bis Extreme Performance, mit oder ohne Touch-Funktion. Finden Sie das perfekte Modell, das Ihren Anforderungen entspricht und steigern Sie Ihre Produktivität, wo immer Sie sind!</Description>
         </ItemWrapper>
         <ItemWrapper>
             <StaticImage
                 placeholder= 'none'
-                src="../images/laptop-arrows.png"
+                src="../images/DesktopPC.png"
                 loading="eager"
                 height={300}
                 quality={100}
@@ -90,12 +92,12 @@ const MultiCarousel = () => (
                 class = "desktopImage"
             />
             <Title>Desktops</Title>
-            <Description>LOREM IPSUM DOLOR SI AMET, LOREM IPSUM DOLOR SI AMET. LOREM IPSUM DOLOR SI AMET, LOREM IPSUM DOLOR SI AMET. LOREM IPSUM DOLOR SI AMET, LOREM IPSUM DOLOR SI AMET.</Description>
+            <Description>Investieren Sie jetzt in einen leistungsstarken All-in-One-Desktop-Computer der Marken ASUS oder Lenovo, der speziell auf Ihre individuellen Anforderungen zugeschnitten ist. Mit unseren vielfältigen Modellen und Leistungsstufen finden Sie garantiert das passende Gerät für Ihren Bedarf! </Description>
         </ItemWrapper>
         <ItemWrapper>
             <StaticImage
                 placeholder= 'none'
-                src="../images/laptop-arrows.png"
+                src="../images/iPad.png"
                 loading="eager"
                 height={300}
                 quality={100}
@@ -104,7 +106,7 @@ const MultiCarousel = () => (
                 class = "desktopImage"
             />
             <Title>Tablets</Title>
-            <Description>LOREM IPSUM DOLOR SI AMET, LOREM IPSUM DOLOR SI AMET. LOREM IPSUM DOLOR SI AMET, LOREM IPSUM DOLOR SI AMET. LOREM IPSUM DOLOR SI AMET, LOREM IPSUM DOLOR SI AMET.</Description>
+            <Description>Wir besitzen eine vielfältige Auswahl an Tablets in verschiedenen Modellen, Displaygrößen und Konnektivitätsoptionen (4G), um für jede Anforderung gerüstet zu sein. Wählen Sie das passende Modell für sich und genießen Sie die Vorteile eines mobilen und leistungsstarken Tablets! </Description>
         </ItemWrapper>
 
     </Carousel>

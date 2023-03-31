@@ -11,7 +11,6 @@
 
     justify-content: center;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
 }
 .introContainerRight{
@@ -33,6 +32,8 @@
 }
 
 .box-footer{
+    display: flex;
+    justify-content: center;
 
 }
 
@@ -74,7 +75,6 @@
 }
 
 .btnSubmit{
-    justify-content: center;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
@@ -88,7 +88,6 @@
     font-size: 1.2rem;
     white-space: nowrap;
     margin-bottom: 2rem;
-
 }
 
 .btnSubmit:hover {

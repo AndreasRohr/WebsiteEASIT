@@ -79,7 +79,7 @@ const Lifecycle = () => (
             <ImageWrapper>
               <StaticImage
                   placeholder= 'none'
-                  src="../images/auswaehlen.png"
+                  src="../images/bestellen.png"
                   loading="eager"
                   width={60}
                   formats={["auto", "webp", "avif"]}
@@ -89,7 +89,7 @@ const Lifecycle = () => (
             </ImageWrapper>
               <Bulletpoint>Bestellen</Bulletpoint>
               <Description>
-                  LOREM IPSUM DOLOR SI AMET, LOREM IPSUM DOLOR SI AMET, LOREM IPSUM DOLOR SI AMET LOREM IPSUM DOLOR
+                  Du sendest uns eine Anfrage per Mail mit dem Typ und der Anzahl Geräte, die du benötigst.
               </Description>
               <PillWrapper >
                   <PillLink to="/how-it-works#section1" className="cardsPill">Mehr erfahren</PillLink>
@@ -100,17 +100,17 @@ const Lifecycle = () => (
               <ImageWrapper>
               <StaticImage
                   placeholder= 'none'
-                  src="../images/bestellen.png"
+                  src="../images/receiver.png"
                   loading="eager"
-                  width={60}
+                  width={80}
                   formats={["auto", "webp", "avif"]}
                   alt="bestellen"
                   className="lifecycleImage"
               />
               </ImageWrapper>
-              <Bulletpoint>Bekommen</Bulletpoint>
+              <Bulletpoint>Erhalten</Bulletpoint>
               <Description>
-                  LOREM IPSUM DOLOR SI AMET, LOREM IPSUM DOLOR SI AMET, LOREM IPSUM DOLOR SI AMET LOREM IPSUM DOLOR
+                  Du kannst die Geräte bei uns in Glattbrugg abholen oder dir kostenlos an den Verwendungsort senden lassen.
               </Description>
               <PillWrapper>
                   <PillLink to="/how-it-works#section2" className="cardsPill">Mehr erfahren</PillLink>
@@ -121,7 +121,7 @@ const Lifecycle = () => (
               <ImageWrapper>
                   <StaticImage
                       placeholder= 'none'
-                      src="../images/bestellen.png"
+                      src="../images/loslegen.png"
                       loading="eager"
                       width={60}
                       formats={["auto", "webp", "avif"]}
@@ -131,7 +131,7 @@ const Lifecycle = () => (
               </ImageWrapper>
               <Bulletpoint>Loslegen</Bulletpoint>
               <Description>
-                  LOREM IPSUM DOLOR SI AMET, LOREM IPSUM DOLOR SI AMET, LOREM IPSUM DOLOR SI AMET LOREM IPSUM DOLOR
+                  Via der EASIT Supportplattform erreichst du unser Support-Team per Mail, Chat und Telefon.
               </Description>
               <PillWrapper>
                   <PillLink to="/how-it-works#section3" className="cardsPill">Mehr erfahren</PillLink>
@@ -142,7 +142,7 @@ const Lifecycle = () => (
               <ImageWrapper>
               <StaticImage
                   placeholder= 'none'
-                  src="../images/loslegen.png"
+                  src="../images/return.png"
                   loading="eager"
                   width={60}
                   formats={["auto", "webp", "avif"]}
@@ -152,7 +152,7 @@ const Lifecycle = () => (
               </ImageWrapper>
               <Bulletpoint>Zurückgeben</Bulletpoint>
               <Description>
-                  LOREM IPSUM DOLOR SI AMET, LOREM IPSUM DOLOR SI AMET, LOREM IPSUM DOLOR SI AMET LOREM IPSUM DOLOR
+                  Du möchtest nach der Laufzeit dein Gerät zurückgeben? Wir melden uns frühzeitig, um eine Rückgabe zu vereinbaren.
               </Description>
               <PillWrapper>
                   <PillLink to="/how-it-works#section4" className="cardsPill">Mehr erfahren</PillLink>

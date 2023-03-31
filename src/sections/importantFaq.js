@@ -13,7 +13,15 @@ const Title = styled.h1`
   margin-bottom: 4rem;
 `
 const FaqWrapper = styled.div`
-margin-bottom: 4rem;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .faq-pill{
+    margin-left: 1rem;
+  }
 `
 
 const ImportantFaq = () => {
@@ -27,7 +35,7 @@ const ImportantFaq = () => {
         {impFAQ.map((item, index) => {
             return <><Collapsible key={index} title={item.title} content={item.content} /> <br /></>
         })}
-        <Pill action={() => navigate("/faq")}>Alle Fragen</Pill>
+        <Pill className={"faq-pill"} action={() => navigate("/faq")}>Alle Fragen</Pill>
         </FaqWrapper>
     </SectionContainer>
 )}

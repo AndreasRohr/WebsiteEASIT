@@ -21,6 +21,7 @@ const PillStyle = styled.button`
     color: white;
     background: #c72159;
     border: 2px solid white;
+    cursor: pointer;
   }
 `
 

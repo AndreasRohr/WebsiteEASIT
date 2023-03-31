@@ -83,15 +83,13 @@ const ContactForm = () => {
                           </div>
                               <form className="contactForm" name="contact-form" method="post" onSubmit={zsubmit}>
                                   <div className="input-label-container">
-                                      <label className="inputLabel" htmlFor="name">Name:</label>
+
                                       <input className="inputField" name="name" type="text" placeholder="Name" id="name" />
                                   </div>
                                   <div className="input-label-container">
-                                      <label className="inputLabel" htmlFor="email">E-Mail:</label>
                                       <input className="inputField" id="email" name="email" type="email" placeholder="E-mail" />
                                   </div>
                                   <div className="input-label-container">
-                                      <label className="inputLabel" htmlFor="body">Nachricht:</label>
                                       <textarea className="inputArea" id="body" name="body" placeholder="Nachricht..." />
                                   </div>
                                   <div className="box-footer">

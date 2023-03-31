@@ -1,6 +1,7 @@
 .react-multiple-carousel__arrow--right {
     background:#dd356e;
     opacity: 0.8;
+    z-index: 0;
 }
 
 .react-multiple-carousel__arrow--left{
