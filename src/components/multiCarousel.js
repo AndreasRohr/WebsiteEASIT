@@ -78,12 +78,12 @@ const MultiCarousel = () => (
             class = "desktopImage"
         />
             <Title>Laptops</Title>
-            <Description>Unsere breite Auswahl an Lenovo ThinkPad Laptops von Medium Performance bis Extreme Performance, mit oder ohne Touch-Funktion. Finden Sie das perfekte Modell, das Ihren Anforderungen entspricht und steigern Sie Ihre Produktivität, wo immer Sie sind!</Description>
+            <Description>Wir haben eine breite Auswahl an Modellen in unserem Sortiment. Von Laptops für die klassische Büroarbeit bis hin zu CAD-Rechenmaschinen ist alles dabei. Alle Laptops kommen mit einer Hülle oder Tasche und verfügen über einen Zahlenblock, damit du noch produktiver sein kannst! </Description>
         </ItemWrapper>
         <ItemWrapper>
             <StaticImage
                 placeholder= 'none'
-                src="../images/thinkpadE15.png"
+                src="../images/lenovo_ideapad.webp"
                 loading="eager"
                 height={300}
                 quality={100}
@@ -91,13 +91,13 @@ const MultiCarousel = () => (
                 alt="Laptop with arrows"
                 class = "desktopImage"
             />
-            <Title>Hybrid Laptops</Title>
-            <Description>Unsere breite Auswahl an Lenovo ThinkPad Laptops von Medium Performance bis Extreme Performance, mit oder ohne Touch-Funktion. Finden Sie das perfekte Modell, das Ihren Anforderungen entspricht und steigern Sie Ihre Produktivität, wo immer Sie sind!</Description>
+            <Title>Touch Laptops</Title>
+            <Description>Tablet oder Laptop? Du musst dich nicht entscheiden und kannst beides in einem Gerät haben! Dank unseren Laptops mit Touchscreen kannst du das Beste aus zwei Welten nutzen. So wird das Notizen schreiben und Dokumente kommentieren zum Kinderspiel.</Description>
         </ItemWrapper>
         <ItemWrapper>
             <StaticImage
                 placeholder= 'none'
-                src="../images/DesktopPC.png"
+                src="../images/lenovo_ideacenter.webp"
                 loading="eager"
                 height={300}
                 quality={100}
@@ -106,7 +106,7 @@ const MultiCarousel = () => (
                 class = "desktopImage"
             />
             <Title>Desktops</Title>
-            <Description>Investieren Sie jetzt in einen leistungsstarken All-in-One-Desktop-Computer der Marken ASUS oder Lenovo, der speziell auf Ihre individuellen Anforderungen zugeschnitten ist. Mit unseren vielfältigen Modellen und Leistungsstufen finden Sie garantiert das passende Gerät für Ihren Bedarf! </Description>
+            <Description>Du brauchst kein mobiles Laptop und arbeitest lieber an einem grossen Bildschirm? Dann sind unsere All-In-One Desktops die richtige Lösung für dich! Die leistungsstarken und schlichten Geräte sind perfekt für den Büroalltag geeignet. Alle unsere Desktops kommen natürlich mit einer Kabellosen Maus und Tastatur, so dass dein Pult nie im Kabelsalat versinkt.</Description>
         </ItemWrapper>
         <ItemWrapper>
             <StaticImage
@@ -120,7 +120,7 @@ const MultiCarousel = () => (
                 class = "desktopImage"
             />
             <Title>Tablets</Title>
-            <Description>Wir besitzen eine vielfältige Auswahl an Tablets in verschiedenen Modellen, Displaygrößen und Konnektivitätsoptionen (4G), um für jede Anforderung gerüstet zu sein. Wählen Sie das passende Modell für sich und genießen Sie die Vorteile eines mobilen und leistungsstarken Tablets! </Description>
+            <Description>Unsere Tablets sind die perfekten begleiter für Unterwegs! Dank der mitgelieferten Tastaturhülle bist du noch produktiver und zum Schutz des Displays verfügen alle unsere Tablets über ein Panzerglas. Wenn du auch unterwegs immer online sein möchtest bieten wir auch iPads mit 4G Modul an, bei diesen Geräten ist auch immer eine Internet Flatrate dabei, so dass du so viel surfen kannst wie du möchtest.</Description>
         </ItemWrapper>
 
     </Carousel>
