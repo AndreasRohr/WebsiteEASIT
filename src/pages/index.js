@@ -8,17 +8,29 @@ import Calculation from "../sections/calculation";
 import Sticker from "../components/sticker";
 import Products from "../sections/products";
 import ImportantFaq from "../sections/importantFaq";
+import Modal from "../components/modal";
 
-const IndexPage = () => (
-  <Layout>
+const IndexPage = () => {
+
+  const [modal, setModal] = React.useState(false);
+
+  const toggleModal = () => {
+    modal ? setModal(false) : setModal(true);
+    console.log(modal)
+  }
+
+  return (
+    <Layout>
+      {modal && <Modal toggleModal={toggleModal}/>}
       <Sticker />
-    <Intro />
+      <Intro toggleModal={toggleModal}/>
       <Products/>
       <Lifecycle />
-      <Calculation />
-    <ImportantFaq />
-  </Layout>
-)
+      <Calculation toggleModal={toggleModal}/>
+      <ImportantFaq />
+    </Layout>
+  )
+}
 
 export const Head = () => <Seo title="Home" lang="de" />
 

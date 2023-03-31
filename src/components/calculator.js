@@ -2,7 +2,6 @@ import * as React from "react"
 import styled from "@emotion/styled"
 import {StaticImage} from "gatsby-plugin-image";
 import Pill from "../components/pill";
-import Modal from "../components/modal";
 import { Tooltip as ReactTooltip } from "react-tooltip";
 import 'react-tooltip/dist/react-tooltip.css'
 import { navigate } from "gatsby";
@@ -162,22 +161,16 @@ margin-right: 1rem;
     }
 `
 
-const Calculator = () => {
+const Calculator = ({ toggleModal }) => {
 
     const [years, setYears] = React.useState(true);
     const [prices, setPrices] = React.useState([1179.00, 150.00, 150.00]);
     const [pricestotal, setPricestotal] = React.useState([534.95]);
-    const [modal, setModal] = React.useState(false);
 
     const toggleYears = () => {
         years ? setYears(false) : setYears(true);
         years ? setPrices([1179.00, 150.00, 450.00]) : setPrices([1179.00, 150.00, 150.00]);
         years ? setPricestotal([1604.85] ): setPricestotal([534.95]);
-    }
-
-    const toggleModal = () => {
-        modal ? setModal(false) : setModal(true);
-        console.log(modal)
     }
 
     const goToContactPage = () => {
@@ -188,11 +181,10 @@ const Calculator = () => {
         <>
             <RequestSection>
                 <div className={"buttonWrapper"}>
-            <Button1 onClick={toggleYears} disabled={years}>1 Jahr</Button1>
-            <Button2 onClick={toggleYears} disabled={!years}>3 Jahre</Button2>
+                  <Button1 onClick={toggleYears} disabled={years}>1 Jahr</Button1>
+                  <Button2 onClick={toggleYears} disabled={!years}>3 Jahre</Button2>
                 </div>
             </RequestSection>
-            {modal && <Modal toggleModal={toggleModal}/>}
            {
                <Table>
 

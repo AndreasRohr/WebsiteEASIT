@@ -62,7 +62,7 @@ margin-top: 0.2rem;
 `
 
 
-const Intro = () => (
+const Intro = ({ toggleModal }) => (
   <SectionContainer color={"linear-gradient(to bottom right, white 60%, #dd356e 60%) "} id="intro" height={70}>
       <IntroContainer>
           <LeftContainer>
@@ -82,7 +82,7 @@ const Intro = () => (
                   objectFit={"contain"}
               />
               </TeqlyContainer>
-              <Pill link="#default">Zum Angebot</Pill>
+              <Pill action={toggleModal}>Zum Angebot</Pill>
           </LeftContainer>
           <RightContainer>
               <StaticImage

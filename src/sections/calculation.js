@@ -10,10 +10,10 @@ const Title = styled.h1`
   margin-bottom: 2rem;
 `
 
-const Calculation = () => (
+const Calculation = ({ toggleModal }) => (
     <SectionContainer color={"#FFFFFF"}>
         <Title>Beispielhafte Gesamtkostenrechnung</Title>
-        <Calculator />
+        <Calculator toggleModal={toggleModal}/>
     </SectionContainer>
 )
 
