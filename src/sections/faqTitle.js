@@ -80,9 +80,9 @@ const FaqTitle = () => (
             <IntroContainerRight>
                 <StaticImage
                     placeholder= 'none'
-                    src="../images/laptop-arrows-5.png"
+                    src="../images/faq.png"
                     loading="eager"
-                    width={550}
+                    width={200}
                     quality={100}
                     formats={["auto", "webp", "avif"]}
                     alt="Laptop with arrows"
