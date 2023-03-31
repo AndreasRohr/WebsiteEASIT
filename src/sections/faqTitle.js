@@ -77,6 +77,7 @@ const FaqTitle = () => (
                     <Pill action={() => navigate("/contact")} className={"pills"}>Kontakt</Pill>
                 </PillWrapper>
             </IntroContainerLeft>
+            {/*TODO: Make image disappear on smaller screen*/}
             <IntroContainerRight>
                 <StaticImage
                     placeholder= 'none'
