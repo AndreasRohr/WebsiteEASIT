@@ -62,14 +62,25 @@ const Table = styled.table`
 `
 
 const Tr = styled.tr`
+  
+ 
  display: flex;
     border: 2px solid #ddd;
     height: 6rem;
     border-bottom: none;
     border-top: none;
 
+
+
+
   @media (max-width: 768px) {
    height: 4rem;
+    .kauf-title{
+      font-size: 1rem;
+    }
+    .easit-logo{
+      min-width: 4rem;
+    }
   }
 
     
@@ -119,6 +130,8 @@ const Tr = styled.tr`
 `
 
 const TrSection1 = styled.div`
+  
+  
 width: 50%;
 min-width: 42%;
 height: 6rem;
@@ -148,10 +161,14 @@ font-size: 1.5rem;
 
   @media (max-width: 768px) {
     font-size: 0.8rem;
-    margin-left: -1rem;
-    margin-right: 2rem;
+    margin-left: -1.5rem;
+    margin-right: 2.5rem;
     height: 4rem;
+    
+    
+    
   }
+
 
 `
 const TrSection3 = styled.div`
@@ -163,10 +180,11 @@ display: flex;
 align-items:center;
 justify-content:center;
     white-space: nowrap;
+  
 
   @media (max-width: 768px) {
     font-size: 0.8rem;
-    width: 30px;
+    width: 35px;
     margin-left: 0;
     height: 4rem;
   }
@@ -202,6 +220,9 @@ margin-right: 1rem;
   .buttonWrapperTop{
     display: flex;
     justify-content: center;
+    @media (max-width: 768px) {
+     margin-bottom: -2.5rem;
+    }
   }
 `
 
@@ -232,10 +253,9 @@ const Calculator = ({ toggleModal }) => {
            {
                <div style={{textAlign:"center"}}>
                <Table>
-
                    <Tr>
                        <TrSection1></TrSection1>
-                       <TrSection2>Kauf</TrSection2>
+                       <TrSection2 className="kauf-title">Kauf</TrSection2>
                        <TrSection3><StaticImage
                            placeholder= 'none'
                            src="../images/EASIT-Logo-slim.png"

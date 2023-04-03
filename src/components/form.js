@@ -65,7 +65,7 @@ const Form = ({close}) => {
                   </div>
                   <div className="input-label-container">
                       <label className="inputLabel" htmlFor="PHONE">Telefon </label>
-                      <input className="inputField" placeholder="Telefon" type="text" defaultValue="+41 56 511 11 33" name="PHONE" id="PHONE"/>
+                      <input className="inputField" placeholder="Telefon" type="text" defaultValue="" name="PHONE" id="PHONE"/>
                   </div>
                   <div className="input-label-container">
                       <label className="inputLabel" htmlFor="EMAIL" required="required">E-Mail* </label>
@@ -74,7 +74,7 @@ const Form = ({close}) => {
               </div>
               <div className="box-footer">
                   <div className="pull-right">
-                      <input type="submit" className="btnSubmit" name="yt0" value="Subscribe"/>
+                      <input type="submit" className="btnSubmit" name="yt0" value="Preisliste bestellen"/>
 
                   </div>
                   <div className="clearfix"></div>
