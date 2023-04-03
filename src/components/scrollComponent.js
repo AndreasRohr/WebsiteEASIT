@@ -35,6 +35,15 @@ const Nav = styled.nav`
 background-color: #dd356e;
 display: flex;
 justify-content: center;
+
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    display: none;
+
+
+  }
 `
 
 const ScrollComponent = ({title1, title2, title3, title4}) => {

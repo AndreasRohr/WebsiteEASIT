@@ -6,62 +6,137 @@ import styled from "@emotion/styled"
 import PillLink from "../components/pillLink";
 
 
+
 const ContentContainerRight = styled.div`
-display: flex;
-margin-left: 10rem;
-margin-bottom: 4rem;
+  display: flex;
+  margin-left: 10rem;
+  margin-bottom: 4rem;
+
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    width: 90%;
+    margin: 0;
+    margin-left: 5%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
 `
 
 const ContentContainerLeft = styled.div`
-display: flex;
-margin-right: 10rem;
-margin-bottom: 4rem;
-margin-left: 3rem;
+  display: flex;
+  margin-right: 10rem;
+  margin-bottom: 4rem;
+  margin-left: 3rem;
+
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    width: 90%;
+    margin: 0;
+    margin-left: 5%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
 `
 
 const LeftContainerImage = styled.div`
-width: 50%;
-display: flex;
+  width: 50%;
+  display: flex;
 
-.desktopImage{
-margin-left: auto;
-margin-right:auto;
-}
+  .desktopImage{
+    margin-left: auto;
+    margin-right:auto;
+  }
+
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    width: 50%;
+  }
 `
 
 
 const RightContainerText = styled.div`
-width: 50%;
-justify-content: center;
-display: flex;
-flex-wrap: wrap;
-flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 
-p {
-margin-right: 2rem;
-}
+  p {
+    margin-right: 2rem;
+  }
+
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    width: 90%;
+    margin: 0;
+    order: 2;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    p {
+      margin: 0;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+    }
+  }
 
 `
 
 const LeftContainerText = styled.div`
 
-width: 50%;
-justify-content: center;
-display: flex;
-flex-wrap: wrap;
-flex-direction: column;
-margin-left: 2rem;
+  width: 50%;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: 2rem;
+
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    order: 2;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    p {
+      margin: 0;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+    }
+  }
 
 `
 
 const RightContainerImage = styled.div`
-width: 50%;
-display: flex;
+  width: 50%;
+  display: flex;
 
-.desktopImage{
-margin-left: auto;
-margin-right:auto;
-}
+  .desktopImage{
+    margin-left: auto;
+    margin-right:auto;
+  }
+
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    width: 50%;
+  }
 
 `
 
@@ -89,11 +164,29 @@ const PillWrapper = styled.div`
       border: 2px solid white;
     }
   }
+
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    margin: 0;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
 `
 
 const Title = styled.h1`
 margin-bottom: 1rem;
 font-size: 2.5rem;
+
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+margin: 0;
+    font-size: 2rem;
+  }
+  
 `
 
 const PhaseTitle = styled.h1`
@@ -101,9 +194,14 @@ margin-bottom: 4rem;
 margin-top: 1rem;
 font-size: 2.5rem;
 text-align: center;
+
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+margin: 0;
+  }
 `
-
-
 
 
 
@@ -129,7 +227,7 @@ const Retourn = () => (
                         quality={100}
                         formats={["auto", "webp", "avif"]}
                         alt="Laptop with arrows"
-                        class = "desktopImage"
+                        class = "hiw-Image"
                         objectFit="contain"
                     />
                 </RightContainerImage>
@@ -144,7 +242,7 @@ const Retourn = () => (
                         quality={100}
                         formats={["auto", "webp", "avif"]}
                         alt="Laptop with arrows"
-                        class = "desktopImage"
+                        class = "hiw-Image"
                         objectFit="contain"
                     />
                 </LeftContainerImage>
@@ -173,7 +271,7 @@ const Retourn = () => (
                         quality={100}
                         formats={["auto", "webp", "avif"]}
                         alt="Laptop with arrows"
-                        class = "desktopImage"
+                        class = "hiw-Image"
                         objectFit="contain"
                     />
                 </RightContainerImage>
