@@ -12,6 +12,10 @@ and (-webkit-min-device-pixel-ratio: 3) {
 
     }
 
+    .btnSubmit{
+        margin-bottom: 6rem!important;
+    }
+
     .desktopImage{
         display: none;
     }
@@ -29,7 +33,7 @@ and (-webkit-min-device-pixel-ratio: 3) {
     }
 
     .introContainerRight {
-
+        width: 0%!important;
 
     }
 
