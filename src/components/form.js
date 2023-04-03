@@ -1,6 +1,7 @@
 import * as React from 'react';
 import "../styles/modalForm.css"
 import {StaticImage} from "gatsby-plugin-image";
+import {navigate} from "gatsby";
 
 const Form = ({close}) => {
 
@@ -23,6 +24,7 @@ const Form = ({close}) => {
         });
 
         close();
+        navigate("/successlist");
     }
 
     return (
