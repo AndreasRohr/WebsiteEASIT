@@ -41,7 +41,7 @@ const Form = ({close}) => {
                           quality={95}
                           formats={["auto", "webp", "avif"]}
                           alt="EASIT Logo"
-                          className="easit-logo"
+                          className="easit-logo-form"
                       />
                   </div>
                   <div className="close-button-wrapper">
@@ -51,7 +51,7 @@ const Form = ({close}) => {
               </div>
               <div className="box-body">
                   <div className="box-body-description">
-                      Erhalten Sie unsere Preisliste per Mail mit nur wenigen Klicks.
+                      Erhalte mit nur wenigen Klicks unsere Preisliste per Mail.
                   </div>
                   <div className="input-label-container">
                       <label className="inputLabel" htmlFor="COMPANY">Firma* </label>

@@ -101,19 +101,25 @@ margin-bottom:2rem;
 
 @media only screen and (max-width: 1024px) {
 
+
     .input-label-container{
-        margin-left: 0;
-        margin-right: 0;
+        margin: 1rem!important;
+        margin-left: 0.5rem!important;
+        margin-right: 0.5rem!important;
     }
 
     .modalBox{
-        height: 100vh;
         overflow-y: hidden;
+        max-height: 80%;
     }
 
     .box-body-description{
         font-size: 1rem!important;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
     }
+
+
 
     .inputLabel{
         display: none;
@@ -122,4 +128,12 @@ margin-bottom:2rem;
     .close-button-wrapper{
         margin-right: 1rem;
     }
+
+    .box-footer{
+        margin: 0!important;
+
+        height: 6rem;
+    }
+
+
 }
