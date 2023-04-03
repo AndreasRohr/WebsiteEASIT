@@ -11,10 +11,13 @@ const SectionStyle = styled.div`
 `
 
 const ContentContainer = styled.div`
-    margin-inline: 3em;
-    padding: 2em;
-    max-width: 1900px;
-    margin: auto;
+  margin-inline: 3em;
+  padding: 2em;
+  max-width: 1900px;
+  margin: auto;
+  @media (max-width: 768px) {
+    padding: 4rem 0 0;
+  }
 `
 
     return (

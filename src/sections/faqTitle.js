@@ -9,6 +9,13 @@ const Title = styled.h1`
 margin-top:3rem;
 
 font-size: 4rem;
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    font-size: 3.5rem;
+  }
+
 `
 
 const IntroContainer = styled.div`
@@ -23,6 +30,7 @@ margin-top: 2.5rem;
   and (-webkit-min-device-pixel-ratio: 3) {
     flex-direction: column;
     min-height: 100vh;
+    margin-bottom: -12rem;
   }
 
   @media only screen
@@ -87,6 +95,7 @@ margin-right: 4rem;
   and (max-device-width: 812px)
   and (-webkit-min-device-pixel-ratio: 3) {
     margin-right: 0!important;
+    
 
   }
 `

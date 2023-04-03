@@ -11,6 +11,13 @@ const Title = styled.h1`
   margin-top: 4rem;
   font-size: 3rem;
   margin-bottom: 4rem;
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    font-size: 2rem;
+    margin-top: 0;
+  }
 `
 const FaqWrapper = styled.div`
   margin-bottom: 4rem;
@@ -21,6 +28,14 @@ const FaqWrapper = styled.div`
 
   .faq-pill{
     margin-left: 1rem;
+  }
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    padding-bottom: 2rem;
+    width: 95%;
+    margin: auto;
   }
 `
 

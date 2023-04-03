@@ -40,6 +40,15 @@ const ItemWrapper = styled.div`
   padding: 2rem;
   border-radius: 8px;
   height: 41rem;
+
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    height: 40rem;
+  }
+  
+  
 `
 
 const Description = styled.p`
@@ -50,18 +59,24 @@ const Description = styled.p`
 const CarouselWrapper = styled.div`
 margin-bottom: 4rem;
   margin-top: 6rem;
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    margin-top: 0;
+  }
 `
 const MultiCarousel = () => (
 <CarouselWrapper>
     <Carousel
-        swipeable={false}
+        swipeable={true}
         draggable={false}
         showDots={true}
         responsive={responsive}
         ssr={true} // means to render carousel on server-side.
         infinite={true}
         autoPlay={true}
-        autoPlaySpeed={5000}
+        autoPlaySpeed={6000}
         keyBoardControl={true}
         removeArrowOnDeviceType={["tablet", "mobile"]}
         dotListClass="custom-dot-list-style"

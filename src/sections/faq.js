@@ -7,10 +7,12 @@ const Faq = () => {
 
   return (
     <SectionContainer color={"#ffffff"}>
+        <div style={{width:"95%", margin:"auto"}}>
         {
             data.questions.map((item, index) => {
             return <><Collapsible key={index} title={item.title} content={item.content} /> <br /></>
         })}
+        </div>
     </SectionContainer>
 )}
 

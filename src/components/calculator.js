@@ -16,6 +16,7 @@ border-right: none;
 border-bottom-left-radius: 1rem;
 border-top-left-radius: 1rem;
 background: white;
+  color: black;
   :disabled {
     background: #dd356e;
     color: white;
@@ -32,6 +33,7 @@ border: 2px solid grey;
 border-left: none;
 border-bottom-right-radius: 1rem;
 border-top-right-radius: 1rem;
+  color: black;
   background: white;
   :disabled {
     background: #dd356e;
@@ -52,8 +54,10 @@ const Table = styled.table`
   border-right: none !important;
 
   @media (max-width: 768px) {
-    width: 100%;
-    margin: auto;
+    padding: 0;
+    margin: 0;
+  display: inline-block;
+    width: 97%;
   }
 `
 
@@ -63,6 +67,11 @@ const Tr = styled.tr`
     height: 6rem;
     border-bottom: none;
     border-top: none;
+
+  @media (max-width: 768px) {
+   height: 4rem;
+  }
+
     
      &:last-child {
     border-bottom-left-radius: 0.5rem;
@@ -82,7 +91,7 @@ const Tr = styled.tr`
            }
 
            .css-fsgl7x {
-             font-size: 1rem;
+             font-size: 0.8rem;
              margin-right: 10px;
              white-space: nowrap;
            }
@@ -121,6 +130,11 @@ font-size: 1.5rem;
   .text{
     margin-right: 0.5rem;
   }
+
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+    height: 4rem;
+  }
 `
 const TrSection2 = styled.div`
 width: 20%;
@@ -130,7 +144,14 @@ display: flex;
 align-items:center;
 justify-content:center;
 font-size: 1.5rem;
-    white-space: nowrap;
+  white-space: nowrap;
+
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+    margin-left: -1rem;
+    margin-right: 2rem;
+    height: 4rem;
+  }
 
 `
 const TrSection3 = styled.div`
@@ -143,6 +164,13 @@ align-items:center;
 justify-content:center;
     white-space: nowrap;
 
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+    width: 30px;
+    margin-left: 0;
+    height: 4rem;
+  }
+
 `
 
 const RequestSection = styled.div`
@@ -153,12 +181,28 @@ margin-top: 3rem;
 .cardsPill{
 margin-left: 1rem;
 margin-right: 1rem;
+  @media (max-width: 768px) {
+    margin-bottom: 1rem;
+  }
 }
 
-.buttonWrapper{
+.buttonWrapperBottom{
       display: flex;
   justify-content: center;
+
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
     }
+
+  .buttonWrapperTop{
+    display: flex;
+    justify-content: center;
+  }
 `
 
 const Calculator = ({ toggleModal }) => {
@@ -180,12 +224,13 @@ const Calculator = ({ toggleModal }) => {
     return (
         <>
             <RequestSection>
-                <div className={"buttonWrapper"}>
+                <div className={"buttonWrapperTop"}>
                   <Button1 onClick={toggleYears} disabled={years}>1 Jahr</Button1>
                   <Button2 onClick={toggleYears} disabled={!years}>3 Jahre</Button2>
                 </div>
             </RequestSection>
            {
+               <div style={{textAlign:"center"}}>
                <Table>
 
                    <Tr>
@@ -299,10 +344,12 @@ const Calculator = ({ toggleModal }) => {
                        <TrSection3>ab {pricestotal[0]} CHF</TrSection3>
                    </Tr>
 
-               </Table>}
+               </Table>
+               </div>}
+
 
            <RequestSection>
-               <div className={"buttonWrapper"}>
+               <div className={"buttonWrapperBottom"}>
                <Pill action={goToContactPage} className="cardsPill">Jetzt kontaktieren</Pill>
                <Pill action={toggleModal} className="cardsPill">Preisübersicht erhalten</Pill>
                </div>

@@ -117,7 +117,7 @@ const Retourn = () => (
                     <Title>Gerätetausch</Title>
                     <p>Du möchtest nach der Laufzeit ein anderes Gerät? Kein Problem! Wir kümmern uns um einen reibungslosen Wechsel auf ein anderes Modell, so dass du ohne Unterbruch weiterarbeiten kannst. </p>
                     <PillWrapper>
-                        <PillLink to="/contact" className="cardsPill">Kontakt aufnehmen</PillLink>
+                        <PillLink to="/support" className="cardsPill">Support kontaktieren</PillLink>
                     </PillWrapper>
                 </LeftContainerText>
                 <RightContainerImage>
@@ -151,6 +151,9 @@ const Retourn = () => (
                 <RightContainerText>
                     <Title>Geräterücknahme</Title>
                     <p>Du möchtest nach der Laufzeit dein Gerät zurückgeben? Wir melden uns frühzeitig, um eine Rückgabe bei uns in Glattbrugg zu vereinbaren oder dir eine Rücksendekiste zuzusenden. </p>
+                    <PillWrapper>
+                        <PillLink to="/support" className="cardsPill">Support kontaktieren</PillLink>
+                    </PillWrapper>
                 </RightContainerText>
             </ContentContainerRight>
             <ContentContainerLeft>

@@ -139,7 +139,7 @@ const Order = ({toggleModal}) => (
                     <Title>Anfrage senden</Title>
                     <p>Du sendest uns eine Anfrage per Mail mit dem Typ und der Anzahl Geräte, die du benötigst oder vereinbarst einfach und schnell einen Beratungstermin mit uns.</p>
                     <PillWrapper>
-                        <PillLink to="/contact" className="cardsPill">Beratungstermin vereinbaren</PillLink>
+                        <PillLink to="/contact" className="cardsPill">Jetzt kontaktieren</PillLink>
                     </PillWrapper>
                 </LeftContainerText>
                 <RightContainerImage>

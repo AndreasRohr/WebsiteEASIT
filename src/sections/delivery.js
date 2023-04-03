@@ -117,9 +117,6 @@ const Delivery = () => (
                 <LeftContainerText>
                     <Title>Vorbereitung</Title>
                     <p>Wir bereiten die Geräte auf und bereiten es für dich vor. Sind die Geräte bei uns an Lager, so sind sie innert 5 Tagen Einsatzbereit. Wenn wir die Geräte beschaffen beträgt die Wartezeit in der Regel zwischen 10 und 30 Tagen. </p>
-                    <PillWrapper>
-                        <PillLink to="/contact" className="cardsPill">Jetzt kontaktieren</PillLink>
-                    </PillWrapper>
                 </LeftContainerText>
                 <RightContainerImage>
                     <StaticImage
@@ -153,7 +150,7 @@ const Delivery = () => (
                     <Title>Software</Title>
                     <p> Auf Wunsch installieren wir alle benötigten Programme bereits während der Vorbereitung auf Ihren Geräten. Ebenso konfigurieren wir Netzwerke, Drucker, etc. bereits vor, so dass die Geräte sofort einsatzbereit sind. </p>
                     <PillWrapper>
-                        <PillLink to="/contact" className="cardsPill">Beratungstermin vereinbaren</PillLink>
+                        <PillLink to="/contact" className="cardsPill">Jetzt kontaktieren</PillLink>
                     </PillWrapper>
                 </RightContainerText>
             </ContentContainerRight>
@@ -161,6 +158,9 @@ const Delivery = () => (
                 <LeftContainerText>
                     <Title>Abholung oder Lieferung</Title>
                     <p>Du kannst die Geräte bei uns in Glattbrugg abholen oder dir kostenlos an den Verwendungsort senden lassen. </p>
+                    <PillWrapper>
+                        <PillLink to="/contact" className="cardsPill">Jetzt kontaktieren</PillLink>
+                    </PillWrapper>
                 </LeftContainerText>
                 <RightContainerImage>
                     <StaticImage

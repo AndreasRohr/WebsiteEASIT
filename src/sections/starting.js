@@ -170,7 +170,7 @@ const Starting = () => (
                     <Title>Defekt</Title>
                     <p>Kaffee über die Tastatur geleert, Tablet runtergefallen oder der Bildschirm bleibt schwarz? Kein Problem, einfach dem Support melden und wir organisieren sofort ein Ersatzgerät, dass so schnell wie möglich geliefert wird. </p>
                     <PillWrapper>
-                        <PillLink to="/contact" className="cardsPill">Kontakt aufnehmen</PillLink>
+                        <PillLink to="/support" className="cardsPill">Support kontaktieren</PillLink>
                     </PillWrapper>
                 </RightContainerText>
             </ContentContainerRight>

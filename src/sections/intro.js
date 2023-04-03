@@ -33,7 +33,8 @@ const LeftContainer = styled.div`
   order: 1;
      @media (max-width: 768px) {
       order:2;
-      margin-top:-10rem;
+      margin-top:-7rem;
+       margin-left: 2rem;
   }
 `
 
