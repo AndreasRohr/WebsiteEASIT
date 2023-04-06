@@ -14,7 +14,7 @@ build:
 
 upload:
   stage: upload
-  image: alpine:stable
+  image: alpine:3.17
   script:
     - apk add lftp
     - lftp --version
