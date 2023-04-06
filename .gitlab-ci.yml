@@ -1,8 +1,23 @@
+stages:
+  - build
+  - upload
+
 build:
   image: node:stable
   stage: build
   script:
     - npm ci
+  artifacts:
+    paths:
+      - public/
+
+upload:
+  image: alpine:stable
+  stage: upload
+  script:
     - apk add lftp
     - lftp --version
     - lftp -c "set ftp:ssl-force true; set ssl:verify-certificate false; open -u $FTP_USERNAME,$FTP_PASSWORD $FTP_HOSTNAME; mirror -Renv ./public ./htdocs"
+  needs:
+    - job: build
+      artifacts: true
