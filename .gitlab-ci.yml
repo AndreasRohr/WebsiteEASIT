@@ -3,8 +3,8 @@ stages:
   - upload
 
 build:
-  image: node:stable
   stage: build
+  image: node:stable
   script:
     - npm ci
   artifacts:
@@ -12,8 +12,8 @@ build:
       - public/
 
 upload:
-  image: alpine:stable
   stage: upload
+  image: alpine:stable
   script:
     - apk add lftp
     - lftp --version
