@@ -9,7 +9,7 @@ build:
     - npm ci
   artifacts:
     paths:
-      - public/
+      - /public
 
 upload:
   stage: upload
