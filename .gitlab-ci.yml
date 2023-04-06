@@ -7,7 +7,7 @@ build:
   image: node:18.15-alpine3.16
   script:
     - npm ci
-    - npm build
+    - npm run build
   artifacts:
     paths:
       - /public
