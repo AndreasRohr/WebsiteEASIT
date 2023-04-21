@@ -18,9 +18,8 @@ upload:
   script:
     - apk add lftp
     - lftp --version
-    - la ./public
+    - ls -la ./public
     - echo "Uploading files to $FTP_HOSTNAME"
-    - echo "With Username: $FTP_USERNAME"
     - lftp -c "open $FTP_HOSTNAME; user $FTP_USERNAME $FTP_PASSWORD; mirror --reverse ./public /htdocs"
   needs:
     - job: build
