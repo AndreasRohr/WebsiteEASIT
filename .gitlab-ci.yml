@@ -17,10 +17,10 @@ upload:
   image: alpine:3.17
   script:
     - apk add lftp
-    - lftp --version
-    - ls -la ./public
     - echo "Uploading files to $FTP_HOSTNAME"
-    - lftp -c "open $FTP_HOSTNAME; user $FTP_USERNAME $FTP_PASSWORD; mirror --reverse ./public /htdocs"
+    - lftp -c "open $FTP_HOSTNAME; set ssl:check-hostname no; user "$FTP_USERNAME" "$FTP_PASSWORD"; mirror --reverse ./public ./"
   needs:
     - job: build
       artifacts: true
+  only:
+    - tags
