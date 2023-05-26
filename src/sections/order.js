@@ -124,7 +124,7 @@ margin-left: 2rem;
 const RightContainerImage = styled.div`
 width: 50%;
 display: flex;
-
+justify-content: center;
 .desktopImage{
 margin-left: auto;
 margin-right:auto;

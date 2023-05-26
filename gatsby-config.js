@@ -61,6 +61,20 @@ module.exports = {
         theme_color_in_head: false, // This will avoid adding theme-color meta tag.
         // Place where crossOrigin attribute can be added.
       }
-    }
+    },
+      {
+          resolve: `gatsby-plugin-google-gtag`,
+          options: {
+              trackingIds: [
+                  "G-2FHN7FDZC3" // Ihre Google Analytics-Tracking-ID hier einfügen
+              ],
+              pluginConfig: {
+                  head: false,
+                  respectDNT: true,
+                  exclude: ["/preview/**", "/do-not-track/me/too/"],
+                  // Falls Sie die Option 'origin' verwenden möchten, setzen Sie diese auf die gewünschte URL
+              },
+          }
+      }
   ],
 }
