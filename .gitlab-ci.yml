@@ -1,0 +1,26 @@
+stages:
+  - build
+  - upload
+
+build:
+  stage: build
+  image: node:18.15-alpine3.16
+  script:
+    - npm ci --silent
+    - npm run build
+  artifacts:
+    paths:
+      - public/
+
+upload:
+  stage: upload
+  image: alpine:3.17
+  script:
+    - apk add lftp
+    - echo "Uploading files to $FTP_HOSTNAME"
+    - lftp -c "open $FTP_HOSTNAME; set ssl:check-hostname no; user "$FTP_USERNAME" "$FTP_PASSWORD"; mirror --reverse ./public ./"
+  needs:
+    - job: build
+      artifacts: true
+  only:
+    - tags
