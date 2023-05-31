@@ -44,7 +44,7 @@ const ImportantFaq = () => {
   const impFAQ = data.questions.slice(0, 3);
 
   return (
-    <SectionContainer color={"#F3F4F7"}>
+    <SectionContainer color={"#FFFFFF"}>
         <Title>Die wichtigsten Fragen</Title>
         <FaqWrapper>
         {impFAQ.map((item, index) => {

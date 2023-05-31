@@ -75,6 +75,13 @@ module.exports = {
                   // Falls Sie die Option 'origin' verwenden möchten, setzen Sie diese auf die gewünschte URL
               },
           }
-      }
+      },
+      {
+          resolve: `gatsby-plugin-google-tagmanager`,
+          options: {
+              id: "GTM-TPDGPRJ",
+              includeInDevelopment: false,
+          },
+      },
   ],
 }
