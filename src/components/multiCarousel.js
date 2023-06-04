@@ -100,7 +100,7 @@ const MultiCarousel = () => (
                 placeholder= 'none'
                 src="../images/lenovo_ideapad.webp"
                 loading="eager"
-                height={300}
+                height={250}
                 quality={100}
                 formats={["auto", "webp", "avif"]}
                 alt="Laptop with arrows"

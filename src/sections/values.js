@@ -14,6 +14,7 @@ const Description = styled.p`
 color: white;
 margin-top: 1rem;
 margin-bottom: 1.5rem;
+  font-size: 1.3rem;
 `
 
 const CardSection = styled.div`
@@ -96,7 +97,7 @@ const Values = () => (
             <Card>
                 <Bulletpoint>Einfach</Bulletpoint>
                 <Description>
-                    Die Bestellung bei EASIT ist für unsere Kunden so einfach wie möglich. Senden Sie uns eine Anfrage mit den benötigten Geräten und wir kümmern uns um den Rest.
+                    Die Bestellung bei EASIT ist für unsere Kunden so einfach wie möglich. Senden Sie uns eine Anfrage mit den benötigten Anforderungen und wir kümmern uns um den Rest.
                 </Description>
 
             </Card>

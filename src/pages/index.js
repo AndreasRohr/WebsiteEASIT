@@ -9,6 +9,7 @@ import Sticker from "../components/sticker";
 import Products from "../sections/products";
 import ImportantFaq from "../sections/importantFaq";
 import Values from "../sections/values";
+import UseSection from "../sections/useSection";
 
 const IndexPage = () => {
 
@@ -26,6 +27,7 @@ const IndexPage = () => {
       <Products/>
       <Lifecycle />
       <Calculation toggleModal={toggleModal}/>
+        <UseSection></UseSection>
         <Values></Values>
       <ImportantFaq />
 
