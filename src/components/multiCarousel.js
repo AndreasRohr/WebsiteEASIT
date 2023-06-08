@@ -30,6 +30,11 @@ const Title = styled.h1`
   margin-top: 1rem;
 `
 
+const Title1 = styled.h1`
+    text-align: center;
+  margin-top: 3rem;
+`
+
 const ItemWrapper = styled.div`
   display: flex;
   justify-content: center; /* centers items horizontally */
@@ -55,6 +60,8 @@ const Description = styled.p`
   margin-top: 1rem;
   margin-bottom: 1rem;
   text-align: center;
+  min-height: 6rem;
+  max-height: 6rem;
 `
 const CarouselWrapper = styled.div`
 margin-bottom: 4rem;
@@ -92,7 +99,7 @@ const MultiCarousel = () => (
             alt="Laptop with arrows"
             class = "carouselImage"
         />
-            <Title>Laptops</Title>
+            <Title1>Laptops</Title1>
             <Description>Wir haben eine breite Auswahl an Modellen in unserem Sortiment. Von Laptops für die klassische Büroarbeit bis hin zu CAD-Rechenmaschinen ist alles dabei. Alle Laptops kommen mit einer Hülle oder Tasche und verfügen über einen Zahlenblock, damit du noch produktiver sein kannst! </Description>
         </ItemWrapper>
         <ItemWrapper>
@@ -100,7 +107,7 @@ const MultiCarousel = () => (
                 placeholder= 'none'
                 src="../images/lenovo_ideapad.webp"
                 loading="eager"
-                height={250}
+                height={300}
                 quality={100}
                 formats={["auto", "webp", "avif"]}
                 alt="Laptop with arrows"

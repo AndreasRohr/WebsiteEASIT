@@ -122,7 +122,8 @@ margin-left: 2rem;
 `
 
 const RightContainerImage = styled.div`
-width: 50%;
+width: 30%;
+  margin-left: 20%;
 display: flex;
 justify-content: center;
 .desktopImage{

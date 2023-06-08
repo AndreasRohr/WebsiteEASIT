@@ -30,6 +30,15 @@ const Title = styled.h1`
   margin-top: 1rem;
 `
 
+const Title2 = styled.h1`
+  text-align: center;
+  font-size: 3rem;
+  margin-top: -6rem;
+  margin-bottom: 2rem;
+  
+
+`
+
 const ItemWrapper = styled.div`
   display: flex;
   justify-content: center; /* centers items horizontally */
@@ -51,10 +60,18 @@ const ItemWrapper = styled.div`
   
 `
 
+const Test = styled.div`
+  
+
+  `
+const Test2 = styled.div`
+
+  `
 const Description = styled.p`
   margin-top: 1rem;
   margin-bottom: 1rem;
   text-align: center;
+  min-height: 10rem;
 `
 const CarouselWrapper = styled.div`
 margin-bottom: 4rem;
@@ -68,6 +85,7 @@ margin-bottom: 4rem;
 `
 const UseCarousel = () => (
     <CarouselWrapper>
+        <Title2>Anwendungen</Title2>
         <Carousel
             swipeable={true}
             draggable={false}
@@ -84,73 +102,151 @@ const UseCarousel = () => (
             <ItemWrapper>
                 <StaticImage
                     placeholder= 'none'
-                    src="../images/thinkpadE15.png"
+                    src="../images/office.png"
                     loading="eager"
-                    height={300}
+                    height={350}
+                    width={500}
                     quality={100}
                     formats={["auto", "webp", "avif"]}
                     alt="Laptop with arrows"
                     class = "carouselImage"
                 />
                 <Title>Arbeitsplätze</Title>
-                <Description>Wir haben eine breite Auswahl an Modellen in unserem Sortiment. Von Laptops für die klassische Büroarbeit bis hin zu CAD-Rechenmaschinen ist alles dabei. Alle Laptops kommen mit einer Hülle oder Tasche und verfügen über einen Zahlenblock, damit du noch produktiver sein kannst! </Description>
+                <Description>Unsere Geräte eignen sich ideal für Unternehmen, die temporäre Mitarbeiter beschäftigen oder ihre Arbeitsumgebung flexibel gestalten möchten. Von Laptops für Remote-Arbeiter bis hin zu Desktops für temporäre Büroplätze bieten wir die passende Lösung für jeden Arbeitsplatzbedarf. </Description>
             </ItemWrapper>
             <ItemWrapper>
                 <StaticImage
                     placeholder= 'none'
-                    src="../images/lenovo_ideapad.webp"
+                    src="../images/lecture.png"
                     loading="eager"
-                    height={300}
+                    height={350}
+                    width={500}
                     quality={100}
                     formats={["auto", "webp", "avif"]}
                     alt="Laptop with arrows"
                     class = "carouselImage"
                 />
                 <Title>Vorträge</Title>
-                <Description>Tablet oder Laptop? Du musst dich nicht entscheiden und kannst beides in einem Gerät haben! Dank unseren Laptops mit Touchscreen kannst du das Beste aus zwei Welten nutzen. So wird das Notizen schreiben und Dokumente kommentieren zum Kinderspiel.</Description>
+                <Description>Bei Vorträgen ist es wichtig, dass Ihre Präsentation reibungslos abläuft. Unsere Mietgeräte ermöglichen es Ihnen, leistungsstarke Laptops oder Tablets zu nutzen, um Ihre Inhalte professionell und effektiv zu präsentieren. Sie können sich auf unsere zuverlässige Technologie verlassen, damit Ihr Vortrag einen bleibenden Eindruck hinterlässt.</Description>
             </ItemWrapper>
             <ItemWrapper>
                 <StaticImage
                     placeholder= 'none'
-                    src="../images/lenovo_ideacenter.webp"
+                    src="../images/booth.png"
                     loading="eager"
-                    height={300}
+                    height={350}
+                    width={500}
                     quality={100}
                     formats={["auto", "webp", "avif"]}
                     alt="Laptop with arrows"
                     class = "carouselImage"
                 />
                 <Title>Messen</Title>
-                <Description>Du brauchst kein mobiles Laptop und arbeitest lieber an einem grossen Bildschirm? Dann sind unsere All-In-One Desktops die richtige Lösung für dich! Die leistungsstarken und schlichten Geräte sind perfekt für den Büroalltag geeignet. Alle unsere Desktops kommen natürlich mit einer Kabellosen Maus und Tastatur, so dass dein Pult nie im Kabelsalat versinkt.</Description>
+                <Description>Auf Messen benötigen Sie möglicherweise Geräte für Produktpräsentationen, Datenmanagement und Kundeninteraktion. Unsere Mietlösungen bieten Ihnen die Möglichkeit, hochwertige Laptops, Tablets und Desktops für die Dauer der Messe zu nutzen und so einen professionellen Eindruck zu hinterlassen.</Description>
             </ItemWrapper>
             <ItemWrapper>
                 <StaticImage
                     placeholder= 'none'
-                    src="../images/iPad.png"
+                    src="../images/store.png"
                     loading="eager"
-                    height={300}
+                    height={350}
+                    width={500}
                     quality={100}
                     formats={["auto", "webp", "avif"]}
                     alt="Laptop with arrows"
                     class = "carouselImage"
                 />
                 <Title>Pop-Up Stores</Title>
-                <Description>Unsere Tablets sind die perfekten begleiter für Unterwegs! Dank der mitgelieferten Tastaturhülle bist du noch produktiver und zum Schutz des Displays verfügen alle unsere Tablets über ein Panzerglas. Wenn du auch unterwegs immer online sein möchtest bieten wir auch iPads mit 4G Modul an, bei diesen Geräten ist auch immer eine Internet Flatrate dabei, so dass du so viel surfen kannst wie du möchtest.</Description>
+                <Description>Wenn Sie einen temporären Laden eröffnen, bieten unsere Mietgeräte die perfekte Lösung. Von Kassensystemen und Tablets für Bestellungen bis hin zu leistungsstarken Desktops für digitale Beschilderungen ermöglichen wir es Ihnen, Ihre Pop-up-Store-Erfahrung mit modernster Technologie zu verbessern.</Description>
             </ItemWrapper>
 
             <ItemWrapper>
+                <Test>
+
+
                 <StaticImage
                     placeholder= 'none'
-                    src="../images/iPad.png"
+                    src="../images/festival.png"
                     loading="eager"
-                    height={300}
+                    height={350}
+                    width={500}
                     quality={100}
                     formats={["auto", "webp", "avif"]}
                     alt="Laptop with arrows"
                     class = "carouselImage"
                 />
+                </Test>
+                <Test2>
                 <Title>Festivals</Title>
-                <Description>Unsere Tablets sind die perfekten begleiter für Unterwegs! Dank der mitgelieferten Tastaturhülle bist du noch produktiver und zum Schutz des Displays verfügen alle unsere Tablets über ein Panzerglas. Wenn du auch unterwegs immer online sein möchtest bieten wir auch iPads mit 4G Modul an, bei diesen Geräten ist auch immer eine Internet Flatrate dabei, so dass du so viel surfen kannst wie du möchtest.</Description>
+                <Description>Auf Festivals ist eine zuverlässige Technologie unerlässlich. Unsere Mietgeräte ermöglichen es Festivalveranstaltern, temporäre Arbeitsbereiche einzurichten, um den reibungslosen Ablauf von Ticketing-Systemen, Verkaufsstellen oder sogar Live-Streaming-Diensten sicherzustellen.</Description>
+                </Test2>
+                </ItemWrapper>
+
+            <ItemWrapper>
+                <Test>
+
+
+                    <StaticImage
+                        placeholder= 'none'
+                        src="../images/homeoffice.png"
+                        loading="eager"
+                        height={350}
+                        width={500}
+                        quality={100}
+                        formats={["auto", "webp", "avif"]}
+                        alt="Laptop with arrows"
+                        class = "carouselImage"
+                    />
+                </Test>
+                <Test2>
+                    <Title>Home-Office</Title>
+                    <Description>Mit unseren Mietgeräten können Sie Ihr Home-Office optimal ausstatten. Egal, ob Sie einen Laptop, einen Desktop oder ein Tablet benötigen, unsere flexiblen Mietlösungen ermöglichen es Ihnen, produktiv von zu Hause aus zu arbeiten.</Description>
+                </Test2>
+            </ItemWrapper>
+
+
+            <ItemWrapper>
+                <Test>
+
+
+                    <StaticImage
+                        placeholder= 'none'
+                        src="../images/workshop.png"
+                        loading="eager"
+                        height={350}
+                        width={500}
+                        quality={100}
+                        formats={["auto", "webp", "avif"]}
+                        alt="Laptop with arrows"
+                        class = "carouselImage"
+                    />
+                </Test>
+                <Test2>
+                    <Title>Schulungen</Title>
+                    <Description>Für Schulungsveranstaltungen bieten wir die ideale Lösung. Unsere Mietgeräte unterstützen Sie dabei, Schulungsteilnehmern Laptops oder Tablets zur Verfügung zu stellen, um interaktive Lerninhalte bereitzustellen und eine effektive Schulungsumgebung zu schaffen.</Description>
+                </Test2>
+            </ItemWrapper>
+
+            <ItemWrapper>
+                <Test>
+
+
+                    <StaticImage
+                        placeholder= 'none'
+                        src="../images/startup.png"
+                        loading="eager"
+                        height={350}
+                        width={500}
+                        quality={100}
+                        formats={["auto", "webp", "avif"]}
+                        alt="Laptop with arrows"
+                        class = "carouselImage"
+                    />
+                </Test>
+                <Test2>
+                    <Title>Start-Ups</Title>
+                    <Description>Für Start-ups mit begrenztem Budget sind Mietgeräte eine kosteneffektive Lösung. Von der Produktentwicklung bis zur Gründungsphase ermöglichen unsere Mietlösungen Start-ups den Zugang zu erstklassiger Technologie, um ihre Ideen umzusetzen und ihr Geschäftswachstum voranzutreiben.</Description>
+                </Test2>
             </ItemWrapper>
 
         </Carousel>

@@ -12,8 +12,10 @@ const Bulletpoint = styled.h2`
 
 const Description = styled.p`
 color: white;
-margin-top: 1rem;
+margin-top: 0.5rem;
 margin-bottom: 1.5rem;
+  min-height: 4.5rem;
+  max-height: 4.5rem;
 `
 
 const CardSection = styled.div`
