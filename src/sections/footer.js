@@ -1,6 +1,6 @@
 import * as React from "react";
 import styled from "@emotion/styled";
-import { Link } from "gatsby";
+import { OutboundLink } from "gatsby-plugin-google-gtag";
 
 const Container = styled.footer`
   text-align: center;
@@ -32,11 +32,11 @@ const Footer = () => (
         <div>
             © {new Date().getFullYear()} &middot; Powered by
             {` `}
-            <a className="link"  href="https://www.teqly.ch">TEQLY GmbH</a>
+            <OutboundLink className="link"  href="https://www.teqly.ch">TEQLY GmbH</OutboundLink>
         </div>
-        <Link to="/legal_agb" className="link" activeClassName="active">AGB</Link>
-        <Link to="/legal_dataprivacy" className="link" activeClassName="active">Datenschutzerklärung</Link>
-        <Link to="/legal_imprint" className="link" activeClassName="active">Impressum</Link>
+        <OutboundLink to="/legal_agb" className="link" activeClassName="active">AGB</OutboundLink>
+        <OutboundLink to="/legal_dataprivacy" className="link" activeClassName="active">Datenschutzerklärung</OutboundLink>
+        <OutboundLink to="/legal_imprint" className="link" activeClassName="active">Impressum</OutboundLink>
     </Container>
 );
 
