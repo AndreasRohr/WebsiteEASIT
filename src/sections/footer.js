@@ -1,6 +1,7 @@
 import * as React from "react";
 import styled from "@emotion/styled";
 import { OutboundLink } from "gatsby-plugin-google-gtag";
+import { Link } from "gatsby";
 
 const Container = styled.footer`
   text-align: center;
@@ -34,9 +35,9 @@ const Footer = () => (
             {` `}
             <OutboundLink className="link"  href="https://www.teqly.ch">TEQLY GmbH</OutboundLink>
         </div>
-        <OutboundLink to="/legal_agb" className="link" activeClassName="active">AGB</OutboundLink>
-        <OutboundLink to="/legal_dataprivacy" className="link" activeClassName="active">Datenschutzerklärung</OutboundLink>
-        <OutboundLink to="/legal_imprint" className="link" activeClassName="active">Impressum</OutboundLink>
+        <Link to="/legal_agb" className="link" activeClassName="active">AGB</Link>
+        <Link to="/legal_dataprivacy" className="link" activeClassName="active">Datenschutzerklärung</Link>
+        <Link to="/legal_imprint" className="link" activeClassName="active">Impressum</Link>
     </Container>
 );
 
