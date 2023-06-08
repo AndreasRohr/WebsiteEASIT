@@ -34,9 +34,9 @@ const Footer = () => (
             {` `}
             <a className="link"  href="https://www.teqly.ch">TEQLY GmbH</a>
         </div>
-        <a><Link to="/legal_agb" className="link" activeClassName="active">AGB</Link></a>
-        <a><Link to="/legal_dataprivacy" className="link" activeClassName="active">Datenschutzerklärung</Link></a>
-        <a><Link to="/legal_imprint" className="link" activeClassName="active">Impressum</Link></a>
+        <Link to="/legal_agb" className="link" activeClassName="active">AGB</Link>
+        <Link to="/legal_dataprivacy" className="link" activeClassName="active">Datenschutzerklärung</Link>
+        <Link to="/legal_imprint" className="link" activeClassName="active">Impressum</Link>
     </Container>
 );
 
