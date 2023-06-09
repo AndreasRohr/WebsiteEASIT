@@ -3,6 +3,7 @@ import {StaticImage} from "gatsby-plugin-image";
 import SectionContainer from "../components/sectionContainer";
 import styled from "@emotion/styled"
 import Pill from "../components/pill";
+import {navigate} from "gatsby";
 
 
 
@@ -83,7 +84,7 @@ const Intro = ({ toggleModal }) => (
                   objectFit={"contain"}
               />
               </TeqlyContainer>
-              <Pill action={toggleModal}>Zum Angebot</Pill>
+              <Pill action={() => navigate("/pricing")} className={"pills"}>Zum Angebot</Pill>
           </LeftContainer>
           <RightContainer>
               <StaticImage

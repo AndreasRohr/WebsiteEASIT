@@ -4,7 +4,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import styled from "@emotion/styled"
 import "../styles/navbar.css"
 import Pill from "../components/pill"
-import { Link } from "gatsby";
+import {Link, navigate} from "gatsby";
 import {StaticImage} from "gatsby-plugin-image";
 
 const A = styled.div`
@@ -53,10 +53,11 @@ const Navbar = ({toggleModal}) => {
             <div className="right">
             <nav ref={navRef}>
                 <A><Link to="/#productSection" className="link" activeClassName="active">Produkte</Link></A>
+                <A><Link to="/pricing" className="link" activeClassName="active">Preise</Link></A>
                 <A><Link to="/how-it-works" className="link" activeClassName="active">Wie funktioniert's?</Link></A>
                 <A><Link to="/faq" className="link" activeClassName="active">FAQ</Link></A>
                 <A><Link to="/contact" className="link" activeClassName="active">Kontakt</Link></A>
-                <Pill action={toggleModal}>Zum Angebot</Pill>
+                <Pill action={() => navigate("/pricing")} className={"pills"}>Zum Angebot</Pill>
                 <button
                     className="nav-btn nav-close-btn"
                     onClick={showNavbar}>

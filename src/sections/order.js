@@ -4,6 +4,7 @@ import SectionContainer from "../components/sectionContainer";
 import styled from "@emotion/styled"
 import Pill from "../components/pill";
 import PillLink from "../components/pillLink";
+import {navigate} from "gatsby";
 
 
 const ContentContainerRight = styled.div`
@@ -230,7 +231,7 @@ const Order = ({toggleModal}) => (
                     <Title>Gerät auswählen</Title>
                     <p>Egal ob Tablet, Smartphone, Laptop oder Workstation, wir haben eine grosse Auswahl an verschiedenen top Geräten.  </p>
                     <PillWrapper>
-                        <Pill action={toggleModal}>Preisliste herunterladen</Pill>
+                        <Pill action={() => navigate("/pricing")} >Zum Angebot</Pill>
                     </PillWrapper>
                 </RightContainerText>
             </ContentContainerRight>

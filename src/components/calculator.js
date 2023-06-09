@@ -371,7 +371,7 @@ const Calculator = ({ toggleModal }) => {
            <RequestSection>
                <div className={"buttonWrapperBottom"}>
                <Pill action={goToContactPage} className="cardsPill">Jetzt kontaktieren</Pill>
-               <Pill action={toggleModal} className="cardsPill">Preisübersicht erhalten</Pill>
+                   <Pill action={() => navigate("/pricing")} className={"pills"}>Preisübersicht</Pill>
                </div>
            </RequestSection>
         </>
