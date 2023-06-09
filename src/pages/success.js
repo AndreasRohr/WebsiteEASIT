@@ -5,7 +5,7 @@ import SuccessSection from "../sections/successSection";
 
 const Success = () => (
   <Layout>
- <SuccessSection></SuccessSection>
+    <SuccessSection />
   </Layout>
 )
 

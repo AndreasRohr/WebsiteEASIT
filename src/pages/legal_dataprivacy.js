@@ -7,11 +7,11 @@ const LegalData = () => {
 
     return (
         <Layout>
-            <DataPrivacy></DataPrivacy>
+            <DataPrivacy />
         </Layout>
     )
 }
 
-export const Head = () => <Seo title="Contact" lang="de" />
+export const Head = () => <Seo title="Datenschutzbestimmungen" lang="de" description="Verantwortliche Stelle im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutzgrundverordnung, ist: TEQLY GmbH, Europa-Strasse 30, 8152 Glattbrugg"/>
 
 export default LegalData

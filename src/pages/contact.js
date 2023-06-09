@@ -19,6 +19,6 @@ const ContactPage = () => {
   )
 }
 
-export const Head = () => <Seo title="Contact" lang="de" />
+export const Head = () => <Seo title="Kontaktformular" lang="de" description="Haben Sie Fragen zu EASIT oder wünschen Sie eine Offerte? Füllen Sie unverbindlich das Kontaktformular aus und wir melden uns so schnell wie möglich bei Ihnen."/>
 
 export default ContactPage

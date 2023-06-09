@@ -7,11 +7,11 @@ const LegalImprint = () => {
 
     return (
         <Layout>
-<Imprint></Imprint>
+          <Imprint />
         </Layout>
     )
 }
 
-export const Head = () => <Seo title="Contact" lang="de" />
+export const Head = () => <Seo title="Impressum" lang="de" />
 
 export default LegalImprint

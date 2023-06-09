@@ -21,16 +21,16 @@ const HowItWorksPage = () => {
 
         return (
           <Layout toggleModal={toggleModal} modal={modal}>
-                  <HiwTitle></HiwTitle>
+                  <HiwTitle />
                   <ScrollComponent title1="Bestellen" title2="Inbetriebnahme" title3="Im Alltag" title4="Rücknahme" />
                   <Order toggleModal={toggleModal}/>
-                  <Delivery></Delivery>
-                  <Starting></Starting>
-                  <Retourn></Retourn>
+                  <Delivery />
+                  <Starting />
+                  <Retourn />
           </Layout>
         )
 }
 
-export const Head = () => <Seo title="Wie funktioniert's" lang="de" />
+export const Head = () => <Seo title="Wie funktioniert's?" lang="de" />
 
 export default HowItWorksPage
