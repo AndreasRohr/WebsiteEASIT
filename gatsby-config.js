@@ -4,6 +4,8 @@
  * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
  */
 
+const siteUrl = process.env.URL || `https://easit.rent`
+
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
@@ -26,7 +28,42 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     //configuration can be modified manually. check out https://www.gatsbyjs.com/plugins/gatsby-plugin-sitemap/
-    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        query: `
+        {
+          allSitePage {
+            nodes {
+              path
+            }
+          }
+        }
+      `,
+        resolveSiteUrl: () => siteUrl,
+        resolvePages: ({
+          allSitePage: { nodes: allPages }
+        }) => {
+
+          const nodeMap = allPages.reduce((acc, node) => {
+            const { uri } = node
+            acc[uri] = node
+
+            return acc
+          }, {})
+
+          return allPages.map(page => {
+            return { ...page, ...nodeMap[page.path] }
+          })
+        },
+        serialize: ({ path, modifiedGmt }) => {
+          return {
+            url: path,
+            lastmod: modifiedGmt,
+          }
+        }
+      }
+    },
     {
       resolve: `gatsby-plugin-robots-txt`,
       options: {
