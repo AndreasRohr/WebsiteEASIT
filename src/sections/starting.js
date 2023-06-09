@@ -175,7 +175,7 @@ const PillWrapper = styled.div`
   }
 `
 
-const Title = styled.h1`
+const Title = styled.h3`
   margin-bottom: 1rem;
   font-size: 2.5rem;
 
@@ -189,7 +189,7 @@ const Title = styled.h1`
 
 `
 
-const PhaseTitle = styled.h1`
+const PhaseTitle = styled.h2`
   margin-bottom: 4rem;
   margin-top: 1rem;
   font-size: 2.5rem;

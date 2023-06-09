@@ -27,8 +27,8 @@ const IndexPage = () => {
       <Products/>
       <Lifecycle />
       <Calculation toggleModal={toggleModal}/>
-        <UseSection></UseSection>
-        <Values></Values>
+      <UseSection />
+      <Values />
       <ImportantFaq />
 
     </Layout>

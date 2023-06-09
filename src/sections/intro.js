@@ -68,8 +68,7 @@ const Intro = ({ toggleModal }) => (
   <SectionContainer color={"linear-gradient(to bottom right, white 60%, #dd356e 60%) "} id="intro" height={70}>
       <IntroContainer>
           <LeftContainer>
-              <Title>Deine <PinkTitle>IT</PinkTitle></Title>
-              <Title>einfach einfach</Title>
+              <Title>Deine <PinkTitle>IT</PinkTitle> <br/>einfach einfach</Title>
               <TeqlyContainer>
               <Powered>powered by</Powered>
               <StaticImage
