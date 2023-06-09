@@ -1,46 +1,8 @@
 import * as React from "react"
 import styled from "@emotion/styled"
 import {StaticImage} from "gatsby-plugin-image";
-import Pill from "../components/pill";
 import { Tooltip as ReactTooltip } from "react-tooltip";
 import 'react-tooltip/dist/react-tooltip.css'
-import { navigate } from "gatsby";
-
-const Button1 = styled.button`
-font-size: 1.5rem;
-font-weight: bold;
-width: 10rem;
-height: 3rem;
-border: 2px solid grey;
-border-right: none;
-border-bottom-left-radius: 1rem;
-border-top-left-radius: 1rem;
-background: white;
-  color: black;
-  :disabled {
-    background: #dd356e;
-    color: white;
-    border: none;
-  }
-`
-
-const Button2 = styled.button`
-font-size: 1.5rem;
-font-weight: bold;
-width: 10rem;
-height: 3rem;
-border: 2px solid grey;
-border-left: none;
-border-bottom-right-radius: 1rem;
-border-top-right-radius: 1rem;
-  color: black;
-  background: white;
-  :disabled {
-    background: #dd356e;
-    color: white;
-    border: none;
-  }
-`
 
 const Title = styled.h1`
 
@@ -197,42 +159,6 @@ justify-content:center;
     margin-left: 0;
     height: 4rem;
   }
-
-`
-
-const RequestSection = styled.div`
-margin-top: 3rem;
-  margin-bottom: 4rem;
-
-
-.cardsPill{
-margin-left: 1rem;
-margin-right: 1rem;
-  @media (max-width: 768px) {
-    margin-bottom: 1rem;
-  }
-}
-
-.buttonWrapperBottom{
-      display: flex;
-  justify-content: center;
-
-  @media (max-width: 768px) {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-  }
-    }
-
-  .buttonWrapperTop{
-    display: flex;
-    justify-content: center;
-    @media (max-width: 768px) {
-     margin-bottom: -2.5rem;
-    }
-  }
 `
 
 const PricingTableLaptop = () => {
@@ -285,9 +211,6 @@ const PricingTableLaptop = () => {
 
                     <p>Zubehör: Laptoptasche</p>
                 </div>
-
-
-
 
     )
 }

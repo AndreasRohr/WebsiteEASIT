@@ -1,9 +1,6 @@
 import * as React from "react";
 import SectionContainer from "../components/sectionContainer";
 import styled from "@emotion/styled"
-import {StaticImage} from "gatsby-plugin-image";
-import PillLink from "../components/pillLink"
-
 
 const Bulletpoint = styled.h2`
   font-size: 40px;
@@ -48,18 +45,6 @@ const Card = styled.div`
 
 `
 
-const ImageWrapper = styled.div`
-height: 6.5rem;
-margin-top: 0.6rem;
-margin-bottom: -1rem;
-
-.lifecycleImage{
--webkit-filter: invert(1);
-filter: invert(1);
-}
-
-
-`
 const Title = styled.h1`
   text-align: center;
   margin-top: 4rem;
@@ -75,14 +60,6 @@ const Title = styled.h1`
   }
 `
 
-
-
-
-const PillWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
 const Values = () => (
     <SectionContainer color={"#F3F4F7"}>
         <Title>Unsere Werte</Title>

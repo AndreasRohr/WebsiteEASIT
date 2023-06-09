@@ -3,7 +3,6 @@ import {StaticImage} from "gatsby-plugin-image";
 import SectionContainer from "../components/sectionContainer";
 import styled from "@emotion/styled"
 import Pill from "../components/pill";
-import PillLink from "../components/pillLink";
 import {navigate} from "gatsby";
 
 const Title = styled.h1`
@@ -107,20 +106,6 @@ const List = styled.li`
   font-size: 1.2rem;
 
   `
-
-const Text1 = styled.p`
-  font-size: 1.3rem;
-  margin-right: 4rem;
-  margin-top: 1rem;
-  @media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 812px)
-  and (-webkit-min-device-pixel-ratio: 3) {
-    margin-right: 0!important;
-
-
-  }
-`
 
 const PillWrapper = styled.div`
   display: flex;
