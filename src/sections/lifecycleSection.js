@@ -5,7 +5,7 @@ import {StaticImage} from "gatsby-plugin-image";
 import PillLink from "../components/pillLink"
 
 
-const Bulletpoint = styled.h2`
+const Bulletpoint = styled.h3`
   font-size: 40px;
   color: white;
 `
@@ -58,7 +58,7 @@ filter: invert(1);
 
 
 `
-const Title = styled.h1`
+const Title = styled.h2`
   text-align: center;
   margin-top: 4rem;
   font-size: 3rem;
