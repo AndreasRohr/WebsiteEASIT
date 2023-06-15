@@ -31,6 +31,6 @@ const HowItWorksPage = () => {
         )
 }
 
-export const Head = () => <Seo title="Wie funktioniert's?" lang="de" />
+export const Head = () => <Seo title="Wie funktioniert's?" description="In nur 4 Schritten können Sie bei EASIT ein einsatzbereites Gerät bestellen. Erfahren Sie hier mehr zu den Details der einzelnen Schritte." lang="de" />
 
 export default HowItWorksPage

@@ -22,6 +22,6 @@ const FaqPage = () => {
     )
 }
 
-export const Head = () => <Seo title="Contact" lang="de" />
+export const Head = () => <Seo title="Contact" description="Zu häufig gestellte Fragen zu EASIT finden Sie hier ihre Antworten. Konnte eine Frage noch nicht beantwortet werden? Dann melden Sie sich unverbindlich bei uns!" lang="de" />
 
 export default FaqPage

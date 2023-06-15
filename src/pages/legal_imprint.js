@@ -12,6 +12,6 @@ const LegalImprint = () => {
     )
 }
 
-export const Head = () => <Seo title="Impressum" lang="de" />
+export const Head = () => <Seo title="Impressum" description="Hauptsitz, Büro und Lager von EASIT befinden sich bei TEQLY GmbH, Europa-Strasse 30 in 8152 Glattbrugg" lang="de" />
 
 export default LegalImprint
