@@ -12,9 +12,9 @@ const Collapsible = ({title, content}) => {
 
     return (
         <div className={`toggle-card ${isActive.card ? 'active' : ''}`}>
-            <div className={`toggle-heading ${isActive.heading ? 'active' : ''}`} onClick={toggleCollapsible}>
-                <h4 className="toggle-heading-text">{title}</h4>
-                <button className={`toggle-card-icon ${isActive.card ? 'active' : ''}`} title="expand">
+            <div className={`toggle-heading ${isActive.heading ? 'active' : ''}`} onClick={toggleCollapsible} id={"FAQ-heading"}>
+                <h4 className="toggle-heading-text" id={"FAQ-H4"}>{title}</h4>
+                <button className={`toggle-card-icon ${isActive.card ? 'active' : ''}`} title="expand" id={"FAQ-Button"}>
                     <svg id="Regular" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                         <path className="cls-1" d="m 0 0 l 10 10 m -0.5 0 l 10 -10"/>
                     </svg>

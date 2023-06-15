@@ -30,7 +30,6 @@ const IndexPage = () => {
       <UseSection />
       <Values />
       <ImportantFaq />
-
     </Layout>
   )
 }
