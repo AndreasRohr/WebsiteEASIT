@@ -28,7 +28,7 @@ const Container = styled.footer`
   }
 `;
 
-const Footer = () => (
+const FooterSection = () => (
     <Container>
         <div>
             © {new Date().getFullYear()} &middot; Powered by
@@ -41,4 +41,4 @@ const Footer = () => (
     </Container>
 );
 
-export default Footer;
+export default FooterSection;

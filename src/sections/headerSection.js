@@ -11,10 +11,10 @@ const HeaderContainer = styled.header`
 `
 
 
-const Header = ({toggleModal}) => (
+const HeaderSection = ({toggleModal}) => (
   <HeaderContainer>
       <Navbar toggleModal={toggleModal}/>
   </HeaderContainer>
 )
 
-export default Header
+export default HeaderSection

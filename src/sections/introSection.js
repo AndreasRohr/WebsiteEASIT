@@ -64,7 +64,7 @@ margin-top: 0.2rem;
 `
 
 
-const Intro = ({ toggleModal }) => (
+const IntroSection = ({ toggleModal }) => (
   <SectionContainer color={"linear-gradient(to bottom right, white 60%, #dd356e 60%) "} id="intro" height={70}>
       <IntroContainer>
           <LeftContainer>
@@ -101,4 +101,4 @@ const Intro = ({ toggleModal }) => (
   </SectionContainer>
 )
 
-export default Intro
+export default IntroSection

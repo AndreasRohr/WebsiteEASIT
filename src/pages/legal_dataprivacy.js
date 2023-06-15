@@ -1,13 +1,13 @@
 import Seo from "../components/seo";
 import * as React from "react";
 import Layout from "./layout";
-import DataPrivacy from "../sections/dataprivacy";
+import DataPrivacySection from "../sections/dataPrivacySection";
 
 const LegalData = () => {
 
     return (
         <Layout>
-            <DataPrivacy />
+            <DataPrivacySection />
         </Layout>
     )
 }

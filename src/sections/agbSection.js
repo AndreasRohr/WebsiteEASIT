@@ -21,7 +21,7 @@ const Content = styled.p`
   margin-bottom: 1rem;
 `
 
-const Agb = () => (
+const AgbSection = () => (
     <SectionContainer color={"#ffffff"}>
        <Title>Allgemeine Geschäftsbedingungen</Title>
         <ContentTitle>I. Allgemeines</ContentTitle>
@@ -257,4 +257,4 @@ const Agb = () => (
     </SectionContainer>
 )
 
-export default Agb
+export default AgbSection

@@ -21,7 +21,7 @@ const ContentLoc = styled.p`
 `
 
 
-const DataPrivacy = () => (
+const DataPrivacySection = () => (
     <SectionContainer color={"#ffffff"}>
         <Title>Datenschutzerklärung</Title>
         <Content>Verantwortliche Stelle im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutzgrundverordnung
@@ -290,4 +290,4 @@ const DataPrivacy = () => (
     </SectionContainer>
 )
 
-export default DataPrivacy
+export default DataPrivacySection

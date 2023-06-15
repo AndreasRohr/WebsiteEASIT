@@ -81,7 +81,7 @@ const PillWrapper = styled.div`
   align-items: center;
   justify-content: center;
 `;
-const Lifecycle = () => (
+const LifecycleSection = () => (
   <SectionContainer color={"#F3F4F7"}>
       <Title>So funktioniert EASIT</Title>
       <CardSection>
@@ -173,4 +173,4 @@ const Lifecycle = () => (
   </SectionContainer>
 )
 
-export default Lifecycle
+export default LifecycleSection

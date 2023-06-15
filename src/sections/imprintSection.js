@@ -25,7 +25,7 @@ const Wrapper = styled.div`
 min-height: 89vh;
 `
 
-const Imprint = () => (
+const ImprintSection = () => (
     <SectionContainer color={"#ffffff"}>
         <Wrapper>
 
@@ -44,4 +44,4 @@ const Imprint = () => (
     </SectionContainer>
 )
 
-export default Imprint
+export default ImprintSection

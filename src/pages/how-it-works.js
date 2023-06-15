@@ -2,12 +2,12 @@ import * as React from "react"
 
 import Layout from "./layout"
 import Seo from "../components/seo"
-import HiwTitle from "../sections/hiwTitle";
+import HiwTitleSection from "../sections/hiwTitleSection";
 import ScrollComponent from "../components/scrollComponent"
-import Order from "../sections/order";
-import Delivery from "../sections/delivery";
+import OrderSection from "../sections/orderSection";
+import DeliverySection from "../sections/deliverySection";
 import Starting from "../sections/starting";
-import Retourn from "../sections/retourn";
+import RetournSection from "../sections/retournSection";
 
 
 const HowItWorksPage = () => {
@@ -21,12 +21,12 @@ const HowItWorksPage = () => {
 
         return (
           <Layout toggleModal={toggleModal} modal={modal}>
-                  <HiwTitle />
+                  <HiwTitleSection />
                   <ScrollComponent title1="Bestellen" title2="Inbetriebnahme" title3="Im Alltag" title4="Rücknahme" />
-                  <Order toggleModal={toggleModal}/>
-                  <Delivery />
+                  <OrderSection toggleModal={toggleModal}/>
+                  <DeliverySection />
                   <Starting />
-                  <Retourn />
+                  <RetournSection />
           </Layout>
         )
 }

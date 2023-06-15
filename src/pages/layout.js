@@ -6,8 +6,8 @@
  */
 
 import * as React from "react"
-import Header from "../sections/header"
-import Footer from "../sections/footer"
+import HeaderSection from "../sections/headerSection"
+import FooterSection from "../sections/footerSection"
 import "./layout.css"
 import Modal from "../components/modal";
 
@@ -15,10 +15,10 @@ const Layout = ({ children, toggleModal, modal }) => {
 
   return (
     <>
-      <Header toggleModal={toggleModal}/>
+      <HeaderSection toggleModal={toggleModal}/>
       {modal && <Modal toggleModal={toggleModal}/>}
       <main>{children}</main>
-      <Footer />
+      <FooterSection />
     </>
   )
 }

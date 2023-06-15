@@ -135,7 +135,7 @@ const PillWrapper = styled.div`
 `
 
 
-const PricingTitle = () => (
+const PricingTitleSection = () => (
     <SectionContainer id="intro" height={80}>
         <IntroContainer>
             <IntroContainerLeft>
@@ -167,4 +167,4 @@ const PricingTitle = () => (
     </SectionContainer>
 )
 
-export default PricingTitle
+export default PricingTitleSection

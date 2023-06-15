@@ -2,12 +2,12 @@ import * as React from "react"
 
 import Layout from "./layout"
 import Seo from "../components/seo"
-import Intro from "../sections/intro"
-import Lifecycle from "../sections/lifecycle"
-import Calculation from "../sections/calculation";
+import IntroSection from "../sections/introSection"
+import LifecycleSection from "../sections/lifecycleSection"
+import CalculationSection from "../sections/calculationSection";
 import Sticker from "../components/sticker";
-import Products from "../sections/products";
-import ImportantFaq from "../sections/importantFaq";
+import ProductsSection from "../sections/productsSection";
+import ImportantFaqSection from "../sections/importantFaqSection";
 import Values from "../sections/values";
 import UseSection from "../sections/useSection";
 
@@ -23,13 +23,13 @@ const IndexPage = () => {
   return (
     <Layout toggleModal={toggleModal} modal={modal}>
       <Sticker />
-      <Intro toggleModal={toggleModal}/>
-      <Products/>
-      <Lifecycle />
-      <Calculation toggleModal={toggleModal}/>
+      <IntroSection toggleModal={toggleModal}/>
+      <ProductsSection/>
+      <LifecycleSection />
+      <CalculationSection toggleModal={toggleModal}/>
       <UseSection />
       <Values />
-      <ImportantFaq />
+      <ImportantFaqSection />
     </Layout>
   )
 }

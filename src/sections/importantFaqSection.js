@@ -39,7 +39,7 @@ const FaqWrapper = styled.div`
   }
 `
 
-const ImportantFaq = () => {
+const ImportantFaqSection = () => {
 
   const impFAQ = data.questions.slice(0, 3);
 
@@ -55,4 +55,4 @@ const ImportantFaq = () => {
     </SectionContainer>
 )}
 
-export default ImportantFaq
+export default ImportantFaqSection

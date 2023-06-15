@@ -207,7 +207,7 @@ margin: 0;
 
 
 
-const Retourn = () => (
+const RetournSection = () => (
     <SectionContainer id="intro" color={"#F3F4F7"} height={80}>
         <div id="section4">
             <PhaseTitle>EASIT Rücknahme</PhaseTitle>
@@ -281,7 +281,7 @@ const Retourn = () => (
     </SectionContainer>
 )
 
-export default Retourn
+export default RetournSection
 
 
 

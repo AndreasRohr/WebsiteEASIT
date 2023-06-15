@@ -19,7 +19,7 @@ const Title = styled.h1`
   }
 `
 
-const Calculation = ({ toggleModal }) => (
+const CalculationSection = ({ toggleModal }) => (
     <SectionContainer >
         <div style={{overflow:"hidden"}}>
         <Title>Beispielhafte Gesamtkostenrechnung</Title>
@@ -28,4 +28,4 @@ const Calculation = ({ toggleModal }) => (
     </SectionContainer>
 )
 
-export default Calculation
+export default CalculationSection

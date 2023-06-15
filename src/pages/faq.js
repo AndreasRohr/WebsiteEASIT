@@ -1,8 +1,8 @@
 import Seo from "../components/seo";
 import * as React from "react";
 import Layout from "./layout";
-import Faq from "../sections/faq";
-import FaqTitle from "../sections/faqTitle";
+import FaqSection from "../sections/faqSection";
+import FaqTitleSection from "../sections/faqTitleSection";
 
 
 const FaqPage = () => {
@@ -16,8 +16,8 @@ const FaqPage = () => {
 
     return (
         <Layout toggleModal={toggleModal} modal={modal}>
-            <FaqTitle />
-            <Faq />
+            <FaqTitleSection />
+            <FaqSection />
         </Layout>
     )
 }

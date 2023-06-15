@@ -2,16 +2,16 @@ import * as React from "react"
 import {StaticImage} from "gatsby-plugin-image";
 import SectionContainer from "../components/sectionContainer";
 import styled from "@emotion/styled"
-
+import Pill from "../components/pill";
 import PillLink from "../components/pillLink";
-
+import {navigate} from "gatsby";
 
 
 const ContentContainerRight = styled.div`
-  display: flex;
-  margin-left: 10rem;
-  margin-bottom: 4rem;
-
+display: flex;
+margin-left: 10rem;
+margin-bottom: 4rem;
+  
   @media only screen
   and (min-device-width: 375px)
   and (max-device-width: 812px)
@@ -22,15 +22,15 @@ const ContentContainerRight = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+ 
   }
 `
 
 const ContentContainerLeft = styled.div`
-  display: flex;
-  margin-right: 10rem;
-  margin-bottom: 4rem;
-  margin-left: 3rem;
+display: flex;
+margin-right: 10rem;
+margin-bottom: 4rem;
+margin-left: 3rem;
 
   @media only screen
   and (min-device-width: 375px)
@@ -47,13 +47,13 @@ const ContentContainerLeft = styled.div`
 `
 
 const LeftContainerImage = styled.div`
-  width: 50%;
-  display: flex;
+width: 50%;
+display: flex;
 
-  .desktopImage{
-    margin-left: auto;
-    margin-right:auto;
-  }
+.desktopImage{
+margin-left: auto;
+margin-right:auto;
+}
 
   @media only screen
   and (min-device-width: 375px)
@@ -65,21 +65,21 @@ const LeftContainerImage = styled.div`
 
 
 const RightContainerText = styled.div`
-  width: 50%;
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+width: 50%;
+justify-content: center;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
 
-  p {
-    margin-right: 2rem;
-  }
+p {
+margin-right: 2rem;
+}
 
   @media only screen
   and (min-device-width: 375px)
   and (max-device-width: 812px)
   and (-webkit-min-device-pixel-ratio: 3) {
-    width: 90%;
+width: 90%;
     margin: 0;
     order: 2;
     text-align: center;
@@ -91,17 +91,17 @@ const RightContainerText = styled.div`
       margin-top: 1rem;
     }
   }
-
+ 
 `
 
 const LeftContainerText = styled.div`
 
-  width: 50%;
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  margin-left: 2rem;
+width: 50%;
+justify-content: center;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+margin-left: 2rem;
 
   @media only screen
   and (min-device-width: 375px)
@@ -123,14 +123,14 @@ const LeftContainerText = styled.div`
 `
 
 const RightContainerImage = styled.div`
-  width: 30%;
+width: 30%;
   margin-left: 20%;
-  display: flex;
-  justify-content: center;
-  .desktopImage{
-    margin-left: auto;
-    margin-right:auto;
-  }
+display: flex;
+justify-content: center;
+.desktopImage{
+margin-left: auto;
+margin-right:auto;
+}
 
   @media only screen
   and (min-device-width: 375px)
@@ -170,7 +170,7 @@ const PillWrapper = styled.div`
   and (min-device-width: 375px)
   and (max-device-width: 812px)
   and (-webkit-min-device-pixel-ratio: 3) {
-    margin: 0;
+margin: 0;
     margin-bottom: 1rem;
     margin-top: 1rem;
   }
@@ -207,19 +207,46 @@ margin: 0;
 
 
 
-const Delivery = () => (
-    <SectionContainer id="intro" color={"#F3F4F7"} height={80}>
-        <div id="section2">
-            <PhaseTitle>EASIT Inbetriebnahme</PhaseTitle>
+
+
+const OrderSection = ({toggleModal}) => (
+    <SectionContainer id="intro" height={80}>
+        <div id="section1">
+            <PhaseTitle>EASIT bestellen</PhaseTitle>
+            <ContentContainerRight>
+                <LeftContainerImage>
+                    <StaticImage
+                        placeholder= 'none'
+                        src="../images/select-device.png"
+                        loading="eager"
+                        width={450}
+                        quality={100}
+                        formats={["auto", "webp", "avif"]}
+                        alt="Laptop with arrows"
+                        class = "hiw-Image"
+                        objectFit="contain"
+                    />
+                </LeftContainerImage>
+                <RightContainerText>
+                    <Title>Gerät auswählen</Title>
+                    <p>Egal ob Tablet, Smartphone, Laptop oder Workstation, wir haben eine grosse Auswahl an verschiedenen top Geräten.  </p>
+                    <PillWrapper>
+                        <Pill action={() => navigate("/pricing")} >Zum Angebot</Pill>
+                    </PillWrapper>
+                </RightContainerText>
+            </ContentContainerRight>
             <ContentContainerLeft>
                 <LeftContainerText>
-                    <Title>Vorbereitung</Title>
-                    <p>Wir bereiten die Geräte auf und bereiten es für dich vor. Sind die Geräte bei uns an Lager, so sind sie innert 5 Tagen Einsatzbereit. Wenn wir die Geräte beschaffen beträgt die Wartezeit in der Regel zwischen 10 und 30 Tagen. </p>
+                    <Title>Anfrage senden</Title>
+                    <p>Du sendest uns eine Anfrage per Mail mit dem Typ und der Anzahl Geräte, die du benötigst oder vereinbarst einfach und schnell einen Beratungstermin mit uns.</p>
+                    <PillWrapper>
+                        <PillLink to="/contact" className="cardsPill">Jetzt kontaktieren</PillLink>
+                    </PillWrapper>
                 </LeftContainerText>
                 <RightContainerImage>
                     <StaticImage
                         placeholder= 'none'
-                        src="../images/preparation.png"
+                        src="../images/send-request.png"
                         loading="eager"
                         width={450}
                         quality={100}
@@ -234,7 +261,7 @@ const Delivery = () => (
                 <LeftContainerImage>
                     <StaticImage
                         placeholder= 'none'
-                        src="../images/software-installation.png"
+                        src="../images/all-inclusive-service.png"
                         loading="eager"
                         width={450}
                         quality={100}
@@ -245,40 +272,18 @@ const Delivery = () => (
                     />
                 </LeftContainerImage>
                 <RightContainerText>
-                    <Title>Software</Title>
-                    <p> Auf Wunsch installieren wir alle benötigten Programme bereits während der Vorbereitung auf Ihren Geräten. Ebenso konfigurieren wir Netzwerke, Drucker, etc. bereits vor, so dass die Geräte sofort einsatzbereit sind. </p>
+                    <Title>All-inclusive Service</Title>
+                    <p>Bei EASIT ist alles rund um deine Geräte inklusive. Wir kümmern uns um alle nötigen Wartungen, tauschen alte oder defekte Geräte aus und leisten Support, wenn etwas mal nicht so läuft wie du es dir wünschst.  </p>
                     <PillWrapper>
                         <PillLink to="/contact" className="cardsPill">Jetzt kontaktieren</PillLink>
                     </PillWrapper>
                 </RightContainerText>
             </ContentContainerRight>
-            <ContentContainerLeft>
-                <LeftContainerText>
-                    <Title>Abholung oder Lieferung</Title>
-                    <p>Du kannst die Geräte bei uns in Glattbrugg abholen oder dir kostenlos an den Verwendungsort senden lassen. </p>
-                    <PillWrapper>
-                        <PillLink to="/contact" className="cardsPill">Jetzt kontaktieren</PillLink>
-                    </PillWrapper>
-                </LeftContainerText>
-                <RightContainerImage>
-                    <StaticImage
-                        placeholder= 'none'
-                        src="../images/pickup-delivery.png"
-                        loading="eager"
-                        width={450}
-                        quality={100}
-                        formats={["auto", "webp", "avif"]}
-                        alt="Laptop with arrows"
-                        class = "hiw-Image"
-                        objectFit="contain"
-                    />
-                </RightContainerImage>
-            </ContentContainerLeft>
         </div>
     </SectionContainer>
 )
 
-export default Delivery
+export default OrderSection
 
 
 

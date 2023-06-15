@@ -3,7 +3,7 @@ import SectionContainer from "../components/sectionContainer";
 import Collapsible from "../components/collapsible";
 import data from "../content/faq.json"
 
-const Faq = () => {
+const FaqSection = () => {
 
   return (
     <SectionContainer color={"#ffffff"}>
@@ -16,4 +16,4 @@ const Faq = () => {
     </SectionContainer>
 )}
 
-export default Faq
+export default FaqSection
