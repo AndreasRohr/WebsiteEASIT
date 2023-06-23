@@ -154,9 +154,9 @@ const PricingTitleSection = () => (
             <IntroContainerRight>
                 <StaticImage
                     placeholder= 'none'
-                    src="../images/circle.png"
+                    src="../images/Preise.png"
                     loading="eager"
-                    width={750}
+                    width={250}
                     quality={100}
                     formats={["auto", "webp", "avif"]}
                     alt="Laptop with arrows"
